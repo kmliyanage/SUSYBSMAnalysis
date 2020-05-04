@@ -1,0 +1,631 @@
+DEBUG 2019-11-23 00:08:15.732 UTC: 	 Running on: Linux lxplus603.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux CERN SLC release 6.10 (Carbon)
+DEBUG 2019-11-23 00:08:15.757 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2019-11-23 00:08:15.758 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-23 00:08:15.758 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-11-23 00:08:15.767 UTC: 	 Checking credentials
+DEBUG 2019-11-23 00:08:15.767 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-23 00:08:15.767 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-23 00:08:16.573 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 39643
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 00:08:17.280 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 39641
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 00:08:17.280 UTC: 	 Proxy lifetime 39643 secs is different from voms extension lifetime 39641 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-23 00:08:17.280 UTC: 	 Proxy valid for 11:00:41 hours
+INFO 2019-11-23 00:08:17.281 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-11-23 00:08:17.281 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-23 00:08:17.368 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2019-11-23 00:08:17.541 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 00:08:17.542 UTC: 	 Checking credentials
+DEBUG 2019-11-23 00:08:17.542 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-23 00:08:17.542 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-23 00:08:18.248 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 39641
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 00:08:18.957 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 39640
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 00:08:18.958 UTC: 	 Proxy lifetime 39641 secs is different from voms extension lifetime 39640 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-23 00:08:18.958 UTC: 	 Proxy valid for 11:00:40 hours
+DEBUG 2019-11-23 00:08:19.664 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u112442 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 00:08:19.741 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-23 00:08:19.861 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 00:08:19.861 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-23 00:08:19.861 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-11-23 00:08:20.167 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 614:54:30  (25.6 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 00:08:20.168 UTC: 	 Myproxy is valid: 2213670
+DEBUG 2019-11-23 00:08:20.168 UTC: 	 Command use: submit
+DEBUG 2019-11-23 00:08:20.168 UTC: 	 Options use: ['-c', 'crabConfig.py']
+DEBUG 2019-11-23 00:08:20.276 UTC: 	 CRABClient version: 3.3.1911.patch1
+DEBUG 2019-11-23 00:08:20.276 UTC: 	 Instance is prod
+DEBUG 2019-11-23 00:08:20.276 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-23 00:08:20.276 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-23 00:08:20.277 UTC: 	 Started submission
+DEBUG 2019-11-23 00:08:20.277 UTC: 	 Working on /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300
+DEBUG 2019-11-23 00:08:20.392 UTC: 	 Loading required information from the environment
+DEBUG 2019-11-23 00:08:20.392 UTC: 	 Found CMSSW_10_2_5 for slc6_amd64_gcc700 with base /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5
+DEBUG 2019-11-23 00:08:20.392 UTC: 	 Loading required information from the environment
+DEBUG 2019-11-23 00:08:20.392 UTC: 	 Found CMSSW_10_2_5 for slc6_amd64_gcc700 with base /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5
+DEBUG 2019-11-23 00:08:20.408 UTC: 	 UNIQUE NAME: tarUUID 83645ff5-4826-4ac3-a1d5-cac370bd9aec 
+DEBUG 2019-11-23 00:08:20.409 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.workArea = 'crab_2017_MC'
+config.General.requestName = 'ana_datamc_dy1400to2300'
+config.section_('JobType')
+config.JobType.psetName = 'histos_crab.py'
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.inputDataset = '/ZToMuMu_NNPDF31_13TeV-powheg_M_1400_2300/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM'
+config.Data.allowNonValidInputDataset = True
+config.Data.totalUnits = -1
+config.Data.unitsPerJob = 20
+config.Data.ignoreLocality = True
+config.Data.inputDBS = 'global'
+config.Data.splitting = 'FileBased'
+config.Data.outputDatasetTag = 'ana_datamc_dy1400to2300'
+config.Data.outLFNDirBase = '/store/user/kaliyana'
+config.Data.publication = False
+config.section_('Site')
+config.Site.whitelist = ['T2_US_MIT']
+config.Site.storageSite = 'T2_US_MIT'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2019-11-23 00:08:20.409 UTC: 	 self.config.JobType.psetName: histos_crab.py
+INFO 2019-11-23 00:08:20.409 UTC: 	 Importing CMSSW configuration histos_crab.py
+INFO 2019-11-23 00:08:20.816 UTC: 	 Finished importing CMSSW configuration histos_crab.py
+DEBUG 2019-11-23 00:08:20.816 UTC: 	 Writing CMSSW configuration to /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300/inputs/PSet.py
+DEBUG 2019-11-23 00:08:20.899 UTC: 	 The following EDM output files will be collected: []
+DEBUG 2019-11-23 00:08:20.899 UTC: 	 The following TFile output files will be collected: ['zp2mu_histos.root']
+DEBUG 2019-11-23 00:08:20.899 UTC: 	 The following user output files (not listed as PoolOuputModule or TFileService in the CMSSW PSet) will be collected: 
+DEBUG 2019-11-23 00:08:20.900 UTC: 	 Loading required information from the environment
+DEBUG 2019-11-23 00:08:20.900 UTC: 	 Found CMSSW_10_2_5 for slc6_amd64_gcc700 with base /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5
+DEBUG 2019-11-23 00:08:20.900 UTC: 	 Making tarball in /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300/inputs/83645ff5-4826-4ac3-a1d5-cac370bd9aecdefault.tgz
+DEBUG 2019-11-23 00:08:20.901 UTC: 	 Checking directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/lib
+DEBUG 2019-11-23 00:08:20.901 UTC: 	 Adding directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/lib to tarball
+DEBUG 2019-11-23 00:08:21.446 UTC: 	 Checking directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/biglib
+DEBUG 2019-11-23 00:08:21.446 UTC: 	 Adding directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/biglib to tarball
+DEBUG 2019-11-23 00:08:21.447 UTC: 	 Checking directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/module
+DEBUG 2019-11-23 00:08:21.539 UTC: 	 Uploading archive /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300/inputs/83645ff5-4826-4ac3-a1d5-cac370bd9aecdefault.tgz (1.274414.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2019-11-23 00:08:22.761 UTC: 	 Loading required information from the environment
+DEBUG 2019-11-23 00:08:22.762 UTC: 	 Found CMSSW_10_2_5 for slc6_amd64_gcc700 with base /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5
+DEBUG 2019-11-23 00:08:22.762 UTC: 	 Making tarball in /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300/inputs/debugFiles.tgz
+DEBUG 2019-11-23 00:08:22.772 UTC: 	 Uploading archive /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300/inputs/debugFiles.tgz (8 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2019-11-23 00:08:22.870 UTC: 	 Result uploading input files: 009ef9b72c3f6e30cc97f0b18acfe355f68df7ed6c0d51044d72e5bfb68af709.tar.gz 
+INFO 2019-11-23 00:08:22.870 UTC: 	 Sending the request to the server at cmsweb.cern.ch
+DEBUG 2019-11-23 00:08:22.870 UTC: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 1, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T2_US_MIT', 'algoargs': 20, 'cachefilename': '009ef9b72c3f6e30cc97f0b18acfe355f68df7ed6c0d51044d72e5bfb68af709.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_10_2_5', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/ZToMuMu_NNPDF31_13TeV-powheg_M_1400_2300/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', 'lfn': '/store/user/kaliyana', 'dryrun': 0, 'workflow': 'crab_ana_datamc_dy1400to2300', 'sitewhitelist': ['T2_US_MIT'], 'nonprodsw': 0, 'tfileoutfiles': ['zp2mu_histos.root'], 'oneEventMode': 0, 'debugfilename': '2a3409ec6a9638460942e0cc19ea02b0382d419cffe0a920eb8191b3a0a17745.tar.gz', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'saveoutput': 1, 'publication': 0, 'jobarch': 'slc6_amd64_gcc700', 'totalunits': -1, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 1, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'ana_datamc_dy1400to2300'} 
+DEBUG 2019-11-23 00:08:22.870 UTC: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=1&savelogsflag=0&useparent=0&asyncdest=T2_US_MIT&algoargs=20&cachefilename=009ef9b72c3f6e30cc97f0b18acfe355f68df7ed6c0d51044d72e5bfb68af709.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_10_2_5&primarydataset=&inputdata=%2FZToMuMu_NNPDF31_13TeV-powheg_M_1400_2300%2FRunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1%2FMINIAODSIM&lfn=%2Fstore%2Fuser%2Fkaliyana&dryrun=0&workflow=crab_ana_datamc_dy1400to2300&nonprodsw=0&oneEventMode=0&debugfilename=2a3409ec6a9638460942e0cc19ea02b0382d419cffe0a920eb8191b3a0a17745.tar.gz&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&saveoutput=1&publication=0&jobarch=slc6_amd64_gcc700&totalunits=-1&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=1&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=ana_datamc_dy1400to2300&sitewhitelist=T2_US_MIT&tfileoutfiles=zp2mu_histos.root
+DEBUG 2019-11-23 00:08:23.101 UTC: 	 Result: {u'result': [{u'RequestName': u'191123_000822:kaliyana_crab_ana_datamc_dy1400to2300'}]}
+INFO 2019-11-23 00:08:23.104 UTC: 	 Success: Your task has been delivered to the prod CRAB3 server.
+INFO 2019-11-23 00:08:23.105 UTC: 	 Task name: 191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 00:08:23.105 UTC: 	 Project dir: crab_2017_MC/crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 00:08:23.105 UTC: 	 Please use 'crab status -d crab_2017_MC/crab_ana_datamc_dy1400to2300' to check how the submission process proceeds.
+DEBUG 2019-11-23 00:08:23.105 UTC: 	 About to return
+INFO 2019-11-23 00:08:23.107 UTC: 	 Log file is /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300/crab.log
+DEBUG 2019-11-23 15:57:46.944 UTC: 	 Running on: Linux lxplus603.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux CERN SLC release 6.10 (Carbon)
+DEBUG 2019-11-23 15:57:46.966 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2019-11-23 15:57:46.966 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-23 15:57:46.967 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-11-23 15:57:47.012 UTC: 	 Checking credentials
+DEBUG 2019-11-23 15:57:47.012 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-23 15:57:47.012 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-23 15:57:47.818 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 43086
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:57:48.629 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 43085
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:57:48.629 UTC: 	 Proxy lifetime 43086 secs is different from voms extension lifetime 43085 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-23 15:57:48.629 UTC: 	 Proxy valid for 11:58:05 hours
+DEBUG 2019-11-23 15:57:48.744 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:57:48.745 UTC: 	 Checking credentials
+DEBUG 2019-11-23 15:57:48.745 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-23 15:57:48.745 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-23 15:57:49.552 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 43084
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:57:50.360 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 43083
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:57:50.360 UTC: 	 Proxy lifetime 43084 secs is different from voms extension lifetime 43083 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-23 15:57:50.360 UTC: 	 Proxy valid for 11:58:03 hours
+DEBUG 2019-11-23 15:57:50.439 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-23 15:57:50.550 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:57:50.551 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-23 15:57:50.551 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-11-23 15:57:50.756 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 599:05:00  (25.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:57:50.757 UTC: 	 Myproxy is valid: 2156700
+DEBUG 2019-11-23 15:57:50.758 UTC: 	 Command use: status
+DEBUG 2019-11-23 15:57:50.758 UTC: 	 Options use: ['-d', 'crab_ana_datamc_dy1400to2300']
+DEBUG 2019-11-23 15:57:50.833 UTC: 	 CRABClient version: 3.3.1911.patch1
+DEBUG 2019-11-23 15:57:50.833 UTC: 	 Instance is prod
+DEBUG 2019-11-23 15:57:50.833 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-23 15:57:50.833 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-23 15:57:50.955 UTC: 	 Got information from server oracle database: {u'result': [u'191123_000822:kaliyana_crab_ana_datamc_dy1400to2300', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-11-23 00:08:23.093433', u'None', u'2019-11-23 00:09:20.836332', u'None', u'CMSSW_10_2_5', u'slc6_amd64_gcc700', u'/ZToMuMu_NNPDF31_13TeV-powheg_M_1400_2300/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'T', u'0', u"['T2_US_MIT']", u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 20, 'runs': [], 'lumis': []}", u'009ef9b72c3f6e30cc97f0b18acfe355f68df7ed6c0d51044d72e5bfb68af709.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'kaliyana', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage', u'cms', u'None', u'None', u'ana_datamc_dy1400to2300-00000000000000000000000000000000', u'F', u'T2_US_MIT', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['zp2mu_histos.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0137.cern.ch/mon/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0137.cern.ch', u'F', u'[]', u'T', u'/store/user/kaliyana', u'T', u'None', u'F', u'None', u'ZToMuMu_NNPDF31_13TeV-powheg_M_1400_2300', u'None', u'2a3409ec6a9638460942e0cc19ea02b0382d419cffe0a920eb8191b3a0a17745.tar.gz', u'44607517', u'filetransfers', u'F', u'137.138.63.5', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-11-23 15:57:50.956 UTC: 	 CRAB project directory:		/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 15:57:50.956 UTC: 	 Task name:			191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 15:57:50.956 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0137.cern.ch - crab-prod-tw01
+INFO 2019-11-23 15:57:50.956 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-11-23 15:57:50.956 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191123_000822%3Akaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 15:57:50.956 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=kaliyana&var-task=191123_000822%3Akaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 15:57:50.956 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2019-11-23 15:57:50.956 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 44607517)
+DEBUG 2019-11-23 15:57:50.956 UTC: 	 Webdir is located at http://vocms0137.cern.ch/mon/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+DEBUG 2019-11-23 15:57:51.027 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0137/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+DEBUG 2019-11-23 15:57:51.027 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0137/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300/status_cache
+DEBUG 2019-11-23 15:57:51.076 UTC: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [10.0, 2239.0], 'StartTimes': [1574468136.0], 'SubmitTimes': [1574467775.0], 'JobIds': ['44607520.0'], 'TotalUserCpuTimeHistory': [832.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2069464], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [53.0]}}
+INFO 2019-11-23 15:57:51.077 UTC: 	 Status on the scheduler:	FAILED
+INFO 2019-11-23 15:57:51.077 UTC: 	 
+Jobs status:                    failed       		100.0% (1/1)
+INFO 2019-11-23 15:57:51.077 UTC: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2019-11-23 15:57:51.077 UTC: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+1 jobs failed with exit code 50660
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2019-11-23 15:57:51.077 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-11-23 15:57:51.077 UTC: 	 
+Warning: the average jobs CPU efficiency is less than 50%, please consider to improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task
+INFO 2019-11-23 15:57:51.077 UTC: 	 
+Summary of run jobs:
+ * Memory: 2020MB min, 2020MB max, 2021MB ave
+ * Runtime: 0:37:19 min, 0:37:19 max, 0:37:19 ave
+ * CPU eff: 40% min, 40% max, 40% ave
+ * Waste: 0:00:10 (0% of total)
+
+INFO 2019-11-23 15:57:51.086 UTC: 	 Log file is /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300/crab.log
+DEBUG 2019-11-23 15:59:12.507 UTC: 	 Running on: Linux lxplus603.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux CERN SLC release 6.10 (Carbon)
+DEBUG 2019-11-23 15:59:12.530 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2019-11-23 15:59:12.531 UTC: 	 Executing command: 'resubmit'
+DEBUG 2019-11-23 15:59:12.531 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-11-23 15:59:12.543 UTC: 	 Checking credentials
+DEBUG 2019-11-23 15:59:12.544 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-23 15:59:12.544 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-23 15:59:13.558 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 43000
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:14.365 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 42999
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:14.366 UTC: 	 Proxy lifetime 43000 secs is different from voms extension lifetime 42999 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-23 15:59:14.366 UTC: 	 Proxy valid for 11:56:39 hours
+DEBUG 2019-11-23 15:59:14.480 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:14.481 UTC: 	 Checking credentials
+DEBUG 2019-11-23 15:59:14.481 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-23 15:59:14.481 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-23 15:59:15.289 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 42998
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:16.099 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 42997
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:16.100 UTC: 	 Proxy lifetime 42998 secs is different from voms extension lifetime 42997 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-23 15:59:16.100 UTC: 	 Proxy valid for 11:56:37 hours
+DEBUG 2019-11-23 15:59:16.174 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-23 15:59:16.287 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:16.287 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-23 15:59:16.288 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-11-23 15:59:16.493 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 599:03:34  (25.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:16.494 UTC: 	 Myproxy is valid: 2156614
+DEBUG 2019-11-23 15:59:16.583 UTC: 	 Command use: resubmit
+DEBUG 2019-11-23 15:59:16.583 UTC: 	 Options use: ['-d', 'crab_ana_datamc_dy1400to2300']
+DEBUG 2019-11-23 15:59:16.655 UTC: 	 CRABClient version: 3.3.1911.patch1
+DEBUG 2019-11-23 15:59:16.655 UTC: 	 Instance is prod
+DEBUG 2019-11-23 15:59:16.655 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-23 15:59:16.655 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-23 15:59:16.723 UTC: 	 Running on: Linux lxplus603.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux CERN SLC release 6.10 (Carbon)
+DEBUG 2019-11-23 15:59:16.742 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2019-11-23 15:59:16.742 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-23 15:59:16.742 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-11-23 15:59:16.751 UTC: 	 Checking credentials
+DEBUG 2019-11-23 15:59:16.752 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-23 15:59:16.752 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-23 15:59:17.562 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 42996
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:18.371 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 42995
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:18.371 UTC: 	 Proxy lifetime 42996 secs is different from voms extension lifetime 42995 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-23 15:59:18.371 UTC: 	 Proxy valid for 11:56:35 hours
+DEBUG 2019-11-23 15:59:18.579 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:18.579 UTC: 	 Checking credentials
+DEBUG 2019-11-23 15:59:18.580 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-23 15:59:18.580 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-23 15:59:19.388 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 42994
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:20.197 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 42993
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:20.198 UTC: 	 Proxy lifetime 42994 secs is different from voms extension lifetime 42993 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-23 15:59:20.198 UTC: 	 Proxy valid for 11:56:33 hours
+DEBUG 2019-11-23 15:59:20.269 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-23 15:59:20.382 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:20.382 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-23 15:59:20.382 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-11-23 15:59:20.587 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 599:03:30  (25.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 15:59:20.588 UTC: 	 Myproxy is valid: 2156610
+DEBUG 2019-11-23 15:59:20.589 UTC: 	 Command use: status
+DEBUG 2019-11-23 15:59:20.589 UTC: 	 Options use: []
+DEBUG 2019-11-23 15:59:20.679 UTC: 	 CRABClient version: 3.3.1911.patch1
+DEBUG 2019-11-23 15:59:20.679 UTC: 	 Instance is prod
+DEBUG 2019-11-23 15:59:20.679 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-23 15:59:20.679 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-23 15:59:20.791 UTC: 	 Got information from server oracle database: {u'result': [u'191123_000822:kaliyana_crab_ana_datamc_dy1400to2300', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-11-23 00:08:23.093433', u'None', u'2019-11-23 00:09:20.836332', u'None', u'CMSSW_10_2_5', u'slc6_amd64_gcc700', u'/ZToMuMu_NNPDF31_13TeV-powheg_M_1400_2300/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'T', u'0', u"['T2_US_MIT']", u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 20, 'runs': [], 'lumis': []}", u'009ef9b72c3f6e30cc97f0b18acfe355f68df7ed6c0d51044d72e5bfb68af709.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'kaliyana', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage', u'cms', u'None', u'None', u'ana_datamc_dy1400to2300-00000000000000000000000000000000', u'F', u'T2_US_MIT', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['zp2mu_histos.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0137.cern.ch/mon/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0137.cern.ch', u'F', u'[]', u'T', u'/store/user/kaliyana', u'T', u'None', u'F', u'None', u'ZToMuMu_NNPDF31_13TeV-powheg_M_1400_2300', u'None', u'2a3409ec6a9638460942e0cc19ea02b0382d419cffe0a920eb8191b3a0a17745.tar.gz', u'44607517', u'filetransfers', u'F', u'137.138.63.5', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-11-23 15:59:20.792 UTC: 	 CRAB project directory:		/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 15:59:20.792 UTC: 	 Task name:			191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 15:59:20.792 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0137.cern.ch - crab-prod-tw01
+INFO 2019-11-23 15:59:20.792 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-11-23 15:59:20.792 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191123_000822%3Akaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 15:59:20.792 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=kaliyana&var-task=191123_000822%3Akaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 15:59:20.793 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2019-11-23 15:59:20.793 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 44607517)
+DEBUG 2019-11-23 15:59:20.793 UTC: 	 Webdir is located at http://vocms0137.cern.ch/mon/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+DEBUG 2019-11-23 15:59:20.874 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0137/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+DEBUG 2019-11-23 15:59:20.874 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0137/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300/status_cache
+DEBUG 2019-11-23 15:59:20.921 UTC: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [10.0, 2239.0], 'StartTimes': [1574468136.0], 'SubmitTimes': [1574467775.0], 'JobIds': ['44607520.0'], 'TotalUserCpuTimeHistory': [832.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2069464], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [53.0]}}
+INFO 2019-11-23 15:59:20.921 UTC: 	 Status on the scheduler:	FAILED
+INFO 2019-11-23 15:59:20.921 UTC: 	 
+Jobs status:                    failed       		100.0% (1/1)
+INFO 2019-11-23 15:59:20.921 UTC: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2019-11-23 15:59:20.922 UTC: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+1 jobs failed with exit code 50660
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2019-11-23 15:59:20.922 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-11-23 15:59:20.922 UTC: 	 
+Warning: the average jobs CPU efficiency is less than 50%, please consider to improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task
+INFO 2019-11-23 15:59:20.922 UTC: 	 
+Summary of run jobs:
+ * Memory: 2020MB min, 2020MB max, 2021MB ave
+ * Runtime: 0:37:19 min, 0:37:19 max, 0:37:19 ave
+ * CPU eff: 40% min, 40% max, 40% ave
+ * Waste: 0:00:10 (0% of total)
+
+DEBUG 2019-11-23 15:59:20.927 UTC: 	 Requesting resubmission of failed jobs in task 191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 15:59:20.927 UTC: 	 Sending resubmit request to the server.
+DEBUG 2019-11-23 15:59:20.927 UTC: 	 Submitting {'publication': 0, 'jobids': ['1'], 'subresource': 'resubmit2', 'workflow': u'191123_000822:kaliyana_crab_ana_datamc_dy1400to2300'} 
+DEBUG 2019-11-23 15:59:20.927 UTC: 	 Encoded resubmit request: publication=0&subresource=resubmit2&workflow=191123_000822%3Akaliyana_crab_ana_datamc_dy1400to2300&jobids=1
+DEBUG 2019-11-23 15:59:21.017 UTC: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2019-11-23 15:59:21.018 UTC: 	 Resubmit request sent to the server.
+INFO 2019-11-23 15:59:21.018 UTC: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2019-11-23 15:59:21.021 UTC: 	 Log file is /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300/crab.log
+DEBUG 2019-11-23 17:37:56.003 UTC: 	 Running on: Linux lxplus603.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux CERN SLC release 6.10 (Carbon)
+DEBUG 2019-11-23 17:37:56.040 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2019-11-23 17:37:56.041 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-23 17:37:56.041 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-11-23 17:37:56.051 UTC: 	 Checking credentials
+DEBUG 2019-11-23 17:37:56.053 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-23 17:37:56.053 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-23 17:37:57.464 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 37076
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:37:58.273 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 37075
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:37:58.273 UTC: 	 Proxy lifetime 37076 secs is different from voms extension lifetime 37075 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-23 17:37:58.273 UTC: 	 Proxy valid for 10:17:55 hours
+DEBUG 2019-11-23 17:37:58.389 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:37:58.390 UTC: 	 Checking credentials
+DEBUG 2019-11-23 17:37:58.390 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-23 17:37:58.390 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-23 17:37:59.198 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 37074
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:38:00.005 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 37074
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:38:00.006 UTC: 	 Proxy valid for 10:17:54 hours
+DEBUG 2019-11-23 17:38:00.317 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-23 17:38:00.431 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:38:00.431 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-23 17:38:00.432 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-11-23 17:38:00.636 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 597:24:50  (24.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:38:00.637 UTC: 	 Myproxy is valid: 2150690
+DEBUG 2019-11-23 17:38:00.638 UTC: 	 Command use: status
+DEBUG 2019-11-23 17:38:00.638 UTC: 	 Options use: ['-d', 'crab_ana_datamc_dy1400to2300']
+DEBUG 2019-11-23 17:38:00.740 UTC: 	 CRABClient version: 3.3.1911.patch1
+DEBUG 2019-11-23 17:38:00.741 UTC: 	 Instance is prod
+DEBUG 2019-11-23 17:38:00.741 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-23 17:38:00.741 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-23 17:38:00.823 UTC: 	 Got information from server oracle database: {u'result': [u'191123_000822:kaliyana_crab_ana_datamc_dy1400to2300', u'None', u'None', u'SUBMITTED', u'None', u'2019-11-23 00:08:23.093433', u'None', u'2019-11-23 00:09:20.836332', u'None', u'CMSSW_10_2_5', u'slc6_amd64_gcc700', u'/ZToMuMu_NNPDF31_13TeV-powheg_M_1400_2300/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'T', u'0', u"['T2_US_MIT']", u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 20, 'runs': [], 'lumis': []}", u'009ef9b72c3f6e30cc97f0b18acfe355f68df7ed6c0d51044d72e5bfb68af709.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'kaliyana', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage', u'cms', u'None', u'None', u'ana_datamc_dy1400to2300-00000000000000000000000000000000', u'F', u'T2_US_MIT', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['zp2mu_histos.root']", u'[]', u'Analysis', u'pythia', u'None', u"{'maxjobruntime': 1250, 'priority': 10, 'site_blacklist': [], 'resubmit_jobids': ['1'], 'numcores': 1, 'site_whitelist': ['T2_US_MIT'], 'maxmemory': 2000, 'resubmit_publication': 0}", u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0137.cern.ch/mon/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0137.cern.ch', u'F', u'[]', u'T', u'/store/user/kaliyana', u'T', u'None', u'F', u'None', u'ZToMuMu_NNPDF31_13TeV-powheg_M_1400_2300', u'None', u'2a3409ec6a9638460942e0cc19ea02b0382d419cffe0a920eb8191b3a0a17745.tar.gz', u'44607517', u'filetransfers', u'F', u'137.138.63.5', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-11-23 17:38:00.824 UTC: 	 CRAB project directory:		/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 17:38:00.824 UTC: 	 Task name:			191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 17:38:00.824 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0137.cern.ch - crab-prod-tw01
+INFO 2019-11-23 17:38:00.824 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-11-23 17:38:00.824 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191123_000822%3Akaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 17:38:00.825 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=kaliyana&var-task=191123_000822%3Akaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 17:38:00.825 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2019-11-23 17:38:00.825 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 44607517)
+DEBUG 2019-11-23 17:38:00.825 UTC: 	 Webdir is located at http://vocms0137.cern.ch/mon/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+DEBUG 2019-11-23 17:38:00.943 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0137/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+DEBUG 2019-11-23 17:38:00.943 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0137/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300/status_cache
+DEBUG 2019-11-23 17:38:01.019 UTC: 	 Got information from status cache file: {'1': {'Retries': 1, 'WallDurations': [10.0, 2239.0, 4031.0], 'StartTimes': [1574468136.0, 1574525117.0], 'SubmitTimes': [1574467775.0, 1574524853.0], 'JobIds': ['44607520.0', '44615342.0'], 'TotalUserCpuTimeHistory': [832.0, 521], 'EndTimes': [1574529148.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [2069464, 1868232], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [53.0, 34]}}
+INFO 2019-11-23 17:38:01.019 UTC: 	 Status on the scheduler:	COMPLETED
+INFO 2019-11-23 17:38:01.019 UTC: 	 
+Jobs status:                    finished     		100.0% (1/1)
+INFO 2019-11-23 17:38:01.019 UTC: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2019-11-23 17:38:01.019 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-11-23 17:38:01.020 UTC: 	 
+Warning: the average jobs CPU efficiency is less than 50%, please consider to improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task
+INFO 2019-11-23 17:38:01.020 UTC: 	 
+Summary of run jobs:
+ * Memory: 1824MB min, 1824MB max, 1824MB ave
+ * Runtime: 1:07:11 min, 1:07:11 max, 1:07:11 ave
+ * CPU eff: 14% min, 14% max, 14% ave
+ * Waste: 0:37:29 (36% of total)
+
+INFO 2019-11-23 17:38:01.032 UTC: 	 Log file is /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300/crab.log
+DEBUG 2019-11-23 17:53:20.208 UTC: 	 Running on: Linux lxplus603.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux CERN SLC release 6.10 (Carbon)
+DEBUG 2019-11-23 17:53:20.229 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2019-11-23 17:53:20.230 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-23 17:53:20.232 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-11-23 17:53:20.247 UTC: 	 Checking credentials
+DEBUG 2019-11-23 17:53:20.248 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-23 17:53:20.249 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-23 17:53:21.474 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 36152
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:53:22.584 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 36151
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:53:22.585 UTC: 	 Proxy lifetime 36152 secs is different from voms extension lifetime 36151 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-23 17:53:22.586 UTC: 	 Proxy valid for 10:02:31 hours
+DEBUG 2019-11-23 17:53:22.704 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:53:22.704 UTC: 	 Checking credentials
+DEBUG 2019-11-23 17:53:22.705 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-23 17:53:22.705 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-23 17:53:23.618 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 36150
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:53:24.640 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 36149
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:53:24.640 UTC: 	 Proxy lifetime 36150 secs is different from voms extension lifetime 36149 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-23 17:53:24.641 UTC: 	 Proxy valid for 10:02:29 hours
+DEBUG 2019-11-23 17:53:24.849 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-23 17:53:24.976 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:53:24.977 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-23 17:53:24.977 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-11-23 17:53:25.285 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 597:09:25  (24.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-23 17:53:25.287 UTC: 	 Myproxy is valid: 2149765
+DEBUG 2019-11-23 17:53:25.288 UTC: 	 Command use: status
+DEBUG 2019-11-23 17:53:25.288 UTC: 	 Options use: ['-d', 'crab_ana_datamc_dy1400to2300']
+DEBUG 2019-11-23 17:53:25.426 UTC: 	 CRABClient version: 3.3.1911.patch1
+DEBUG 2019-11-23 17:53:25.426 UTC: 	 Instance is prod
+DEBUG 2019-11-23 17:53:25.426 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-23 17:53:25.426 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-23 17:53:25.536 UTC: 	 Got information from server oracle database: {u'result': [u'191123_000822:kaliyana_crab_ana_datamc_dy1400to2300', u'None', u'None', u'SUBMITTED', u'None', u'2019-11-23 00:08:23.093433', u'None', u'2019-11-23 00:09:20.836332', u'None', u'CMSSW_10_2_5', u'slc6_amd64_gcc700', u'/ZToMuMu_NNPDF31_13TeV-powheg_M_1400_2300/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'T', u'0', u"['T2_US_MIT']", u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 20, 'runs': [], 'lumis': []}", u'009ef9b72c3f6e30cc97f0b18acfe355f68df7ed6c0d51044d72e5bfb68af709.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'kaliyana', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage', u'cms', u'None', u'None', u'ana_datamc_dy1400to2300-00000000000000000000000000000000', u'F', u'T2_US_MIT', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['zp2mu_histos.root']", u'[]', u'Analysis', u'pythia', u'None', u"{'maxjobruntime': 1250, 'priority': 10, 'site_blacklist': [], 'resubmit_jobids': ['1'], 'numcores': 1, 'site_whitelist': ['T2_US_MIT'], 'maxmemory': 2000, 'resubmit_publication': 0}", u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0137.cern.ch/mon/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0137.cern.ch', u'F', u'[]', u'T', u'/store/user/kaliyana', u'T', u'None', u'F', u'None', u'ZToMuMu_NNPDF31_13TeV-powheg_M_1400_2300', u'None', u'2a3409ec6a9638460942e0cc19ea02b0382d419cffe0a920eb8191b3a0a17745.tar.gz', u'44607517', u'filetransfers', u'F', u'137.138.63.5', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-11-23 17:53:25.537 UTC: 	 CRAB project directory:		/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 17:53:25.538 UTC: 	 Task name:			191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 17:53:25.538 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0137.cern.ch - crab-prod-tw01
+INFO 2019-11-23 17:53:25.539 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-11-23 17:53:25.539 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191123_000822%3Akaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 17:53:25.539 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=kaliyana&var-task=191123_000822%3Akaliyana_crab_ana_datamc_dy1400to2300
+INFO 2019-11-23 17:53:25.539 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2019-11-23 17:53:25.539 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 44607517)
+DEBUG 2019-11-23 17:53:25.539 UTC: 	 Webdir is located at http://vocms0137.cern.ch/mon/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+DEBUG 2019-11-23 17:53:25.619 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0137/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300
+DEBUG 2019-11-23 17:53:25.619 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0137/cms253/191123_000822:kaliyana_crab_ana_datamc_dy1400to2300/status_cache
+DEBUG 2019-11-23 17:53:25.671 UTC: 	 Got information from status cache file: {'1': {'Retries': 1, 'WallDurations': [10.0, 2239.0, 4031.0], 'StartTimes': [1574468136.0, 1574525117.0], 'SubmitTimes': [1574467775.0, 1574524853.0], 'JobIds': ['44607520.0', '44615342.0'], 'EndTimes': [1574529148.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [2069464, 1868232], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'TotalUserCpuTimeHistory': [832.0, 521], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [53.0, 34]}}
+INFO 2019-11-23 17:53:25.671 UTC: 	 Status on the scheduler:	COMPLETED
+INFO 2019-11-23 17:53:25.671 UTC: 	 
+Jobs status:                    finished     		100.0% (1/1)
+INFO 2019-11-23 17:53:25.672 UTC: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2019-11-23 17:53:25.672 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-11-23 17:53:25.672 UTC: 	 
+Warning: the average jobs CPU efficiency is less than 50%, please consider to improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task
+INFO 2019-11-23 17:53:25.672 UTC: 	 
+Summary of run jobs:
+ * Memory: 1824MB min, 1824MB max, 1824MB ave
+ * Runtime: 1:07:11 min, 1:07:11 max, 1:07:11 ave
+ * CPU eff: 14% min, 14% max, 14% ave
+ * Waste: 0:37:29 (36% of total)
+
+INFO 2019-11-23 17:53:25.688 UTC: 	 Log file is /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC/crab_ana_datamc_dy1400to2300/crab.log

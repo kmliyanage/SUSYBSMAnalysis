@@ -1,0 +1,2107 @@
+DEBUG 2019-07-02 13:33:01,506: 	 Executing command: 'kill'
+DEBUG 2019-07-02 13:33:01,506: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-07-02 13:33:01,507: 	 Error: Please indicate the CRAB project directory with --dir=<project-directory>.
+ERROR 2019-07-02 13:33:01,507: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 582, in validateOptions
+    raise ex
+MissingOptionException: [91mError[0m: Please indicate the CRAB project directory with --dir=<project-directory>.
+DEBUG 2019-07-02 22:27:35,383: 	 Executing command: 'getoutput'
+DEBUG 2019-07-02 22:27:35,383: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-07-02 22:27:35,384: 	 Error: /crab_2018_dy_400_800/crab_ana_datamc_dy400to800 is not a valid CRAB project directory.
+ERROR 2019-07-02 22:27:35,384: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: /crab_2018_dy_400_800/crab_ana_datamc_dy400to800 is not a valid CRAB project directory.
+DEBUG 2019-07-03 19:04:09,099: 	 Executing command: 'submit'
+DEBUG 2019-07-03 19:04:09,099: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-07-03 19:04:09,107: 	 Checking credentials
+DEBUG 2019-07-03 19:04:09,108: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-07-03 19:04:09,108: 	 Getting proxy life time left
+DEBUG 2019-07-03 19:04:09,814: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 35595
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-03 19:04:10,520: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 35594
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-03 19:04:10,520: 	 Proxy lifetime 35595 secs is different from voms extension lifetime 35594 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-07-03 19:04:10,520: 	 Proxy valid for 09:53:14 hours
+INFO 2019-07-03 19:04:10,520: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-07-03 19:04:10,521: 	 Loading CRAB configuration file.
+DEBUG 2019-07-03 19:04:10,543: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-07-03 19:04:10,543: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_dy_2300_3500/crab_ana_datamc_dy2300to3500' already exists 
+Please change the requestName in the config file
+ERROR 2019-07-03 19:04:10,544: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 404, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_dy_2300_3500/crab_ana_datamc_dy2300to3500' already exists 
+Please change the requestName in the config file
+DEBUG 2019-07-03 19:36:05,537: 	 Executing command: 'submit'
+DEBUG 2019-07-03 19:36:05,537: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-07-03 19:36:05,546: 	 Checking credentials
+DEBUG 2019-07-03 19:36:05,547: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-07-03 19:36:05,547: 	 Getting proxy life time left
+DEBUG 2019-07-03 19:36:06,352: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 33678
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-03 19:36:07,059: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 33678
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-03 19:36:07,060: 	 Proxy valid for 09:21:18 hours
+INFO 2019-07-03 19:36:07,060: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-07-03 19:36:07,060: 	 Loading CRAB configuration file.
+DEBUG 2019-07-03 19:36:07,065: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-07-03 19:36:07,065: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_dy_2300_3500/crab_ana_datamc_dy2300to3500' already exists 
+Please change the requestName in the config file
+ERROR 2019-07-03 19:36:07,066: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 404, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_dy_2300_3500/crab_ana_datamc_dy2300to3500' already exists 
+Please change the requestName in the config file
+DEBUG 2019-07-23 00:36:00,704: 	 Executing command: 'status'
+DEBUG 2019-07-23 00:36:00,704: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-07-23 00:36:00,704: 	 Error: crab_2018_TTTo2L2Nu is not a valid CRAB project directory.
+ERROR 2019-07-23 00:36:00,704: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_TTTo2L2Nu is not a valid CRAB project directory.
+DEBUG 2019-08-07 11:30:02,812: 	 Executing command: 'submit'
+DEBUG 2019-08-07 11:30:02,812: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-08-07 11:30:02,822: 	 Checking credentials
+DEBUG 2019-08-07 11:30:02,823: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-08-07 11:30:02,823: 	 Getting proxy life time left
+DEBUG 2019-08-07 11:30:03,834: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 38640
+
+ error: 
+ retcode : 0
+DEBUG 2019-08-07 11:30:04,752: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 38639
+
+ error: 
+ retcode : 0
+DEBUG 2019-08-07 11:30:04,752: 	 Proxy lifetime 38640 secs is different from voms extension lifetime 38639 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-08-07 11:30:04,753: 	 Proxy valid for 10:43:59 hours
+INFO 2019-08-07 11:30:04,753: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-08-07 11:30:04,753: 	 Loading CRAB configuration file.
+DEBUG 2019-08-07 11:30:04,758: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-08-07 11:30:04,759: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/crab_ana_datamc_ttbar_lep' already exists 
+Please change the requestName in the config file
+ERROR 2019-08-07 11:30:04,759: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 404, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/crab_ana_datamc_ttbar_lep' already exists 
+Please change the requestName in the config file
+DEBUG 2019-08-08 11:36:46,734: 	 Executing command: 'kill'
+DEBUG 2019-08-08 11:36:46,735: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-08-08 11:36:46,735: 	 Error: Please indicate the CRAB project directory with --dir=<project-directory>.
+ERROR 2019-08-08 11:36:46,735: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 582, in validateOptions
+    raise ex
+MissingOptionException: [91mError[0m: Please indicate the CRAB project directory with --dir=<project-directory>.
+DEBUG 2019-08-08 11:48:10,782: 	 Executing command: 'kill'
+DEBUG 2019-08-08 11:48:10,782: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-08-08 11:48:10,784: 	 Error: DataMCSpectraComparison/crab_2018_ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8/crab_ana_datamc_Wantitop is not a valid CRAB project directory.
+ERROR 2019-08-08 11:48:10,785: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: DataMCSpectraComparison/crab_2018_ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8/crab_ana_datamc_Wantitop is not a valid CRAB project directory.
+DEBUG 2019-08-08 14:09:16,757: 	 Executing command: 'status'
+DEBUG 2019-08-08 14:09:16,757: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-08-08 14:09:16,760: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_ST_tW_top_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8
+ERROR 2019-08-08 14:09:16,760: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_ST_tW_top_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8
+DEBUG 2019-08-26 11:01:07,609: 	 Executing command: 'submit'
+DEBUG 2019-08-26 11:01:07,609: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-08-26 11:01:07,616: 	 Checking credentials
+DEBUG 2019-08-26 11:01:07,616: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-08-26 11:01:07,617: 	 Getting proxy life time left
+DEBUG 2019-08-26 11:01:08,323: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 40027
+
+ error: 
+ retcode : 0
+DEBUG 2019-08-26 11:01:09,029: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 40027
+
+ error: 
+ retcode : 0
+DEBUG 2019-08-26 11:01:09,029: 	 Proxy valid for 11:07:07 hours
+INFO 2019-08-26 11:01:09,029: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-08-26 11:01:09,030: 	 Loading CRAB configuration file.
+DEBUG 2019-08-26 11:01:09,034: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-08-26 11:01:09,035: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/crab_ana_datamc_dyInclusive50' already exists 
+Please change the requestName in the config file
+ERROR 2019-08-26 11:01:09,035: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 404, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/crab_ana_datamc_dyInclusive50' already exists 
+Please change the requestName in the config file
+DEBUG 2019-08-27 10:18:58,870: 	 Executing command: 'status'
+DEBUG 2019-08-27 10:18:58,871: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-08-27 10:18:58,876: 	 Error: crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia/ is not a valid CRAB project directory.
+ERROR 2019-08-27 10:18:58,876: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia/ is not a valid CRAB project directory.
+DEBUG 2019-08-29 23:05:41,862: 	 Executing command: 'status'
+DEBUG 2019-08-29 23:05:41,864: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-08-29 23:05:41,889: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8_ext2
+ERROR 2019-08-29 23:05:41,890: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8_ext2
+DEBUG 2019-08-30 16:20:46,431: 	 Executing command: 'kill'
+DEBUG 2019-08-30 16:20:46,431: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-08-30 16:20:46,431: 	 Error: Please indicate the CRAB project directory with --dir=<project-directory>.
+ERROR 2019-08-30 16:20:46,431: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 582, in validateOptions
+    raise ex
+MissingOptionException: [91mError[0m: Please indicate the CRAB project directory with --dir=<project-directory>.
+DEBUG 2019-08-31 22:27:57,557: 	 Executing command: 'submit'
+DEBUG 2019-08-31 22:27:57,558: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-08-31 22:27:57,568: 	 Checking credentials
+DEBUG 2019-08-31 22:27:57,571: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-08-31 22:27:57,571: 	 Getting proxy life time left
+DEBUG 2019-08-31 22:28:00,487: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 42443
+
+ error: 
+ retcode : 0
+DEBUG 2019-08-31 22:28:01,293: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 42442
+
+ error: 
+ retcode : 0
+DEBUG 2019-08-31 22:28:01,293: 	 Proxy lifetime 42443 secs is different from voms extension lifetime 42442 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-08-31 22:28:01,293: 	 Proxy valid for 11:47:22 hours
+INFO 2019-08-31 22:28:01,294: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-08-31 22:28:01,294: 	 Loading CRAB configuration file.
+DEBUG 2019-08-31 22:28:01,381: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-08-31 22:28:01,384: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8_ext2/crab_ana_datamc_dyInclusive50' already exists 
+Please change the requestName in the config file
+ERROR 2019-08-31 22:28:01,384: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 404, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8_ext2/crab_ana_datamc_dyInclusive50' already exists 
+Please change the requestName in the config file
+DEBUG 2019-09-03 13:44:18,690: 	 Executing command: 'submit'
+DEBUG 2019-09-03 13:44:18,691: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-09-03 13:44:18,699: 	 Checking credentials
+DEBUG 2019-09-03 13:44:18,700: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-09-03 13:44:18,700: 	 Getting proxy life time left
+DEBUG 2019-09-03 13:44:19,608: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 42972
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-03 13:44:20,416: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 42971
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-03 13:44:20,417: 	 Proxy lifetime 42972 secs is different from voms extension lifetime 42971 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-09-03 13:44:20,417: 	 Proxy valid for 11:56:11 hours
+INFO 2019-09-03 13:44:20,418: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-09-03 13:44:20,418: 	 Loading CRAB configuration file.
+ERROR 2019-09-03 13:44:20,450: 	 Invalid CRAB configuration: In case of Automatic splitting, the Data.unitsPerJob parameter must be in the [180, 2700] minutes range. You asked for 100000 minutes.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2019-09-03 13:44:20,450: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 92, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: In case of Automatic splitting, the Data.unitsPerJob parameter must be in the [180, 2700] minutes range. You asked for 100000 minutes.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2019-09-03 13:51:38,011: 	 Executing command: 'status'
+DEBUG 2019-09-03 13:51:38,011: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-09-03 13:51:38,011: 	 Error: crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8_ext2/crab_ana_datamc_dyInclusive50 is not a valid CRAB project directory.
+ERROR 2019-09-03 13:51:38,011: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8_ext2/crab_ana_datamc_dyInclusive50 is not a valid CRAB project directory.
+DEBUG 2019-09-21 20:39:59.645 UTC: 	 Executing command: 'kill'
+DEBUG 2019-09-21 20:39:59.645 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-09-26 09:08:08.669 UTC: 	 Executing command: 'status'
+DEBUG 2019-09-26 09:08:08.670 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-09-26 09:08:08.670 UTC: 	 Error: crab_2017_QCD_Pt_6000toInf_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd6000toInf/ is not a valid CRAB project directory.
+ERROR 2019-09-26 09:08:08.670 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2017_QCD_Pt_6000toInf_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd6000toInf/ is not a valid CRAB project directory.
+DEBUG 2019-09-28 22:15:38.471 UTC: 	 Executing command: 'status'
+DEBUG 2019-09-28 22:15:38.472 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-09-28 22:15:38.472 UTC: 	 Error: ls is not a valid CRAB project directory.
+ERROR 2019-09-28 22:15:38.472 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: ls is not a valid CRAB project directory.
+DEBUG 2019-10-10 13:43:17.968 UTC: 	 Executing command: 'kill'
+DEBUG 2019-10-10 13:43:17.969 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-10 13:43:55.966 UTC: 	 Executing command: 'kill'
+DEBUG 2019-10-10 13:43:55.966 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-10 13:43:55.966 UTC: 	 Error: /crab_2018_QCD_Pt_80to120_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd50to80 is not a valid CRAB project directory.
+ERROR 2019-10-10 13:43:55.966 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: /crab_2018_QCD_Pt_80to120_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd50to80 is not a valid CRAB project directory.
+DEBUG 2019-10-10 13:44:09.900 UTC: 	 Executing command: 'kill'
+DEBUG 2019-10-10 13:44:09.900 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-10 13:44:09.901 UTC: 	 Error: /crab_2018_QCD_Pt_80to120_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd50to80/ is not a valid CRAB project directory.
+ERROR 2019-10-10 13:44:09.901 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: /crab_2018_QCD_Pt_80to120_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd50to80/ is not a valid CRAB project directory.
+DEBUG 2019-10-10 14:53:37.908 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-10 14:53:37.908 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-10 14:53:37.908 UTC: 	 Error: crab_2018_QCD_Pt_300to600_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd300to600 is not a valid CRAB project directory.
+ERROR 2019-10-10 14:53:37.909 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_QCD_Pt_300to600_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd300to600 is not a valid CRAB project directory.
+DEBUG 2019-10-10 14:55:13.369 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-10 14:55:13.371 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-10 14:55:13.371 UTC: 	 Error: crab_2018_QCD_Pt_4700to600_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd470to600 is not a valid CRAB project directory.
+ERROR 2019-10-10 14:55:13.371 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_QCD_Pt_4700to600_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd470to600 is not a valid CRAB project directory.
+DEBUG 2019-10-10 15:47:06.520 UTC: 	 Executing command: 'submit'
+DEBUG 2019-10-10 15:47:06.520 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-10 15:47:06.528 UTC: 	 Checking credentials
+DEBUG 2019-10-10 15:47:06.529 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-10 15:47:06.529 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-10 15:47:07.441 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 76941
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-10 15:47:08.451 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 76940
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-10 15:47:08.452 UTC: 	 Proxy lifetime 76941 secs is different from voms extension lifetime 76940 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-10 15:47:08.452 UTC: 	 Proxy valid for 21:22:20 hours
+INFO 2019-10-10 15:47:08.452 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-10-10 15:47:08.452 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-10-10 15:47:08.457 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-10-10 15:47:08.459 UTC: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_470to600_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd470to600' already exists 
+Please change the requestName in the config file
+ERROR 2019-10-10 15:47:08.459 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 408, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_470to600_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd470to600' already exists 
+Please change the requestName in the config file
+DEBUG 2019-10-10 15:50:10.155 UTC: 	 Executing command: 'submit'
+DEBUG 2019-10-10 15:50:10.157 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-10 15:50:10.165 UTC: 	 Checking credentials
+DEBUG 2019-10-10 15:50:10.166 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-10 15:50:10.166 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-10 15:50:10.973 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 76758
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-10 15:50:11.783 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 76757
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-10 15:50:11.783 UTC: 	 Proxy lifetime 76758 secs is different from voms extension lifetime 76757 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-10 15:50:11.784 UTC: 	 Proxy valid for 21:19:17 hours
+INFO 2019-10-10 15:50:11.784 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-10-10 15:50:11.784 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-10-10 15:50:11.790 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-10-10 15:50:11.790 UTC: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_600to800_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd600to800' already exists 
+Please change the requestName in the config file
+ERROR 2019-10-10 15:50:11.791 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 408, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_600to800_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd600to800' already exists 
+Please change the requestName in the config file
+DEBUG 2019-10-10 15:55:45.035 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-10 15:55:45.035 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-10 15:55:45.046 UTC: 	 Error: crab_2018_QCD_Pt_470to600_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd300to470 is not a valid CRAB project directory.
+ERROR 2019-10-10 15:55:45.046 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_QCD_Pt_470to600_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd300to470 is not a valid CRAB project directory.
+DEBUG 2019-10-10 16:04:35.535 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-10 16:04:35.535 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-10 16:04:35.539 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_300to470_TuneCP5_13TeV_pythia8
+ERROR 2019-10-10 16:04:35.539 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_300to470_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-10 16:05:19.513 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-10 16:05:19.513 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-10 16:05:19.516 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_470to600_TuneCP5_13TeV_pythia8
+ERROR 2019-10-10 16:05:19.516 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_470to600_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-11 23:20:06.846 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-11 23:20:06.847 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-11 23:20:06.868 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_600to800_TuneCP5_13TeV_pythia8
+ERROR 2019-10-11 23:20:06.868 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_600to800_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-12 12:03:34.933 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-12 12:03:34.934 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-12 12:03:34.952 UTC: 	 Error: crab_2018_QCD_Pt_1000to1400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1000t01400/ is not a valid CRAB project directory.
+ERROR 2019-10-12 12:03:34.952 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_QCD_Pt_1000to1400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1000t01400/ is not a valid CRAB project directory.
+DEBUG 2019-10-12 12:24:05.513 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-12 12:24:05.515 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-12 12:24:05.525 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_800to1000_TuneCP5_13TeV_pythia8
+ERROR 2019-10-12 12:24:05.525 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_800to1000_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-13 10:45:28.253 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-13 10:45:28.253 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-13 10:45:28.263 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_300to470_TuneCP5_13TeV_pythia8
+ERROR 2019-10-13 10:45:28.263 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_300to470_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-13 11:02:13.295 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-13 11:02:13.295 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-13 11:02:13.296 UTC: 	 Error: crab_2018_QCD_Pt_80to50_TuneCP5_13TeV_pythia8/ is not a valid CRAB project directory.
+ERROR 2019-10-13 11:02:13.296 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_QCD_Pt_80to50_TuneCP5_13TeV_pythia8/ is not a valid CRAB project directory.
+DEBUG 2019-10-13 11:02:38.498 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-13 11:02:38.498 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-13 11:02:38.499 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_50to80_TuneCP5_13TeV_pythia8
+ERROR 2019-10-13 11:02:38.499 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_50to80_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-13 12:07:18.302 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-13 12:07:18.303 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-13 12:07:18.303 UTC: 	 Error: crab_2017_QCD_Pt_1400to1000_TuneCP5_13TeV_pythia8/ is not a valid CRAB project directory.
+ERROR 2019-10-13 12:07:18.303 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2017_QCD_Pt_1400to1000_TuneCP5_13TeV_pythia8/ is not a valid CRAB project directory.
+DEBUG 2019-10-13 12:10:27.441 UTC: 	 Executing command: 'resubmit'
+DEBUG 2019-10-13 12:10:27.441 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-13 12:10:27.441 UTC: 	 Error: crab_2018_QCD_Pt_100to1400_TuneCP5_13TeV_pythia8/ is not a valid CRAB project directory.
+ERROR 2019-10-13 12:10:27.441 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 28, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_QCD_Pt_100to1400_TuneCP5_13TeV_pythia8/ is not a valid CRAB project directory.
+DEBUG 2019-10-17 17:10:59.107 UTC: 	 Executing command: 'kill'
+DEBUG 2019-10-17 17:10:59.107 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-17 17:10:59.107 UTC: 	 Error: crab_2018_QCD_Pt_15to30_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd15to30 is not a valid CRAB project directory.
+ERROR 2019-10-17 17:10:59.107 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_QCD_Pt_15to30_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd15to30 is not a valid CRAB project directory.
+DEBUG 2019-10-17 17:11:44.172 UTC: 	 Executing command: 'kill'
+DEBUG 2019-10-17 17:11:44.172 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-17 17:11:44.173 UTC: 	 Error: crab_2018_QCD_Pt_15to30_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd15to30 is not a valid CRAB project directory.
+ERROR 2019-10-17 17:11:44.173 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_QCD_Pt_15to30_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd15to30 is not a valid CRAB project directory.
+DEBUG 2019-10-17 17:12:49.759 UTC: 	 Executing command: 'kill'
+DEBUG 2019-10-17 17:12:49.759 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-17 17:13:52.672 UTC: 	 Executing command: 'kill'
+DEBUG 2019-10-17 17:13:52.672 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-17 17:13:52.674 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_crab_2018_QCD_Pt_15to30_TuneCP5_13TeV_pythia8
+ERROR 2019-10-17 17:13:52.674 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_crab_2018_QCD_Pt_15to30_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-17 17:22:55.577 UTC: 	 Executing command: 'submit'
+DEBUG 2019-10-17 17:22:55.577 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-17 17:22:55.588 UTC: 	 Checking credentials
+DEBUG 2019-10-17 17:22:55.588 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-17 17:22:55.588 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-17 17:22:56.702 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 24016
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-17 17:22:57.615 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 24015
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-17 17:22:57.615 UTC: 	 Proxy lifetime 24016 secs is different from voms extension lifetime 24015 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-17 17:22:57.615 UTC: 	 Proxy valid for 06:40:15 hours
+INFO 2019-10-17 17:22:57.616 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-10-17 17:22:57.616 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-10-17 17:22:57.623 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-10-17 17:22:57.623 UTC: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_80to120_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd80to120' already exists 
+Please change the requestName in the config file
+ERROR 2019-10-17 17:22:57.623 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 408, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_80to120_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd80to120' already exists 
+Please change the requestName in the config file
+DEBUG 2019-10-17 17:53:05.237 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-17 17:53:05.237 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-17 17:53:05.238 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+ERROR 2019-10-17 17:53:05.238 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+DEBUG 2019-10-17 21:31:39.935 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-17 21:31:39.935 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-17 21:31:39.964 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+ERROR 2019-10-17 21:31:39.964 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+DEBUG 2019-10-17 22:37:25.565 UTC: 	 Executing command: 'resubmit'
+DEBUG 2019-10-17 22:37:25.565 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-18 06:31:20.354 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-18 06:31:20.355 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-18 06:31:20.371 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+ERROR 2019-10-18 06:31:20.371 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+DEBUG 2019-10-18 06:36:31.439 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2019-10-18 06:36:31.439 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-18 06:36:31.454 UTC: 	 Checking credentials
+DEBUG 2019-10-18 06:36:31.455 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 06:36:31.455 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 06:36:32.362 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 42819
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 06:36:33.170 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 42818
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 06:36:33.170 UTC: 	 Proxy lifetime 42819 secs is different from voms extension lifetime 42818 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 06:36:33.170 UTC: 	 Proxy valid for 11:53:38 hours
+DEBUG 2019-10-18 06:36:33.281 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 06:36:33.281 UTC: 	 Checking credentials
+DEBUG 2019-10-18 06:36:33.281 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 06:36:33.281 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 06:36:34.088 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 42818
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 06:36:34.898 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 42817
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 06:36:34.898 UTC: 	 Proxy lifetime 42818 secs is different from voms extension lifetime 42817 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 06:36:34.898 UTC: 	 Proxy valid for 11:53:37 hours
+DEBUG 2019-10-18 06:36:35.706 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u112442 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 06:36:35.707 UTC: 	 Command use: checkwrite
+DEBUG 2019-10-18 06:36:35.707 UTC: 	 Options use: ['--site=T2_IT_Bari']
+DEBUG 2019-10-18 06:36:35.707 UTC: 	 Instance is None
+DEBUG 2019-10-18 06:36:35.708 UTC: 	 Server base url is None
+INFO 2019-10-18 06:36:35.711 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2019-10-18 06:36:35.711 UTC: 	 Retrieving DN from proxy...
+INFO 2019-10-18 06:36:36.665 UTC: 	 DN is: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+INFO 2019-10-18 06:36:36.666 UTC: 	 Retrieving username for this DN...
+DEBUG 2019-10-18 06:36:36.666 UTC: 	 Retrieving username from SiteDB...
+DEBUG 2019-10-18 06:36:39.339 UTC: 	 Username is: kaliyana
+DEBUG 2019-10-18 06:36:39.340 UTC: 	 Retrieving username from CRIC...
+DEBUG 2019-10-18 06:36:42.743 UTC: 	 Username is: kaliyana
+INFO 2019-10-18 06:36:42.744 UTC: 	 username is kaliyana
+INFO 2019-10-18 06:36:42.745 UTC: 	 Validating LFN /store/user/kaliyana...
+INFO 2019-10-18 06:36:42.745 UTC: 	 LFN /store/user/kaliyana is valid.
+INFO 2019-10-18 06:36:42.778 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2019-10-18 06:36:42.779 UTC: 	 Will check write permission in /store/user/kaliyana on site T2_IT_Bari
+INFO 2019-10-18 06:36:42.840 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20191018_083642 and copy (dummy) file crab3checkwrite_20191018_083642.tmp to /store/user/kaliyana
+
+INFO 2019-10-18 06:36:42.844 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab3checkwrite_20191018_083642.tmp 'srm://storm-se-01.ba.infn.it:8444/srm/managerv2?SFN=//cms/store/user/kaliyana/crab3checkwrite_20191018_083642/crab3checkwrite_20191018_083642.tmp'
+INFO 2019-10-18 06:36:42.845 UTC: 	 Please wait...
+INFO 2019-10-18 06:40:13.209 UTC: 	 Failed running copy command
+INFO 2019-10-18 06:40:13.210 UTC: 	   Stderr:
+    Command timed out after 180 seconds!
+    
+INFO 2019-10-18 06:40:13.212 UTC: 	 
+Checkwrite Result:
+INFO 2019-10-18 06:40:13.212 UTC: 	 Unable to check write permission in /store/user/kaliyana on site T2_IT_Bari
+Please try again later or contact the site administrators sending them the 'crab checkwrite' output as printed above.
+INFO 2019-10-18 06:40:13.212 UTC: 	 Note: You cannot write to a site if you did not ask permission.
+DEBUG 2019-10-18 08:22:31.709 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-18 08:22:31.710 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-18 08:22:31.713 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+ERROR 2019-10-18 08:22:31.714 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+DEBUG 2019-10-18 09:02:33.747 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2019-10-18 09:02:33.747 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-18 09:02:33.755 UTC: 	 Checking credentials
+DEBUG 2019-10-18 09:02:33.756 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 09:02:33.756 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 09:02:34.567 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 40558
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:02:35.279 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 40557
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:02:35.279 UTC: 	 Proxy lifetime 40558 secs is different from voms extension lifetime 40557 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 09:02:35.279 UTC: 	 Proxy valid for 11:15:57 hours
+DEBUG 2019-10-18 09:02:35.388 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:02:35.388 UTC: 	 Checking credentials
+DEBUG 2019-10-18 09:02:35.389 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 09:02:35.389 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 09:02:36.194 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 40556
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:02:36.899 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 40556
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:02:36.900 UTC: 	 Proxy valid for 11:15:56 hours
+DEBUG 2019-10-18 09:02:37.604 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u112442 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:02:37.605 UTC: 	 Command use: checkwrite
+DEBUG 2019-10-18 09:02:37.605 UTC: 	 Options use: ['--site=T2_IT_Bari']
+DEBUG 2019-10-18 09:02:37.605 UTC: 	 Instance is None
+DEBUG 2019-10-18 09:02:37.605 UTC: 	 Server base url is None
+INFO 2019-10-18 09:02:37.608 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2019-10-18 09:02:37.608 UTC: 	 Retrieving DN from proxy...
+INFO 2019-10-18 09:02:38.528 UTC: 	 DN is: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+INFO 2019-10-18 09:02:38.528 UTC: 	 Retrieving username for this DN...
+DEBUG 2019-10-18 09:02:38.528 UTC: 	 Retrieving username from SiteDB...
+DEBUG 2019-10-18 09:02:41.648 UTC: 	 Username is: kaliyana
+DEBUG 2019-10-18 09:02:41.649 UTC: 	 Retrieving username from CRIC...
+DEBUG 2019-10-18 09:02:45.259 UTC: 	 Username is: kaliyana
+INFO 2019-10-18 09:02:45.260 UTC: 	 username is kaliyana
+INFO 2019-10-18 09:02:45.260 UTC: 	 Validating LFN /store/user/kaliyana...
+INFO 2019-10-18 09:02:45.260 UTC: 	 LFN /store/user/kaliyana is valid.
+INFO 2019-10-18 09:02:45.286 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2019-10-18 09:02:45.287 UTC: 	 Will check write permission in /store/user/kaliyana on site T2_IT_Bari
+INFO 2019-10-18 09:02:45.351 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20191018_110245 and copy (dummy) file crab3checkwrite_20191018_110245.tmp to /store/user/kaliyana
+
+INFO 2019-10-18 09:02:45.356 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab3checkwrite_20191018_110245.tmp 'srm://storm-se-01.ba.infn.it:8444/srm/managerv2?SFN=//cms/store/user/kaliyana/crab3checkwrite_20191018_110245/crab3checkwrite_20191018_110245.tmp'
+INFO 2019-10-18 09:02:45.356 UTC: 	 Please wait...
+INFO 2019-10-18 09:06:15.674 UTC: 	 Failed running copy command
+INFO 2019-10-18 09:06:15.675 UTC: 	   Stderr:
+    Command timed out after 180 seconds!
+    
+INFO 2019-10-18 09:06:15.677 UTC: 	 
+Checkwrite Result:
+INFO 2019-10-18 09:06:15.678 UTC: 	 Unable to check write permission in /store/user/kaliyana on site T2_IT_Bari
+Please try again later or contact the site administrators sending them the 'crab checkwrite' output as printed above.
+INFO 2019-10-18 09:06:15.678 UTC: 	 Note: You cannot write to a site if you did not ask permission.
+DEBUG 2019-10-18 09:30:03.444 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2019-10-18 09:30:03.444 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-18 09:30:03.453 UTC: 	 Checking credentials
+DEBUG 2019-10-18 09:30:03.454 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 09:30:03.454 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 09:30:04.574 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 38908
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:30:05.510 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 38907
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:30:05.510 UTC: 	 Proxy lifetime 38908 secs is different from voms extension lifetime 38907 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 09:30:05.510 UTC: 	 Proxy valid for 10:48:27 hours
+DEBUG 2019-10-18 09:30:05.625 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:30:05.625 UTC: 	 Checking credentials
+DEBUG 2019-10-18 09:30:05.625 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 09:30:05.625 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 09:30:06.664 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 38906
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:30:07.479 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 38905
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:30:07.479 UTC: 	 Proxy lifetime 38906 secs is different from voms extension lifetime 38905 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 09:30:07.479 UTC: 	 Proxy valid for 10:48:25 hours
+DEBUG 2019-10-18 09:30:08.293 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u112442 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:30:08.294 UTC: 	 Command use: checkwrite
+DEBUG 2019-10-18 09:30:08.294 UTC: 	 Options use: ['--site=T1_US_FNAL_Disk']
+DEBUG 2019-10-18 09:30:08.294 UTC: 	 Instance is None
+DEBUG 2019-10-18 09:30:08.294 UTC: 	 Server base url is None
+INFO 2019-10-18 09:30:08.298 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2019-10-18 09:30:08.298 UTC: 	 Retrieving DN from proxy...
+INFO 2019-10-18 09:30:09.486 UTC: 	 DN is: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+INFO 2019-10-18 09:30:09.487 UTC: 	 Retrieving username for this DN...
+DEBUG 2019-10-18 09:30:09.487 UTC: 	 Retrieving username from SiteDB...
+DEBUG 2019-10-18 09:30:12.201 UTC: 	 Username is: kaliyana
+DEBUG 2019-10-18 09:30:12.201 UTC: 	 Retrieving username from CRIC...
+DEBUG 2019-10-18 09:30:15.709 UTC: 	 Username is: kaliyana
+INFO 2019-10-18 09:30:15.710 UTC: 	 username is kaliyana
+INFO 2019-10-18 09:30:15.710 UTC: 	 Validating LFN /store/user/kaliyana...
+INFO 2019-10-18 09:30:15.710 UTC: 	 LFN /store/user/kaliyana is valid.
+INFO 2019-10-18 09:30:15.724 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2019-10-18 09:30:15.724 UTC: 	 Will check write permission in /store/user/kaliyana on site T1_US_FNAL_Disk
+INFO 2019-10-18 09:30:15.790 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20191018_113015 and copy (dummy) file crab3checkwrite_20191018_113015.tmp to /store/user/kaliyana
+
+INFO 2019-10-18 09:30:15.794 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab3checkwrite_20191018_113015.tmp 'srm://cmsdcadisk01.fnal.gov:8443/srm/managerv2?SFN=/dcache/uscmsdisk/store/user/kaliyana/crab3checkwrite_20191018_113015/crab3checkwrite_20191018_113015.tmp'
+INFO 2019-10-18 09:30:15.794 UTC: 	 Please wait...
+INFO 2019-10-18 09:30:17.513 UTC: 	 Failed running copy command
+INFO 2019-10-18 09:30:17.513 UTC: 	   Stdout:
+    Copying 85 bytes file:///afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab3checkwrite_20191018_113015.tmp => srm://cmsdcadisk01.fnal.gov:8443/srm/managerv2?SFN=/dcache/uscmsdisk/store/user/kaliyana/crab3checkwrite_20191018_113015/crab3checkwrite_20191018_113015.tmp
+    event: [1571391017131] BOTH   GFAL2:CORE:COPY	LIST:ENTER	
+    event: [1571391017131] BOTH   GFAL2:CORE:COPY	LIST:ITEM	file:///afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab3checkwrite_20191018_113015.tmp => srm://cmsdcadisk01.fnal.gov:8443/srm/managerv2?SFN=/dcache/uscmsdisk/store/user/kaliyana/crab3checkwrite_20191018_113015/crab3checkwrite_20191018_113015.tmp
+    event: [1571391017131] BOTH   GFAL2:CORE:COPY	LIST:EXIT	
+    event: [1571391017238] BOTH   SRM	PREPARE:ENTER	
+    
+INFO 2019-10-18 09:30:17.513 UTC: 	   Stderr:
+    WARNING Transfer failed with: DESTINATION MAKE_PARENT srm-ifce err: Permission denied, err: [SE][Mkdir][SRM_AUTHORIZATION_FAILURE] httpg://cmsdcadisk01.fnal.gov:8443/srm/managerv2: srm://cmsdcadisk01.fnal.gov/dcache/uscmsdisk/store/user/kaliyana/crab3checkwrite_20191018_113015: Permission denied.
+    
+    gfal-copy error: 13 (Permission denied) - DESTINATION MAKE_PARENT srm-ifce err: Permission denied, err: [SE][Mkdir][SRM_AUTHORIZATION_FAILURE] httpg://cmsdcadisk01.fnal.gov:8443/srm/managerv2: srm://cmsdcadisk01.fnal.gov/dcache/uscmsdisk/store/user/kaliyana/crab3checkwrite_20191018_113015: Permission denied.
+    
+    
+INFO 2019-10-18 09:30:17.573 UTC: 	 
+Checkwrite Result:
+INFO 2019-10-18 09:30:17.573 UTC: 	 Error: Unable to write in /store/user/kaliyana on site T1_US_FNAL_Disk
+       You may want to contact the site administrators sending them the 'crab checkwrite' output as printed above.
+INFO 2019-10-18 09:30:17.573 UTC: 	 Note: You cannot write to a site if you did not ask permission.
+DEBUG 2019-10-18 09:33:12.193 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2019-10-18 09:33:12.193 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-18 09:33:12.201 UTC: 	 Checking credentials
+DEBUG 2019-10-18 09:33:12.202 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 09:33:12.202 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 09:33:13.517 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 38719
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:33:14.335 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 38718
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:33:14.336 UTC: 	 Proxy lifetime 38719 secs is different from voms extension lifetime 38718 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 09:33:14.336 UTC: 	 Proxy valid for 10:45:18 hours
+DEBUG 2019-10-18 09:33:14.446 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:33:14.447 UTC: 	 Checking credentials
+DEBUG 2019-10-18 09:33:14.447 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 09:33:14.447 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 09:33:15.372 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 38717
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:33:16.181 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 38716
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:33:16.181 UTC: 	 Proxy lifetime 38717 secs is different from voms extension lifetime 38716 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 09:33:16.181 UTC: 	 Proxy valid for 10:45:16 hours
+DEBUG 2019-10-18 09:33:17.189 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u112442 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 09:33:17.190 UTC: 	 Command use: checkwrite
+DEBUG 2019-10-18 09:33:17.190 UTC: 	 Options use: ['--site=T2_US_MIT']
+DEBUG 2019-10-18 09:33:17.190 UTC: 	 Instance is None
+DEBUG 2019-10-18 09:33:17.190 UTC: 	 Server base url is None
+INFO 2019-10-18 09:33:17.194 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2019-10-18 09:33:17.194 UTC: 	 Retrieving DN from proxy...
+INFO 2019-10-18 09:33:18.144 UTC: 	 DN is: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+INFO 2019-10-18 09:33:18.145 UTC: 	 Retrieving username for this DN...
+DEBUG 2019-10-18 09:33:18.145 UTC: 	 Retrieving username from SiteDB...
+DEBUG 2019-10-18 09:33:20.932 UTC: 	 Username is: kaliyana
+DEBUG 2019-10-18 09:33:20.932 UTC: 	 Retrieving username from CRIC...
+DEBUG 2019-10-18 09:33:24.365 UTC: 	 Username is: kaliyana
+INFO 2019-10-18 09:33:24.365 UTC: 	 username is kaliyana
+INFO 2019-10-18 09:33:24.365 UTC: 	 Validating LFN /store/user/kaliyana...
+INFO 2019-10-18 09:33:24.365 UTC: 	 LFN /store/user/kaliyana is valid.
+INFO 2019-10-18 09:33:24.375 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2019-10-18 09:33:24.375 UTC: 	 Will check write permission in /store/user/kaliyana on site T2_US_MIT
+INFO 2019-10-18 09:33:24.483 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20191018_113324 and copy (dummy) file crab3checkwrite_20191018_113324.tmp to /store/user/kaliyana
+
+INFO 2019-10-18 09:33:24.487 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab3checkwrite_20191018_113324.tmp 'gsiftp://se01.cmsaf.mit.edu:2811/cms/store/user/kaliyana/crab3checkwrite_20191018_113324/crab3checkwrite_20191018_113324.tmp'
+INFO 2019-10-18 09:33:24.488 UTC: 	 Please wait...
+INFO 2019-10-18 09:33:30.275 UTC: 	 
+Successfully created directory crab3checkwrite_20191018_113324 and copied file crab3checkwrite_20191018_113324.tmp to /store/user/kaliyana
+INFO 2019-10-18 09:33:30.276 UTC: 	 
+Attempting to delete file gsiftp://se01.cmsaf.mit.edu:2811/cms/store/user/kaliyana/crab3checkwrite_20191018_113324/crab3checkwrite_20191018_113324.tmp
+
+INFO 2019-10-18 09:33:30.276 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -v -t 180 'gsiftp://se01.cmsaf.mit.edu:2811/cms/store/user/kaliyana/crab3checkwrite_20191018_113324/crab3checkwrite_20191018_113324.tmp'
+INFO 2019-10-18 09:33:30.276 UTC: 	 Please wait...
+INFO 2019-10-18 09:33:33.609 UTC: 	 
+Successfully deleted file gsiftp://se01.cmsaf.mit.edu:2811/cms/store/user/kaliyana/crab3checkwrite_20191018_113324/crab3checkwrite_20191018_113324.tmp
+INFO 2019-10-18 09:33:33.609 UTC: 	 
+Attempting to delete directory gsiftp://se01.cmsaf.mit.edu:2811/cms/store/user/kaliyana/crab3checkwrite_20191018_113324/
+
+INFO 2019-10-18 09:33:33.609 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -r -v -t 180 'gsiftp://se01.cmsaf.mit.edu:2811/cms/store/user/kaliyana/crab3checkwrite_20191018_113324/'
+INFO 2019-10-18 09:33:33.610 UTC: 	 Please wait...
+INFO 2019-10-18 09:33:37.817 UTC: 	 
+Successfully deleted directory gsiftp://se01.cmsaf.mit.edu:2811/cms/store/user/kaliyana/crab3checkwrite_20191018_113324/
+INFO 2019-10-18 09:33:37.870 UTC: 	 
+Checkwrite Result:
+INFO 2019-10-18 09:33:37.870 UTC: 	 Success: Able to write in /store/user/kaliyana on site T2_US_MIT
+DEBUG 2019-10-18 11:39:55.186 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-18 11:39:55.186 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-18 11:39:55.189 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+ERROR 2019-10-18 11:39:55.189 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+DEBUG 2019-10-18 12:39:13.366 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-18 12:39:13.366 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-18 12:39:13.368 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_15to30_TuneCP5_13TeV_pythia8
+ERROR 2019-10-18 12:39:13.368 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_15to30_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-18 12:39:44.310 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-18 12:39:44.310 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-18 12:39:44.312 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_30to50_TuneCP5_13TeV_pythia8
+ERROR 2019-10-18 12:39:44.312 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_30to50_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-18 12:40:09.803 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-18 12:40:09.803 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-18 12:40:09.805 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_50to80_TuneCP5_13TeV_pythia8
+ERROR 2019-10-18 12:40:09.805 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_50to80_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-19 00:03:07.388 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-19 00:03:07.388 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-19 00:03:07.409 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_80to120_TuneCP5_13TeV_pythia8
+ERROR 2019-10-19 00:03:07.409 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_80to120_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-19 07:17:57.363 UTC: 	 Executing command: 'resubmit'
+DEBUG 2019-10-19 07:17:57.364 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-19 07:17:57.364 UTC: 	 Error: DataMCSpectraComparison/crab_2018_QCD_Pt_50to80_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd50to80 is not a valid CRAB project directory.
+ERROR 2019-10-19 07:17:57.364 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 28, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: DataMCSpectraComparison/crab_2018_QCD_Pt_50to80_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd50to80 is not a valid CRAB project directory.
+DEBUG 2019-10-19 07:34:21.340 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-19 07:34:21.340 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-19 07:34:21.341 UTC: 	 Error: crab_2018_QCD_Pt_1400to1000_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1400to1000/ is not a valid CRAB project directory.
+ERROR 2019-10-19 07:34:21.341 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_QCD_Pt_1400to1000_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1400to1000/ is not a valid CRAB project directory.
+DEBUG 2019-10-19 07:40:46.567 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-19 07:40:46.567 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-19 07:40:46.567 UTC: 	 Error: crab_2018_QCD_Pt_3200to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd3200to2400/ is not a valid CRAB project directory.
+ERROR 2019-10-19 07:40:46.568 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_QCD_Pt_3200to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd3200to2400/ is not a valid CRAB project directory.
+DEBUG 2019-10-19 07:41:11.508 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-19 07:41:11.508 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-19 07:41:11.510 UTC: 	 Error: crab_2018_QCD_Pt_2400to3200_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd3200to2400/ is not a valid CRAB project directory.
+ERROR 2019-10-19 07:41:11.510 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_QCD_Pt_2400to3200_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd3200to2400/ is not a valid CRAB project directory.
+DEBUG 2019-10-19 11:05:09.143 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-19 11:05:09.143 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-19 11:05:09.144 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+ERROR 2019-10-19 11:05:09.144 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+DEBUG 2019-10-23 12:06:23.155 UTC: 	 Executing command: 'submit'
+DEBUG 2019-10-23 12:06:23.156 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-23 12:06:23.206 UTC: 	 Checking credentials
+DEBUG 2019-10-23 12:06:23.207 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-23 12:06:23.207 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-23 12:06:24.313 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 35864
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-23 12:06:25.426 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 35863
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-23 12:06:25.427 UTC: 	 Proxy lifetime 35864 secs is different from voms extension lifetime 35863 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-23 12:06:25.427 UTC: 	 Proxy valid for 09:57:43 hours
+INFO 2019-10-23 12:06:25.427 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-10-23 12:06:25.427 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-10-23 12:06:25.454 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-10-23 12:06:25.461 UTC: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_15to30_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd15to30' already exists 
+Please change the requestName in the config file
+ERROR 2019-10-23 12:06:25.462 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 408, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_15to30_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd15to30' already exists 
+Please change the requestName in the config file
+DEBUG 2019-10-23 12:17:45.497 UTC: 	 Executing command: 'submit'
+DEBUG 2019-10-23 12:17:45.498 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-23 12:17:45.506 UTC: 	 Checking credentials
+DEBUG 2019-10-23 12:17:45.507 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-23 12:17:45.507 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-23 12:17:46.413 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 35182
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-23 12:17:47.221 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 35181
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-23 12:17:47.222 UTC: 	 Proxy lifetime 35182 secs is different from voms extension lifetime 35181 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-23 12:17:47.222 UTC: 	 Proxy valid for 09:46:21 hours
+INFO 2019-10-23 12:17:47.222 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-10-23 12:17:47.222 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-10-23 12:17:47.229 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-10-23 12:17:47.229 UTC: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd30to50' already exists 
+Please change the requestName in the config file
+ERROR 2019-10-23 12:17:47.229 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 408, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd30to50' already exists 
+Please change the requestName in the config file
+DEBUG 2019-10-23 18:36:26.115 UTC: 	 Running on: Linux lxplus600.cern.ch 2.6.32-754.18.2.el6.x86_64 #1 SMP Wed Aug 14 10:00:35 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-23 18:36:26.116 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-23 18:36:26.117 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-23 18:36:26.145 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_15to30_TuneCP5_13TeV_pythia8
+ERROR 2019-10-23 18:36:26.146 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_15to30_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-23 18:36:57.214 UTC: 	 Running on: Linux lxplus600.cern.ch 2.6.32-754.18.2.el6.x86_64 #1 SMP Wed Aug 14 10:00:35 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-23 18:36:57.214 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-23 18:36:57.215 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-23 18:36:57.241 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8
+ERROR 2019-10-23 18:36:57.241 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-23 19:20:28.144 UTC: 	 Running on: Linux lxplus600.cern.ch 2.6.32-754.18.2.el6.x86_64 #1 SMP Wed Aug 14 10:00:35 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-23 19:20:28.145 UTC: 	 Executing command: 'submit'
+DEBUG 2019-10-23 19:20:28.145 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-23 19:20:28.157 UTC: 	 Checking credentials
+DEBUG 2019-10-23 19:20:28.157 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-23 19:20:28.157 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-23 19:20:29.066 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 29121
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-23 19:20:29.873 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 29120
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-23 19:20:29.874 UTC: 	 Proxy lifetime 29121 secs is different from voms extension lifetime 29120 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-23 19:20:29.874 UTC: 	 Proxy valid for 08:05:20 hours
+INFO 2019-10-23 19:20:29.874 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-10-23 19:20:29.874 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-10-23 19:20:29.879 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-10-23 19:20:29.880 UTC: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_300to470_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd300to470' already exists 
+Please change the requestName in the config file
+ERROR 2019-10-23 19:20:29.880 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_300to470_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd300to470' already exists 
+Please change the requestName in the config file
+DEBUG 2019-10-23 23:41:18.167 UTC: 	 Running on: Linux lxplus621.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-23 23:41:18.167 UTC: 	 Executing command: 'submit'
+DEBUG 2019-10-23 23:41:18.168 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-23 23:41:18.177 UTC: 	 Checking credentials
+DEBUG 2019-10-23 23:41:18.178 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-23 23:41:18.178 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-23 23:41:19.084 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 42014
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-23 23:41:19.792 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 42014
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-23 23:41:19.792 UTC: 	 Proxy valid for 11:40:14 hours
+INFO 2019-10-23 23:41:19.793 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-10-23 23:41:19.793 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-10-23 23:41:19.798 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-10-23 23:41:19.798 UTC: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_470to600_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd470to600' already exists 
+Please change the requestName in the config file
+ERROR 2019-10-23 23:41:19.799 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_470to600_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd470to600' already exists 
+Please change the requestName in the config file
+DEBUG 2019-10-23 23:48:05.743 UTC: 	 Running on: Linux lxplus621.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-23 23:48:05.744 UTC: 	 Executing command: 'submit'
+DEBUG 2019-10-23 23:48:05.744 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-23 23:48:05.753 UTC: 	 Checking credentials
+DEBUG 2019-10-23 23:48:05.755 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-23 23:48:05.755 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-23 23:48:06.662 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 41607
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-23 23:48:07.369 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 41606
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-23 23:48:07.370 UTC: 	 Proxy lifetime 41607 secs is different from voms extension lifetime 41606 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-23 23:48:07.370 UTC: 	 Proxy valid for 11:33:26 hours
+INFO 2019-10-23 23:48:07.370 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-10-23 23:48:07.370 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-10-23 23:48:07.406 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-10-23 23:48:07.407 UTC: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_600to800_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd600to800' already exists 
+Please change the requestName in the config file
+ERROR 2019-10-23 23:48:07.407 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_600to800_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd600to800' already exists 
+Please change the requestName in the config file
+DEBUG 2019-10-24 09:41:02.901 UTC: 	 Running on: Linux lxplus625.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-24 09:41:02.902 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-24 09:41:02.902 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-24 09:41:02.904 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8
+ERROR 2019-10-24 09:41:02.904 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-24 09:46:21.234 UTC: 	 Running on: Linux lxplus625.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-24 09:46:21.234 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-24 09:46:21.234 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-24 09:46:21.236 UTC: 	 Error: crab_2017_QCD_Pt_120to80_TuneCP5_13TeV_pythia8/ is not a valid CRAB project directory.
+ERROR 2019-10-24 09:46:21.236 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 580, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2017_QCD_Pt_120to80_TuneCP5_13TeV_pythia8/ is not a valid CRAB project directory.
+DEBUG 2019-10-24 09:46:40.429 UTC: 	 Running on: Linux lxplus625.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-24 09:46:40.429 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-24 09:46:40.429 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-24 09:46:40.433 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_80to120_TuneCP5_13TeV_pythia8
+ERROR 2019-10-24 09:46:40.433 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_80to120_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-24 15:37:20.414 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-24 15:37:20.415 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-24 15:37:20.415 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-24 15:37:20.417 UTC: 	 Error: crab_2017_WZ_TuneCP5_13TeV-powheg-pythia8/crab_ana_datamc_WZ/ is not a valid CRAB project directory.
+ERROR 2019-10-24 15:37:20.417 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 580, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2017_WZ_TuneCP5_13TeV-powheg-pythia8/crab_ana_datamc_WZ/ is not a valid CRAB project directory.
+DEBUG 2019-10-24 23:15:30.035 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-24 23:15:30.035 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-24 23:15:30.040 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-24 23:15:30.043 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_3200toInf_TuneCP5_13TeV_pythia8
+ERROR 2019-10-24 23:15:30.044 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_3200toInf_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-25 08:49:29.452 UTC: 	 Running on: Linux lxplus602.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-25 08:49:29.452 UTC: 	 Executing command: 'submit'
+DEBUG 2019-10-25 08:49:29.453 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-25 08:49:29.464 UTC: 	 Checking credentials
+DEBUG 2019-10-25 08:49:29.467 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-25 08:49:29.467 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-25 08:49:30.373 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 42430
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-25 08:49:31.282 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 42429
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-25 08:49:31.283 UTC: 	 Proxy lifetime 42430 secs is different from voms extension lifetime 42429 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-25 08:49:31.283 UTC: 	 Proxy valid for 11:47:09 hours
+INFO 2019-10-25 08:49:31.284 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-10-25 08:49:31.284 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-10-25 08:49:31.293 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-10-25 08:49:31.294 UTC: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd30to50' already exists 
+Please change the requestName in the config file
+ERROR 2019-10-25 08:49:31.294 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd30to50' already exists 
+Please change the requestName in the config file
+DEBUG 2019-10-25 08:50:05.724 UTC: 	 Running on: Linux lxplus602.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-25 08:50:05.725 UTC: 	 Executing command: 'submit'
+DEBUG 2019-10-25 08:50:05.725 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-25 08:50:05.733 UTC: 	 Checking credentials
+DEBUG 2019-10-25 08:50:05.734 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-25 08:50:05.734 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-25 08:50:06.640 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 42394
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-25 08:50:07.450 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 42393
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-25 08:50:07.450 UTC: 	 Proxy lifetime 42394 secs is different from voms extension lifetime 42393 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-25 08:50:07.450 UTC: 	 Proxy valid for 11:46:33 hours
+INFO 2019-10-25 08:50:07.451 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-10-25 08:50:07.451 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-10-25 08:50:07.470 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-10-25 08:50:07.471 UTC: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd30to50' already exists 
+Please change the requestName in the config file
+ERROR 2019-10-25 08:50:07.471 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd30to50' already exists 
+Please change the requestName in the config file
+DEBUG 2019-10-25 10:41:03.187 UTC: 	 Running on: Linux lxplus602.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-25 10:41:03.188 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-25 10:41:03.201 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-25 10:41:03.222 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8
+ERROR 2019-10-25 10:41:03.222 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8
+DEBUG 2019-10-25 12:49:53.794 UTC: 	 Running on: Linux lxplus602.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-25 12:49:53.795 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-25 12:49:53.795 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-25 12:49:53.812 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+ERROR 2019-10-25 12:49:53.813 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+DEBUG 2019-10-28 13:40:19.833 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-28 13:40:19.833 UTC: 	 Executing command: 'submit'
+DEBUG 2019-10-28 13:40:19.834 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-28 13:40:19.844 UTC: 	 Checking credentials
+DEBUG 2019-10-28 13:40:19.846 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-28 13:40:19.846 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-28 13:40:20.754 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 37071
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-28 13:40:21.562 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 37070
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-28 13:40:21.563 UTC: 	 Proxy lifetime 37071 secs is different from voms extension lifetime 37070 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-28 13:40:21.563 UTC: 	 Proxy valid for 10:17:50 hours
+INFO 2019-10-28 13:40:21.563 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-10-28 13:40:21.563 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-10-28 13:40:21.570 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-10-28 13:40:21.570 UTC: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_MC/crab_ana_datamc_dy6000toInf' already exists 
+Please change the requestName in the config file
+ERROR 2019-10-28 13:40:21.570 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_MC/crab_ana_datamc_dy6000toInf' already exists 
+Please change the requestName in the config file
+DEBUG 2019-10-28 13:40:52.804 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-28 13:40:52.804 UTC: 	 Executing command: 'submit'
+DEBUG 2019-10-28 13:40:52.805 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-28 13:40:52.812 UTC: 	 Checking credentials
+DEBUG 2019-10-28 13:40:52.813 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-28 13:40:52.813 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-28 13:40:53.719 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 37038
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-28 13:40:54.528 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 37037
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-28 13:40:54.529 UTC: 	 Proxy lifetime 37038 secs is different from voms extension lifetime 37037 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-28 13:40:54.529 UTC: 	 Proxy valid for 10:17:17 hours
+INFO 2019-10-28 13:40:54.529 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-10-28 13:40:54.529 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-10-28 13:40:54.535 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-10-28 13:40:54.536 UTC: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_MC/crab_ana_datamc_dy6000toInf' already exists 
+Please change the requestName in the config file
+ERROR 2019-10-28 13:40:54.536 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 309, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_MC/crab_ana_datamc_dy6000toInf' already exists 
+Please change the requestName in the config file
+DEBUG 2019-10-28 18:18:37.900 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-28 18:18:37.901 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-28 18:18:37.901 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-28 18:18:37.902 UTC: 	 Error: crab_ana_datamc_dy120to200/ is not a valid CRAB project directory.
+ERROR 2019-10-28 18:18:37.903 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 580, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_ana_datamc_dy120to200/ is not a valid CRAB project directory.
+DEBUG 2019-10-28 18:19:00.480 UTC: 	 Running on: Linux lxplus609.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-10-28 18:19:00.481 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-28 18:19:00.481 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-10-28 18:19:00.483 UTC: 	 Error: crab_2018-MC/crab_ana_datamc_dy120to200/ is not a valid CRAB project directory.
+ERROR 2019-10-28 18:19:00.483 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 580, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018-MC/crab_ana_datamc_dy120to200/ is not a valid CRAB project directory.
+DEBUG 2019-11-01 14:19:31.304 UTC: 	 Running on: Linux lxplus605.cern.ch 2.6.32-754.18.2.el6.x86_64 #1 SMP Wed Aug 14 10:00:35 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-01 14:19:31.304 UTC: 	 Executing command: 'report'
+DEBUG 2019-11-01 14:19:31.304 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-11-01 14:19:31.305 UTC: 	 Error: crab_2018_QCD_Pt_18 is not a valid CRAB project directory.
+ERROR 2019-11-01 14:19:31.305 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/report.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 580, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_2018_QCD_Pt_18 is not a valid CRAB project directory.
+DEBUG 2019-11-01 14:30:10.339 UTC: 	 Running on: Linux lxplus605.cern.ch 2.6.32-754.18.2.el6.x86_64 #1 SMP Wed Aug 14 10:00:35 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-01 14:30:10.340 UTC: 	 Executing command: 'report'
+DEBUG 2019-11-01 14:30:10.340 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-11-01 14:30:10.361 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+ERROR 2019-11-01 14:30:10.362 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/report.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 584, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 446, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8-Zjets
+DEBUG 2019-11-22 23:12:53.180 UTC: 	 Running on: Linux lxplus603.cern.ch 2.6.32-754.23.1.el6.x86_64 #1 SMP Thu Sep 26 11:57:28 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux CERN SLC release 6.10 (Carbon)
+DEBUG 2019-11-22 23:12:53.197 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2019-11-22 23:12:53.198 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-22 23:12:53.198 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2019-11-22 23:12:53.222 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8
+ERROR 2019-11-22 23:12:53.222 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 599, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 461, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_QCD_Pt_30to50_TuneCP5_13TeV_pythia8
+DEBUG 2020-03-17 21:28:55.717 UTC: 	 Running on: Linux lxplus600.cern.ch 2.6.32-754.27.1.el6.x86_64 #1 SMP Wed Jan 29 10:28:48 CET 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux CERN SLC release 6.10 (Carbon)
+DEBUG 2020-03-17 21:28:55.730 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2020-03-17 21:28:55.731 UTC: 	 Executing command: 'submit'
+DEBUG 2020-03-17 21:28:55.731 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2020-03-17 21:28:55.738 UTC: 	 Checking credentials
+DEBUG 2020-03-17 21:28:55.740 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2020-03-17 21:28:55.740 UTC: 	 Getting proxy life time left
+DEBUG 2020-03-17 21:28:56.445 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 42793
+
+ error: 
+ retcode : 0
+DEBUG 2020-03-17 21:28:57.049 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 42792
+
+ error: 
+ retcode : 0
+DEBUG 2020-03-17 21:28:57.050 UTC: 	 Proxy lifetime 42793 secs is different from voms extension lifetime 42792 secs for proxy: /tmp/x509up_u112442
+DEBUG 2020-03-17 21:28:57.050 UTC: 	 Proxy valid for 11:53:12 hours
+INFO 2020-03-17 21:28:57.050 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2020-03-17 21:28:57.050 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-03-17 21:28:57.055 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-03-17 21:28:57.055 UTC: 	 Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC_MUOTrackFix_Bari/crab_ana_datamc_dy50to120' already exists 
+Please change the requestName in the config file
+ERROR 2020-03-17 21:28:57.055 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 324, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 418, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2017_MC_MUOTrackFix_Bari/crab_ana_datamc_dy50to120' already exists 
+Please change the requestName in the config file
+DEBUG 2020-03-18 20:34:45.465 UTC: 	 Running on: Linux lxplus608.cern.ch 2.6.32-754.27.1.el6.x86_64 #1 SMP Wed Jan 29 10:28:48 CET 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux CERN SLC release 6.10 (Carbon)
+DEBUG 2020-03-18 20:34:45.541 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2020-03-18 20:34:45.542 UTC: 	 Executing command: 'status'
+DEBUG 2020-03-18 20:34:45.543 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2020-03-18 20:34:45.544 UTC: 	 Error: crab_ana_datamc_dy400to800 is not a valid CRAB project directory.
+ERROR 2020-03-18 20:34:45.544 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 595, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_ana_datamc_dy400to800 is not a valid CRAB project directory.

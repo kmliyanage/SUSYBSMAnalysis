@@ -1,0 +1,814 @@
+DEBUG 2019-10-17 17:45:26.126 UTC: 	 Executing command: 'submit'
+DEBUG 2019-10-17 17:45:26.126 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-17 17:45:26.136 UTC: 	 Checking credentials
+DEBUG 2019-10-17 17:45:26.139 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-17 17:45:26.139 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-17 17:45:27.248 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 22665
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-17 17:45:28.157 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 22664
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-17 17:45:28.157 UTC: 	 Proxy lifetime 22665 secs is different from voms extension lifetime 22664 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-17 17:45:28.157 UTC: 	 Proxy valid for 06:17:44 hours
+INFO 2019-10-17 17:45:28.157 UTC: 	 Will use CRAB configuration file crabConfig.py
+DEBUG 2019-10-17 17:45:28.158 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-10-17 17:45:28.164 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2019-10-17 17:45:28.291 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-17 17:45:28.292 UTC: 	 Checking credentials
+DEBUG 2019-10-17 17:45:28.292 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-17 17:45:28.292 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-17 17:45:29.201 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 22663
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-17 17:45:30.414 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 22662
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-17 17:45:30.415 UTC: 	 Proxy lifetime 22663 secs is different from voms extension lifetime 22662 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-17 17:45:30.415 UTC: 	 Proxy valid for 06:17:42 hours
+DEBUG 2019-10-17 17:45:31.334 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u112442 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-17 17:45:31.433 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-10-17 17:45:31.553 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-17 17:45:31.554 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-10-17 17:45:31.554 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-10-17 17:45:31.961 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 547:24:20  (22.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-17 17:45:31.963 UTC: 	 Myproxy is valid: 1970660
+DEBUG 2019-10-17 17:45:31.964 UTC: 	 Command use: submit
+DEBUG 2019-10-17 17:45:31.964 UTC: 	 Options use: ['-c', 'crabConfig.py']
+DEBUG 2019-10-17 17:45:32.047 UTC: 	 CRABClient version: 3.3.1909
+DEBUG 2019-10-17 17:45:32.047 UTC: 	 Instance is prod
+DEBUG 2019-10-17 17:45:32.047 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-10-17 17:45:32.047 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-10-17 17:45:32.047 UTC: 	 Started submission
+DEBUG 2019-10-17 17:45:32.047 UTC: 	 Working on /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400
+DEBUG 2019-10-17 17:45:32.159 UTC: 	 Loading required information from the environment
+DEBUG 2019-10-17 17:45:32.160 UTC: 	 Found CMSSW_10_2_5 for slc6_amd64_gcc700 with base /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5
+DEBUG 2019-10-17 17:45:32.160 UTC: 	 Loading required information from the environment
+DEBUG 2019-10-17 17:45:32.160 UTC: 	 Found CMSSW_10_2_5 for slc6_amd64_gcc700 with base /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5
+DEBUG 2019-10-17 17:45:32.183 UTC: 	 UNIQUE NAME: tarUUID 44073183-73fb-4eb6-a2c9-582eb5de6f57 
+DEBUG 2019-10-17 17:45:32.187 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.workArea = 'crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8'
+config.General.requestName = 'ana_datamc_qcd1800to2400'
+config.section_('JobType')
+config.JobType.psetName = 'histos_crab.py'
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.inputDataset = '/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM'
+config.Data.allowNonValidInputDataset = True
+config.Data.totalUnits = -1
+config.Data.unitsPerJob = 20
+config.Data.ignoreLocality = True
+config.Data.inputDBS = 'global'
+config.Data.splitting = 'FileBased'
+config.Data.outputDatasetTag = 'ana_datamc_qcd1800to2400'
+config.Data.outLFNDirBase = '/store/user/kaliyana'
+config.Data.publication = False
+config.section_('Site')
+config.Site.whitelist = ['T2_US_MIT']
+config.Site.storageSite = 'T2_US_MIT'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2019-10-17 17:45:32.187 UTC: 	 self.config.JobType.psetName: histos_crab.py
+INFO 2019-10-17 17:45:32.188 UTC: 	 Importing CMSSW configuration histos_crab.py
+INFO 2019-10-17 17:45:32.623 UTC: 	 Finished importing CMSSW configuration histos_crab.py
+DEBUG 2019-10-17 17:45:32.623 UTC: 	 Writing CMSSW configuration to /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/inputs/PSet.py
+DEBUG 2019-10-17 17:45:32.713 UTC: 	 The following EDM output files will be collected: []
+DEBUG 2019-10-17 17:45:32.713 UTC: 	 The following TFile output files will be collected: ['zp2mu_histos.root']
+DEBUG 2019-10-17 17:45:32.713 UTC: 	 The following user output files will be collected: []
+DEBUG 2019-10-17 17:45:32.713 UTC: 	 Loading required information from the environment
+DEBUG 2019-10-17 17:45:32.713 UTC: 	 Found CMSSW_10_2_5 for slc6_amd64_gcc700 with base /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5
+DEBUG 2019-10-17 17:45:32.713 UTC: 	 Making tarball in /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/inputs/44073183-73fb-4eb6-a2c9-582eb5de6f57default.tgz
+DEBUG 2019-10-17 17:45:32.715 UTC: 	 Checking directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/lib
+DEBUG 2019-10-17 17:45:32.715 UTC: 	 Adding directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/lib to tarball
+DEBUG 2019-10-17 17:45:33.314 UTC: 	 Checking directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/biglib
+DEBUG 2019-10-17 17:45:33.314 UTC: 	 Adding directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/biglib to tarball
+DEBUG 2019-10-17 17:45:33.315 UTC: 	 Checking directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/module
+DEBUG 2019-10-17 17:45:33.400 UTC: 	 Uploading archive /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/inputs/44073183-73fb-4eb6-a2c9-582eb5de6f57default.tgz (1.275391.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2019-10-17 17:45:34.527 UTC: 	 Loading required information from the environment
+DEBUG 2019-10-17 17:45:34.527 UTC: 	 Found CMSSW_10_2_5 for slc6_amd64_gcc700 with base /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5
+DEBUG 2019-10-17 17:45:34.527 UTC: 	 Making tarball in /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/inputs/debugFiles.tgz
+DEBUG 2019-10-17 17:45:34.543 UTC: 	 Uploading archive /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/inputs/debugFiles.tgz (12 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2019-10-17 17:45:34.621 UTC: 	 Result uploading input files: 263bdb8b60407f090ce1f41c3d06ef428620a1156889942efbeeaeb9a8b70773.tar.gz 
+INFO 2019-10-17 17:45:34.621 UTC: 	 Sending the request to the server
+DEBUG 2019-10-17 17:45:34.622 UTC: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 1, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T2_US_MIT', 'algoargs': 20, 'cachefilename': '263bdb8b60407f090ce1f41c3d06ef428620a1156889942efbeeaeb9a8b70773.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_10_2_5', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM', 'lfn': '/store/user/kaliyana', 'dryrun': 0, 'workflow': 'crab_ana_datamc_qcd1800to2400', 'sitewhitelist': ['T2_US_MIT'], 'nonprodsw': 0, 'tfileoutfiles': ['zp2mu_histos.root'], 'oneEventMode': 0, 'debugfilename': 'ee021f84c425e996d5f832f6c42697bf24d90452caca2403d923061f5e688fa2.tar.gz', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'saveoutput': 1, 'publication': 0, 'jobarch': 'slc6_amd64_gcc700', 'totalunits': -1, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 1, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'ana_datamc_qcd1800to2400'} 
+DEBUG 2019-10-17 17:45:34.622 UTC: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=1&savelogsflag=0&useparent=0&asyncdest=T2_US_MIT&algoargs=20&cachefilename=263bdb8b60407f090ce1f41c3d06ef428620a1156889942efbeeaeb9a8b70773.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_10_2_5&primarydataset=&inputdata=%2FQCD_Pt_1800to2400_TuneCP5_13TeV_pythia8%2FRunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1%2FMINIAODSIM&lfn=%2Fstore%2Fuser%2Fkaliyana&dryrun=0&workflow=crab_ana_datamc_qcd1800to2400&nonprodsw=0&oneEventMode=0&debugfilename=ee021f84c425e996d5f832f6c42697bf24d90452caca2403d923061f5e688fa2.tar.gz&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&saveoutput=1&publication=0&jobarch=slc6_amd64_gcc700&totalunits=-1&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=1&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=ana_datamc_qcd1800to2400&sitewhitelist=T2_US_MIT&tfileoutfiles=zp2mu_histos.root
+DEBUG 2019-10-17 17:45:34.936 UTC: 	 Result: {u'result': [{u'RequestName': u'191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400'}]}
+INFO 2019-10-17 17:45:34.939 UTC: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2019-10-17 17:45:34.939 UTC: 	 Task name: 191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-17 17:45:34.939 UTC: 	 Project dir: crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400
+INFO 2019-10-17 17:45:34.940 UTC: 	 Please use 'crab status -d crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400' to check how the submission process proceeds.
+DEBUG 2019-10-17 17:45:34.940 UTC: 	 About to return
+INFO 2019-10-17 17:45:34.944 UTC: 	 Log file is /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/crab.log
+DEBUG 2019-10-18 11:36:25.306 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-18 11:36:25.306 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-18 11:36:25.351 UTC: 	 Checking credentials
+DEBUG 2019-10-18 11:36:25.351 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 11:36:25.351 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 11:36:26.256 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 31326
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:26.962 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 31326
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:26.962 UTC: 	 Proxy valid for 08:42:06 hours
+DEBUG 2019-10-18 11:36:27.076 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:27.076 UTC: 	 Checking credentials
+DEBUG 2019-10-18 11:36:27.077 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 11:36:27.077 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 11:36:27.782 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 31325
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:28.590 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 31324
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:28.590 UTC: 	 Proxy lifetime 31325 secs is different from voms extension lifetime 31324 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 11:36:28.590 UTC: 	 Proxy valid for 08:42:04 hours
+DEBUG 2019-10-18 11:36:28.695 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-10-18 11:36:28.805 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:28.806 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-10-18 11:36:28.806 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-10-18 11:36:29.010 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 529:33:23  (22.1 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:29.011 UTC: 	 Myproxy is valid: 1906403
+DEBUG 2019-10-18 11:36:29.012 UTC: 	 Command use: status
+DEBUG 2019-10-18 11:36:29.012 UTC: 	 Options use: ['-d', 'crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/']
+DEBUG 2019-10-18 11:36:29.144 UTC: 	 CRABClient version: 3.3.1909
+DEBUG 2019-10-18 11:36:29.144 UTC: 	 Instance is prod
+DEBUG 2019-10-18 11:36:29.144 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-10-18 11:36:29.144 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-10-18 11:36:29.413 UTC: 	 Got information from server oracle database: {u'result': [u'191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-10-17 17:45:34.928347', u'None', u'2019-10-17 17:49:39.771054', u'None', u'CMSSW_10_2_5', u'slc6_amd64_gcc700', u'/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM', u'T', u'0', u"['T2_US_MIT']", u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 20, 'runs': [], 'lumis': []}", u'263bdb8b60407f090ce1f41c3d06ef428620a1156889942efbeeaeb9a8b70773.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'kaliyana', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage', u'cms', u'None', u'None', u'ana_datamc_qcd1800to2400-00000000000000000000000000000000', u'F', u'T2_US_MIT', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['zp2mu_histos.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u"['The CRAB3 server got a non-critical error while checking stageout permissions. Please use checkwrite to check if everything is fine.']", u'http://vocms0119.cern.ch/mon/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0119.cern.ch', u'F', u'[]', u'T', u'/store/user/kaliyana', u'T', u'None', u'F', u'None', u'QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8', u'None', u'ee021f84c425e996d5f832f6c42697bf24d90452caca2403d923061f5e688fa2.tar.gz', u'44345368', u'filetransfers', u'F', u'188.184.106.99', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-10-18 11:36:29.414 UTC: 	 CRAB project directory:		/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 11:36:29.414 UTC: 	 Task name:			191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 11:36:29.414 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0119.cern.ch - crab-prod-tw01
+INFO 2019-10-18 11:36:29.414 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-10-18 11:36:29.414 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 11:36:29.414 UTC: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=kaliyana&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 11:36:29.414 UTC: 	 New dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=kaliyana&var-task=191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 11:36:29.414 UTC: 	 In case of issues with the new dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+WARNING 2019-10-18 11:36:29.414 UTC: 	 Warning:			The CRAB3 server got a non-critical error while checking stageout permissions. Please use checkwrite to check if everything is fine.
+DEBUG 2019-10-18 11:36:29.414 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 44345368)
+DEBUG 2019-10-18 11:36:29.414 UTC: 	 Webdir is located at http://vocms0119.cern.ch/mon/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+DEBUG 2019-10-18 11:36:29.496 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0119/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+DEBUG 2019-10-18 11:36:29.496 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0119/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400/status_cache
+DEBUG 2019-10-18 11:36:29.593 UTC: 	 Got information from status cache file: {'1': {'Retries': 1, 'WallDurations': [9.0, 15059.0, 9.0, 17742.0], 'StartTimes': [1571334964.0, 1571355792.0], 'SubmitTimes': [1571334592.0, 1571355500.0], 'JobIds': ['44345370.0', '44360407.0'], 'EndTimes': [1571350023.0, 1571373534.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1828492, 1804932], 'TotalUserCpuTimeHistory': [3220, 3347.0], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [225, 248.0]}, '2': {'Retries': 2, 'WallDurations': [9.0, 12163.0, 8.0, 8057.0, 10.0, 9952.0], 'StartTimes': [1571334971.0, 1571351231.0, 1571359668.0], 'SubmitTimes': [1571334593.0, 1571350812.0, 1571359425.0], 'JobIds': ['44345371.0', '44357920.0', '44361284.0'], 'EndTimes': [1571347134.0, 1571359288.0, 1571369620.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [1615512, 1406340, 1619432], 'Error': [90000, 'Got recoverable stageout exception:\nStageout failed with code 1.\nThere were 1 failed/killed stageout jobs.\nFailure reasons (per document) follow:\n- d46419344e8c445a0e096e8f23d9fb9dc197b853f77e5ce6ca878f55:\n  -----> ASO log start -----\n  TRANSFER 70 TRANSFER  globus_xio: Unable to connect to se01.cmsaf.mit.edu:2811 globus_xio: System error in connect: Connection timed out globus_xio: A system call failed: Connection timed out  [...CUT...] Full log at https://fts3.cern.ch:8449/fts3/ftsmon/#/job/a547c676-f158-11e9-8d03-02163e018d65\n  <----- ASO log finish ----', {}], 'TotalUserCpuTimeHistory': [2667, 2019, 1970], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'Unknown', 'T2_US_Vanderbilt', 'Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [291, 130, 172]}}
+INFO 2019-10-18 11:36:29.593 UTC: 	 Status on the scheduler:	FAILED
+INFO 2019-10-18 11:36:29.593 UTC: 	 
+Jobs status:                    failed       		 50.0% (1/2)
+INFO 2019-10-18 11:36:29.593 UTC: 	 				finished     		 50.0% (1/2)
+INFO 2019-10-18 11:36:29.594 UTC: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2019-10-18 11:36:29.594 UTC: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+1 jobs failed in postprocessing step
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2019-10-18 11:36:29.594 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-10-18 11:36:29.594 UTC: 	 
+Warning: the average jobs CPU efficiency is less than 50%, please consider to improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task
+INFO 2019-10-18 11:36:29.594 UTC: 	 
+Summary of run jobs:
+ * Memory: 1762MB min, 1762MB max, 1672MB ave
+ * Runtime: 2:45:52 min, 4:55:42 max, 3:50:47 ave
+ * CPU eff: 20% min, 22% max, 21% ave
+ * Waste: 9:48:44 (56% of total)
+
+INFO 2019-10-18 11:36:29.627 UTC: 	 Log file is /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/crab.log
+DEBUG 2019-10-18 11:36:46.229 UTC: 	 Executing command: 'resubmit'
+DEBUG 2019-10-18 11:36:46.229 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-18 11:36:46.236 UTC: 	 Checking credentials
+DEBUG 2019-10-18 11:36:46.236 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 11:36:46.236 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 11:36:47.043 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 31306
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:47.751 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 31305
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:47.751 UTC: 	 Proxy lifetime 31306 secs is different from voms extension lifetime 31305 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 11:36:47.751 UTC: 	 Proxy valid for 08:41:45 hours
+DEBUG 2019-10-18 11:36:47.867 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:47.868 UTC: 	 Checking credentials
+DEBUG 2019-10-18 11:36:47.868 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 11:36:47.868 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 11:36:48.574 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 31304
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:49.379 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 31303
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:49.380 UTC: 	 Proxy lifetime 31304 secs is different from voms extension lifetime 31303 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 11:36:49.380 UTC: 	 Proxy valid for 08:41:43 hours
+DEBUG 2019-10-18 11:36:49.495 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-10-18 11:36:49.604 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:49.604 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-10-18 11:36:49.604 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-10-18 11:36:49.808 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 529:33:02  (22.1 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:49.809 UTC: 	 Myproxy is valid: 1906382
+DEBUG 2019-10-18 11:36:49.941 UTC: 	 Command use: resubmit
+DEBUG 2019-10-18 11:36:49.941 UTC: 	 Options use: ['-d', 'crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/']
+DEBUG 2019-10-18 11:36:50.030 UTC: 	 CRABClient version: 3.3.1909
+DEBUG 2019-10-18 11:36:50.031 UTC: 	 Instance is prod
+DEBUG 2019-10-18 11:36:50.031 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-10-18 11:36:50.031 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-10-18 11:36:50.031 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-18 11:36:50.031 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-18 11:36:50.039 UTC: 	 Checking credentials
+DEBUG 2019-10-18 11:36:50.040 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 11:36:50.040 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 11:36:50.744 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 31302
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:51.559 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 31301
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:51.560 UTC: 	 Proxy lifetime 31302 secs is different from voms extension lifetime 31301 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 11:36:51.560 UTC: 	 Proxy valid for 08:41:41 hours
+DEBUG 2019-10-18 11:36:53.247 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:53.247 UTC: 	 Checking credentials
+DEBUG 2019-10-18 11:36:53.248 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 11:36:53.248 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 11:36:54.055 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 31299
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:54.762 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 31298
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:54.762 UTC: 	 Proxy lifetime 31299 secs is different from voms extension lifetime 31298 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 11:36:54.762 UTC: 	 Proxy valid for 08:41:38 hours
+DEBUG 2019-10-18 11:36:54.846 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-10-18 11:36:54.956 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:54.957 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-10-18 11:36:54.957 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-10-18 11:36:55.161 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 529:32:56  (22.1 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 11:36:55.161 UTC: 	 Myproxy is valid: 1906376
+DEBUG 2019-10-18 11:36:55.162 UTC: 	 Command use: status
+DEBUG 2019-10-18 11:36:55.162 UTC: 	 Options use: []
+DEBUG 2019-10-18 11:36:55.299 UTC: 	 CRABClient version: 3.3.1909
+DEBUG 2019-10-18 11:36:55.299 UTC: 	 Instance is prod
+DEBUG 2019-10-18 11:36:55.299 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-10-18 11:36:55.299 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-10-18 11:36:55.400 UTC: 	 Got information from server oracle database: {u'result': [u'191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-10-17 17:45:34.928347', u'None', u'2019-10-17 17:49:39.771054', u'None', u'CMSSW_10_2_5', u'slc6_amd64_gcc700', u'/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM', u'T', u'0', u"['T2_US_MIT']", u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 20, 'runs': [], 'lumis': []}", u'263bdb8b60407f090ce1f41c3d06ef428620a1156889942efbeeaeb9a8b70773.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'kaliyana', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage', u'cms', u'None', u'None', u'ana_datamc_qcd1800to2400-00000000000000000000000000000000', u'F', u'T2_US_MIT', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['zp2mu_histos.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u"['The CRAB3 server got a non-critical error while checking stageout permissions. Please use checkwrite to check if everything is fine.']", u'http://vocms0119.cern.ch/mon/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0119.cern.ch', u'F', u'[]', u'T', u'/store/user/kaliyana', u'T', u'None', u'F', u'None', u'QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8', u'None', u'ee021f84c425e996d5f832f6c42697bf24d90452caca2403d923061f5e688fa2.tar.gz', u'44345368', u'filetransfers', u'F', u'188.184.106.99', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-10-18 11:36:55.400 UTC: 	 CRAB project directory:		/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 11:36:55.400 UTC: 	 Task name:			191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 11:36:55.400 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0119.cern.ch - crab-prod-tw01
+INFO 2019-10-18 11:36:55.400 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-10-18 11:36:55.400 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 11:36:55.400 UTC: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=kaliyana&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 11:36:55.400 UTC: 	 New dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=kaliyana&var-task=191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 11:36:55.401 UTC: 	 In case of issues with the new dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+WARNING 2019-10-18 11:36:55.401 UTC: 	 Warning:			The CRAB3 server got a non-critical error while checking stageout permissions. Please use checkwrite to check if everything is fine.
+DEBUG 2019-10-18 11:36:55.401 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 44345368)
+DEBUG 2019-10-18 11:36:55.401 UTC: 	 Webdir is located at http://vocms0119.cern.ch/mon/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+DEBUG 2019-10-18 11:36:55.469 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0119/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+DEBUG 2019-10-18 11:36:55.469 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0119/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400/status_cache
+DEBUG 2019-10-18 11:36:55.521 UTC: 	 Got information from status cache file: {'1': {'Retries': 1, 'WallDurations': [9.0, 15059.0, 9.0, 17742.0], 'StartTimes': [1571334964.0, 1571355792.0], 'SubmitTimes': [1571334592.0, 1571355500.0], 'JobIds': ['44345370.0', '44360407.0'], 'EndTimes': [1571350023.0, 1571373534.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1828492, 1804932], 'TotalUserCpuTimeHistory': [3220, 3347.0], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [225, 248.0]}, '2': {'Retries': 2, 'WallDurations': [9.0, 12163.0, 8.0, 8057.0, 10.0, 9952.0], 'StartTimes': [1571334971.0, 1571351231.0, 1571359668.0], 'SubmitTimes': [1571334593.0, 1571350812.0, 1571359425.0], 'JobIds': ['44345371.0', '44357920.0', '44361284.0'], 'EndTimes': [1571347134.0, 1571359288.0, 1571369620.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [1615512, 1406340, 1619432], 'Error': [90000, 'Got recoverable stageout exception:\nStageout failed with code 1.\nThere were 1 failed/killed stageout jobs.\nFailure reasons (per document) follow:\n- d46419344e8c445a0e096e8f23d9fb9dc197b853f77e5ce6ca878f55:\n  -----> ASO log start -----\n  TRANSFER 70 TRANSFER  globus_xio: Unable to connect to se01.cmsaf.mit.edu:2811 globus_xio: System error in connect: Connection timed out globus_xio: A system call failed: Connection timed out  [...CUT...] Full log at https://fts3.cern.ch:8449/fts3/ftsmon/#/job/a547c676-f158-11e9-8d03-02163e018d65\n  <----- ASO log finish ----', {}], 'TotalUserCpuTimeHistory': [2667, 2019, 1970], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'Unknown', 'T2_US_Vanderbilt', 'Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [291, 130, 172]}}
+INFO 2019-10-18 11:36:55.521 UTC: 	 Status on the scheduler:	FAILED
+INFO 2019-10-18 11:36:55.521 UTC: 	 
+Jobs status:                    failed       		 50.0% (1/2)
+INFO 2019-10-18 11:36:55.521 UTC: 	 				finished     		 50.0% (1/2)
+INFO 2019-10-18 11:36:55.521 UTC: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2019-10-18 11:36:55.522 UTC: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+1 jobs failed in postprocessing step
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2019-10-18 11:36:55.522 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-10-18 11:36:55.522 UTC: 	 
+Warning: the average jobs CPU efficiency is less than 50%, please consider to improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task
+INFO 2019-10-18 11:36:55.522 UTC: 	 
+Summary of run jobs:
+ * Memory: 1762MB min, 1762MB max, 1672MB ave
+ * Runtime: 2:45:52 min, 4:55:42 max, 3:50:47 ave
+ * CPU eff: 20% min, 22% max, 21% ave
+ * Waste: 9:48:44 (56% of total)
+
+DEBUG 2019-10-18 11:36:55.526 UTC: 	 Requesting resubmission of failed jobs in task 191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 11:36:55.526 UTC: 	 Sending resubmit request to the server.
+DEBUG 2019-10-18 11:36:55.526 UTC: 	 Submitting {'publication': 0, 'jobids': ['2'], 'subresource': 'resubmit2', 'workflow': u'191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400'} 
+DEBUG 2019-10-18 11:36:55.526 UTC: 	 Encoded resubmit request: publication=0&subresource=resubmit2&workflow=191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400&jobids=2
+DEBUG 2019-10-18 11:36:55.657 UTC: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2019-10-18 11:36:55.657 UTC: 	 Resubmit request sent to the server.
+INFO 2019-10-18 11:36:55.657 UTC: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2019-10-18 11:36:55.660 UTC: 	 Log file is /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/crab.log
+DEBUG 2019-10-18 13:31:36.396 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-18 13:31:36.396 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-18 13:31:36.423 UTC: 	 Checking credentials
+DEBUG 2019-10-18 13:31:36.423 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 13:31:36.423 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 13:31:37.229 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 24415
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 13:31:38.236 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 24414
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 13:31:38.236 UTC: 	 Proxy lifetime 24415 secs is different from voms extension lifetime 24414 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 13:31:38.236 UTC: 	 Proxy valid for 06:46:54 hours
+DEBUG 2019-10-18 13:31:38.355 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 13:31:38.355 UTC: 	 Checking credentials
+DEBUG 2019-10-18 13:31:38.355 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-18 13:31:38.355 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-18 13:31:39.262 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 24413
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 13:31:40.270 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 24412
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 13:31:40.271 UTC: 	 Proxy lifetime 24413 secs is different from voms extension lifetime 24412 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-18 13:31:40.271 UTC: 	 Proxy valid for 06:46:52 hours
+DEBUG 2019-10-18 13:31:40.347 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-10-18 13:31:40.456 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 13:31:40.456 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-10-18 13:31:40.456 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-10-18 13:31:40.661 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 527:38:11  (22.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-18 13:31:40.662 UTC: 	 Myproxy is valid: 1899491
+DEBUG 2019-10-18 13:31:40.663 UTC: 	 Command use: status
+DEBUG 2019-10-18 13:31:40.663 UTC: 	 Options use: ['-d', 'crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/']
+DEBUG 2019-10-18 13:31:40.756 UTC: 	 CRABClient version: 3.3.1909
+DEBUG 2019-10-18 13:31:40.756 UTC: 	 Instance is prod
+DEBUG 2019-10-18 13:31:40.756 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-10-18 13:31:40.756 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-10-18 13:31:40.916 UTC: 	 Got information from server oracle database: {u'result': [u'191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400', u'None', u'None', u'SUBMITTED', u'None', u'2019-10-17 17:45:34.928347', u'None', u'2019-10-17 17:49:39.771054', u'None', u'CMSSW_10_2_5', u'slc6_amd64_gcc700', u'/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM', u'T', u'0', u"['T2_US_MIT']", u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 20, 'runs': [], 'lumis': []}", u'263bdb8b60407f090ce1f41c3d06ef428620a1156889942efbeeaeb9a8b70773.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'kaliyana', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage', u'cms', u'None', u'None', u'ana_datamc_qcd1800to2400-00000000000000000000000000000000', u'F', u'T2_US_MIT', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['zp2mu_histos.root']", u'[]', u'Analysis', u'pythia', u'None', u"{'maxjobruntime': 1250, 'priority': 10, 'site_blacklist': [], 'resubmit_jobids': ['2'], 'numcores': 1, 'site_whitelist': ['T2_US_MIT'], 'maxmemory': 2000, 'resubmit_publication': 0}", u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u"['The CRAB3 server got a non-critical error while checking stageout permissions. Please use checkwrite to check if everything is fine.']", u'http://vocms0119.cern.ch/mon/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0119.cern.ch', u'F', u'[]', u'T', u'/store/user/kaliyana', u'T', u'None', u'F', u'None', u'QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8', u'None', u'ee021f84c425e996d5f832f6c42697bf24d90452caca2403d923061f5e688fa2.tar.gz', u'44345368', u'filetransfers', u'F', u'188.184.106.99', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-10-18 13:31:40.917 UTC: 	 CRAB project directory:		/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 13:31:40.917 UTC: 	 Task name:			191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 13:31:40.917 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0119.cern.ch - crab-prod-tw01
+INFO 2019-10-18 13:31:40.917 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-10-18 13:31:40.918 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 13:31:40.918 UTC: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=kaliyana&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 13:31:40.918 UTC: 	 New dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=kaliyana&var-task=191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-18 13:31:40.918 UTC: 	 In case of issues with the new dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+WARNING 2019-10-18 13:31:40.918 UTC: 	 Warning:			The CRAB3 server got a non-critical error while checking stageout permissions. Please use checkwrite to check if everything is fine.
+DEBUG 2019-10-18 13:31:40.918 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 44345368)
+DEBUG 2019-10-18 13:31:40.918 UTC: 	 Webdir is located at http://vocms0119.cern.ch/mon/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+DEBUG 2019-10-18 13:31:41.011 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0119/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+DEBUG 2019-10-18 13:31:41.011 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0119/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400/status_cache
+DEBUG 2019-10-18 13:31:41.067 UTC: 	 Got information from status cache file: {'1': {'Retries': 1, 'WallDurations': [9.0, 15059.0, 9.0, 17742.0], 'StartTimes': [1571334964.0, 1571355792.0], 'SubmitTimes': [1571334592.0, 1571355500.0], 'JobIds': ['44345370.0', '44360407.0'], 'EndTimes': [1571350023.0, 1571373534.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1828492, 1804932], 'TotalUserCpuTimeHistory': [3220, 3347.0], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [225, 248.0]}, '2': {'Retries': 3, 'WallDurations': [9.0, 12163.0, 8.0, 8057.0, 10.0, 9952.0, 9.0, 3617.0], 'StartTimes': [1571334971.0, 1571351231.0, 1571359668.0, 1571401672.0], 'SubmitTimes': [1571334593.0, 1571350812.0, 1571359425.0, 1571400319.0], 'JobIds': ['44345371.0', '44357920.0', '44361284.0', '44384989.0'], 'TotalUserCpuTimeHistory': [2667, 2019, 1970, 727.0], 'EndTimes': [1571347134.0, 1571359288.0, 1571369620.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1615512, 1406340, 1619432, 1207144], 'Error': [90000, 'Got recoverable stageout exception:\nStageout failed with code 1.\nThere were 1 failed/killed stageout jobs.\nFailure reasons (per document) follow:\n- d46419344e8c445a0e096e8f23d9fb9dc197b853f77e5ce6ca878f55:\n  -----> ASO log start -----\n  TRANSFER 70 TRANSFER  globus_xio: Unable to connect to se01.cmsaf.mit.edu:2811 globus_xio: System error in connect: Connection timed out globus_xio: A system call failed: Connection timed out  [...CUT...] Full log at https://fts3.cern.ch:8449/fts3/ftsmon/#/job/a547c676-f158-11e9-8d03-02163e018d65\n  <----- ASO log finish ----', {}], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'Unknown', 'T2_US_Vanderbilt', 'Unknown', 'T2_US_UCSD', 'Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [291, 130, 172, 47.0]}}
+INFO 2019-10-18 13:31:41.067 UTC: 	 Status on the scheduler:	SUBMITTED
+INFO 2019-10-18 13:31:41.068 UTC: 	 
+Jobs status:                    finished     		 50.0% (1/2)
+INFO 2019-10-18 13:31:41.068 UTC: 	 				running      		 50.0% (1/2)
+INFO 2019-10-18 13:31:41.068 UTC: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2019-10-18 13:31:41.068 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-10-18 13:31:41.068 UTC: 	 
+Warning: the average jobs CPU efficiency is less than 50%, please consider to improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task
+INFO 2019-10-18 13:31:41.068 UTC: 	 
+Summary of run jobs:
+ * Memory: 1762MB min, 1762MB max, 1763MB ave
+ * Runtime: 1:00:17 min, 4:55:42 max, 4:55:42 ave
+ * CPU eff: 20% min, 20% max, 20% ave
+ * Waste: 4:11:17 (46% of total)
+
+INFO 2019-10-18 13:31:41.098 UTC: 	 Log file is /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/crab.log
+DEBUG 2019-10-19 00:40:09.247 UTC: 	 Executing command: 'status'
+DEBUG 2019-10-19 00:40:09.247 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-10-19 00:40:09.302 UTC: 	 Checking credentials
+DEBUG 2019-10-19 00:40:09.303 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-19 00:40:09.303 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-19 00:40:10.415 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 40317
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-19 00:40:11.325 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 40316
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-19 00:40:11.326 UTC: 	 Proxy lifetime 40317 secs is different from voms extension lifetime 40316 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-19 00:40:11.326 UTC: 	 Proxy valid for 11:11:56 hours
+DEBUG 2019-10-19 00:40:11.447 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-19 00:40:11.447 UTC: 	 Checking credentials
+DEBUG 2019-10-19 00:40:11.448 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-10-19 00:40:11.448 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-19 00:40:12.259 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 40315
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-19 00:40:13.068 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 40314
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-19 00:40:13.068 UTC: 	 Proxy lifetime 40315 secs is different from voms extension lifetime 40314 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-10-19 00:40:13.068 UTC: 	 Proxy valid for 11:11:54 hours
+DEBUG 2019-10-19 00:40:13.195 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-10-19 00:40:13.318 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-19 00:40:13.319 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-10-19 00:40:13.319 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-10-19 00:40:13.727 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 516:29:38  (21.5 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-19 00:40:13.729 UTC: 	 Myproxy is valid: 1859378
+DEBUG 2019-10-19 00:40:13.730 UTC: 	 Command use: status
+DEBUG 2019-10-19 00:40:13.730 UTC: 	 Options use: ['-d', 'crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/']
+DEBUG 2019-10-19 00:40:13.818 UTC: 	 CRABClient version: 3.3.1909
+DEBUG 2019-10-19 00:40:13.818 UTC: 	 Instance is prod
+DEBUG 2019-10-19 00:40:13.818 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-10-19 00:40:13.818 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-10-19 00:40:13.916 UTC: 	 Got information from server oracle database: {u'result': [u'191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400', u'None', u'None', u'SUBMITTED', u'None', u'2019-10-17 17:45:34.928347', u'None', u'2019-10-17 17:49:39.771054', u'None', u'CMSSW_10_2_5', u'slc6_amd64_gcc700', u'/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM', u'T', u'0', u"['T2_US_MIT']", u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 20, 'runs': [], 'lumis': []}", u'263bdb8b60407f090ce1f41c3d06ef428620a1156889942efbeeaeb9a8b70773.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'kaliyana', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage', u'cms', u'None', u'None', u'ana_datamc_qcd1800to2400-00000000000000000000000000000000', u'F', u'T2_US_MIT', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['zp2mu_histos.root']", u'[]', u'Analysis', u'pythia', u'None', u"{'maxjobruntime': 1250, 'priority': 10, 'site_blacklist': [], 'resubmit_jobids': ['2'], 'numcores': 1, 'site_whitelist': ['T2_US_MIT'], 'maxmemory': 2000, 'resubmit_publication': 0}", u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u"['The CRAB3 server got a non-critical error while checking stageout permissions. Please use checkwrite to check if everything is fine.']", u'http://vocms0119.cern.ch/mon/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0119.cern.ch', u'F', u'[]', u'T', u'/store/user/kaliyana', u'T', u'None', u'F', u'None', u'QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8', u'None', u'ee021f84c425e996d5f832f6c42697bf24d90452caca2403d923061f5e688fa2.tar.gz', u'44345368', u'filetransfers', u'F', u'188.184.106.99', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-10-19 00:40:13.917 UTC: 	 CRAB project directory:		/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400
+INFO 2019-10-19 00:40:13.917 UTC: 	 Task name:			191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-19 00:40:13.917 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0119.cern.ch - crab-prod-tw01
+INFO 2019-10-19 00:40:13.917 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-10-19 00:40:13.917 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-19 00:40:13.917 UTC: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=kaliyana&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-19 00:40:13.918 UTC: 	 New dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=kaliyana&var-task=191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-10-19 00:40:13.918 UTC: 	 In case of issues with the new dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+WARNING 2019-10-19 00:40:13.918 UTC: 	 Warning:			The CRAB3 server got a non-critical error while checking stageout permissions. Please use checkwrite to check if everything is fine.
+DEBUG 2019-10-19 00:40:13.918 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 44345368)
+DEBUG 2019-10-19 00:40:13.918 UTC: 	 Webdir is located at http://vocms0119.cern.ch/mon/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+DEBUG 2019-10-19 00:40:14.024 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0119/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+DEBUG 2019-10-19 00:40:14.024 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0119/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400/status_cache
+DEBUG 2019-10-19 00:40:14.177 UTC: 	 Got information from status cache file: {'1': {'Retries': 1, 'WallDurations': [9.0, 15059.0, 9.0, 17742.0], 'StartTimes': [1571334964.0, 1571355792.0], 'SubmitTimes': [1571334592.0, 1571355500.0], 'JobIds': ['44345370.0', '44360407.0'], 'EndTimes': [1571350023.0, 1571373534.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1828492, 1804932], 'TotalUserCpuTimeHistory': [3220, 3347.0], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [225, 248.0]}, '2': {'Retries': 3, 'WallDurations': [9.0, 12163.0, 8.0, 8057.0, 10.0, 9952.0, 9.0, 11757.0], 'StartTimes': [1571334971.0, 1571351231.0, 1571359668.0, 1571401672.0], 'SubmitTimes': [1571334593.0, 1571350812.0, 1571359425.0, 1571400319.0], 'JobIds': ['44345371.0', '44357920.0', '44361284.0', '44384989.0'], 'EndTimes': [1571347134.0, 1571359288.0, 1571369620.0, 1571413429.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1615512, 1406340, 1619432, 1664572], 'Error': [90000, 'Got recoverable stageout exception:\nStageout failed with code 1.\nThere were 1 failed/killed stageout jobs.\nFailure reasons (per document) follow:\n- d46419344e8c445a0e096e8f23d9fb9dc197b853f77e5ce6ca878f55:\n  -----> ASO log start -----\n  TRANSFER 70 TRANSFER  globus_xio: Unable to connect to se01.cmsaf.mit.edu:2811 globus_xio: System error in connect: Connection timed out globus_xio: A system call failed: Connection timed out  [...CUT...] Full log at https://fts3.cern.ch:8449/fts3/ftsmon/#/job/a547c676-f158-11e9-8d03-02163e018d65\n  <----- ASO log finish ----', {}], 'TotalUserCpuTimeHistory': [2667, 2019, 1970, 2209], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'Unknown', 'T2_US_Vanderbilt', 'Unknown', 'T2_US_UCSD', 'Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [291, 130, 172, 151]}}
+INFO 2019-10-19 00:40:14.177 UTC: 	 Status on the scheduler:	COMPLETED
+INFO 2019-10-19 00:40:14.178 UTC: 	 
+Jobs status:                    finished     		100.0% (2/2)
+INFO 2019-10-19 00:40:14.178 UTC: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2019-10-19 00:40:14.178 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-10-19 00:40:14.178 UTC: 	 
+Warning: the average jobs CPU efficiency is less than 50%, please consider to improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task
+INFO 2019-10-19 00:40:14.179 UTC: 	 
+Summary of run jobs:
+ * Memory: 1762MB min, 1762MB max, 1694MB ave
+ * Runtime: 3:15:57 min, 4:55:42 max, 4:05:49 ave
+ * CPU eff: 20% min, 20% max, 20% ave
+ * Waste: 12:34:45 (61% of total)
+
+INFO 2019-10-19 00:40:14.233 UTC: 	 Log file is /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/crab.log
+DEBUG 2019-11-01 14:19:34.947 UTC: 	 Running on: Linux lxplus605.cern.ch 2.6.32-754.18.2.el6.x86_64 #1 SMP Wed Aug 14 10:00:35 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-01 14:19:34.947 UTC: 	 Executing command: 'report'
+DEBUG 2019-11-01 14:19:34.948 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-11-01 14:19:34.988 UTC: 	 Checking credentials
+DEBUG 2019-11-01 14:19:34.989 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-01 14:19:34.989 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-01 14:19:35.693 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 41365
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:36.399 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 41363
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:36.399 UTC: 	 Proxy lifetime 41365 secs is different from voms extension lifetime 41363 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-01 14:19:36.399 UTC: 	 Proxy valid for 11:29:23 hours
+DEBUG 2019-11-01 14:19:36.578 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:36.578 UTC: 	 Checking credentials
+DEBUG 2019-11-01 14:19:36.579 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-01 14:19:36.579 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-01 14:19:37.285 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 41363
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:37.991 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 41362
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:37.991 UTC: 	 Proxy lifetime 41363 secs is different from voms extension lifetime 41362 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-01 14:19:37.991 UTC: 	 Proxy valid for 11:29:22 hours
+DEBUG 2019-11-01 14:19:38.526 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-01 14:19:38.636 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:38.636 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-01 14:19:38.636 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-11-01 14:19:38.941 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 550:56:10  (23.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:38.942 UTC: 	 Myproxy is valid: 1983370
+DEBUG 2019-11-01 14:19:38.942 UTC: 	 Command use: report
+DEBUG 2019-11-01 14:19:38.942 UTC: 	 Options use: ['-d', 'crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/']
+DEBUG 2019-11-01 14:19:39.097 UTC: 	 CRABClient version: 3.3.1910.patch2
+DEBUG 2019-11-01 14:19:39.098 UTC: 	 Instance is prod
+DEBUG 2019-11-01 14:19:39.098 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-01 14:19:39.098 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-01 14:19:39.098 UTC: 	 Looking up report for task 191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+DEBUG 2019-11-01 14:19:40.271 UTC: 	 Result: {u'result': [{u'runsAndLumis': {u'1': [{u'parents': u'[]', u'runlumi': u'{}', u'type': u'TFILE', u'events': 0, u'lfn': u'/store/user/kaliyana/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/ana_datamc_qcd1800to2400/191017_174534/0000/zp2mu_histos_1.root'}, {u'parents': u'[]', u'runlumi': u"{'1': {'4004': 'None', '4022': 'None', '4023': 'None', '4020': 'None', '1499': 'None', '4225': 'None', '4227': 'None', '6576': 'None', '4017': 'None', '1445': 'None', '6325': 'None', '2382': 'None', '2248': 'None', '1468': 'None', '2014': 'None', '1466': 'None', '2386': 'None', '6152': 'None', '1493': 'None', '6155': 'None', '6159': 'None', '6449': 'None', '1552': 'None', '4870': 'None', '2318': 'None', '2316': 'None', '4131': 'None', '2314': 'None', '2313': 'None', '5918': 'None', '1385': 'None', '5917': 'None', '5916': 'None', '1327': 'None', '1328': 'None', '1920': 'None', '1484': 'None', '2334': 'None', '2308': 'None', '2307': 'None', '2381': 'None', '2380': 'None', '1527': 'None', '2385': 'None', '2384': 'None', '2387': 'None', '1523': 'None', '2389': 'None', '1392': 'None', '1338': 'None', '4110': 'None', '4118': 'None', '1492': 'None', '2378': 'None', '2379': 'None', '2374': 'None', '2375': 'None', '2376': 'None', '2377': 'None', '2372': 'None', '1349': 'None', '4264': 'None', '4100': 'None', '2193': 'None', '6438': 'None', '6167': 'None', '1982': 'None', '1635': 'None', '1989': 'None', '1502': 'None', '1503': 'None', '2367': 'None', '2364': 'None', '2362': 'None', '6528': 'None', '2124': 'None', '1990': 'None', '1454': 'None', '2109': 'None', '2359': 'None', '6190': 'None', '6058': 'None', '1517': 'None', '2351': 'None', '2356': 'None', '2354': 'None', '1512': 'None', '1289': 'None', '2344': 'None', '2343': 'None', '1367': 'None', '2349': 'None', '1364': 'None', '4006': 'None', '1298': 'None', '5934': 'None', '4313': 'None', '4314': 'None', '1271': 'None', '4257': 'None', '1281': 'None', '6552': 'None', '4013': 'None', '2339': 'None', '1975': 'None', '2235': 'None', '4016': 'None', '1472': 'None', '1473': 'None', '5935': 'None', '1578': 'None', '2004': 'None', '1479': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/8F839AE9-76C8-0F42-836B-1D23E97E0F32.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'1263': 'None', '1265': 'None', '4478': 'None', '5315': 'None', '4576': 'None', '1295': 'None', '4473': 'None', '5820': 'None', '5823': 'None', '5822': 'None', '5824': 'None', '5827': 'None', '2324': 'None', '5829': 'None', '5828': 'None', '4675': 'None', '4674': 'None', '4387': 'None', '4981': 'None', '4338': 'None', '4566': 'None', '4565': 'None', '4874': 'None', '4871': 'None', '4529': 'None', '4407': 'None', '5305': 'None', '4487': 'None', '5804': 'None', '5016': 'None', '4878': 'None', '4650': 'None', '5769': 'None', '4556': 'None', '4555': 'None', '4553': 'None', '4550': 'None', '5797': 'None', '4805': 'None', '4415': 'None', '4412': 'None', '4411': 'None', '1252': 'None', '1400': 'None', '4962': 'None', '1405': 'None', '1390': 'None', '5004': 'None', '5323': 'None', '5771': 'None', '5770': 'None', '4350': 'None', '5083': 'None', '5081': 'None', '4421': 'None', '4958': 'None', '5816': 'None', '4630': 'None', '5136': 'None', '4439': 'None', '4538': 'None', '4940': 'None', '4534': 'None', '4535': 'None', '4537': 'None', '4531': 'None', '4533': 'None', '5785': 'None', '5780': 'None', '4605': 'None', '4684': 'None', '4521': 'None', '4683': 'None', '4936': 'None', '4527': 'None', '5188': 'None', '4688': 'None', '5818': 'None', '5819': 'None', '5794': 'None', '5793': 'None', '1515': 'None', '5813': 'None', '5814': 'None', '4914': 'None', '5799': 'None', '5798': 'None', '4618': 'None', '4762': 'None', '4610': 'None', '4695': 'None', '5198': 'None', '4925': 'None', '5723': 'None', '1243': 'None', '4592': 'None', '4593': 'None', '1440': 'None', '5801': 'None', '5800': 'None', '5807': 'None', '5806': 'None', '5805': 'None', '1448': 'None', '1273': 'None', '4501': 'None', '5836': 'None', '5835': 'None', '4392': 'None', '5839': 'None', '4588': 'None', '4993': 'None', '4580': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/8533A19D-53F1-0345-8CF3-3E654F17CB00.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'7221': 'None', '7220': 'None', '7223': 'None', '7222': 'None', '7225': 'None', '7224': 'None', '7227': 'None', '7226': 'None', '1915': 'None', '1658': 'None', '7696': 'None', '7514': 'None', '7691': 'None', '7692': 'None', '7191': 'None', '7698': 'None', '7699': 'None', '7391': 'None', '7393': 'None', '7392': 'None', '7250': 'None', '7317': 'None', '7311': 'None', '7310': 'None', '2147': 'None', '7686': 'None', '7685': 'None', '7683': 'None', '7895': 'None', '1663': 'None', '7688': 'None', '7340': 'None', '7632': 'None', '1526': 'None', '1653': 'None', '1529': 'None', '7023': 'None', '7022': 'None', '7021': 'None', '7020': 'None', '7027': 'None', '7026': 'None', '7024': 'None', '7706': 'None', '7707': 'None', '7704': 'None', '7705': 'None', '7702': 'None', '7703': 'None', '7700': 'None', '7701': 'None', '7708': 'None', '7709': 'None', '2169': 'None', '1532': 'None', '7018': 'None', '7019': 'None', '7016': 'None', '7017': 'None', '7014': 'None', '7015': 'None', '7012': 'None', '7013': 'None', '7010': 'None', '7011': 'None', '7711': 'None', '7710': 'None', '7499': 'None', '7269': 'None', '7714': 'None', '7290': 'None', '1645': 'None', '7298': 'None', '7009': 'None', '7008': 'None', '7001': 'None', '7003': 'None', '7002': 'None', '7005': 'None', '7004': 'None', '7007': 'None', '7006': 'None', '7175': 'None', '7169': 'None', '7197': 'None', '7171': 'None', '7838': 'None', '7174': 'None', '7177': 'None', '7176': 'None', '1898': 'None', '7170': 'None', '7173': 'None', '7172': 'None', '7178': 'None', '7324': 'None', '7188': 'None', '7327': 'None', '7328': 'None', '7835': 'None', '1533': 'None', '7333': 'None', '7331': 'None', '7339': 'None', '1911': 'None', '7189': 'None', '7180': 'None', '7182': 'None', '7183': 'None', '7184': 'None', '7185': 'None', '7186': 'None', '7187': 'None'}}", u'type': u'POOLIN', u'events': 42840, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/81624B26-5BF0-0E45-A6DC-A274B1293045.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'4303': 'None', '4307': 'None', '4306': 'None', '4309': 'None', '5477': 'None', '4223': 'None', '4388': 'None', '4148': 'None', '2153': 'None', '4863': 'None', '4860': 'None', '2158': 'None', '5755': 'None', '5514': 'None', '4405': 'None', '4401': 'None', '4488': 'None', '2148': 'None', '7030': 'None', '7031': 'None', '7032': 'None', '7033': 'None', '7034': 'None', '7035': 'None', '7036': 'None', '5602': 'None', '7038': 'None', '7039': 'None', '4201': 'None', '5762': 'None', '4207': 'None', '4283': 'None', '4280': 'None', '4285': 'None', '4288': 'None', '5563': 'None', '4493': 'None', '4967': 'None', '4966': 'None', '4210': 'None', '4199': 'None', '4195': 'None', '4359': 'None', '5485': 'None', '7028': 'None', '4352': 'None', '2044': 'None', '2041': 'None', '4294': 'None', '4753': 'None', '4291': 'None', '4424': 'None', '4292': 'None', '2162': 'None', '4261': 'None', '4267': 'None', '4180': 'None', '4182': 'None', '4186': 'None', '7795': 'None', '7029': 'None', '4357': 'None', '4067': 'None', '4532': 'None', '4270': 'None', '4276': 'None', '4441': 'None', '4442': 'None', '4379': 'None', '4373': 'None', '4371': 'None', '4375': 'None', '4177': 'None', '4837': 'None', '2025': 'None', '2023': 'None', '5601': 'None', '4367': 'None', '4667': 'None', '4361': 'None', '4363': 'None', '7037': 'None', '4368': 'None', '4293': 'None', '4613': 'None', '4165': 'None', '4164': 'None', '4163': 'None', '4160': 'None', '2032': 'None', '4311': 'None', '4091': 'None', '4318': 'None', '4319': 'None', '4518': 'None', '5532': 'None', '5354': 'None', '4152': 'None', '4150': 'None', '4156': 'None', '4157': 'None', '4915': 'None'}}", u'type': u'POOLIN', u'events': 38760, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/7DE853B8-1648-9D4A-926F-9CD6D5258809.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'5743': 'None', '7229': 'None', '7228': 'None', '7384': 'None', '7385': 'None', '7456': 'None', '7457': 'None', '7454': 'None', '7455': 'None', '7452': 'None', '7453': 'None', '5626': 'None', '7616': 'None', '5623': 'None', '7611': 'None', '7458': 'None', '7694': 'None', '7695': 'None', '7515': 'None', '7697': 'None', '7513': 'None', '7512': 'None', '7511': 'None', '7693': 'None', '7518': 'None', '7395': 'None', '7397': 'None', '7396': 'None', '7808': 'None', '7399': 'None', '7398': 'None', '7477': 'None', '7124': 'None', '7441': 'None', '7445': 'None', '7447': 'None', '7446': 'None', '7449': 'None', '7314': 'None', '7258': 'None', '7313': 'None', '7312': 'None', '7522': 'None', '7520': 'None', '7521': 'None', '7526': 'None', '7527': 'None', '7524': 'None', '7525': 'None', '7528': 'None', '7886': 'None', '5858': 'None', '7689': 'None', '5607': 'None', '7568': 'None', '5603': 'None', '7687': 'None', '7638': 'None', '7639': 'None', '7241': 'None', '7240': 'None', '7636': 'None', '7637': 'None', '7635': 'None', '7434': 'None', '7435': 'None', '7436': 'None', '7431': 'None', '7439': 'None', '7682': 'None', '5821': 'None', '7681': 'None', '7680': 'None', '7624': 'None', '7626': 'None', '7622': 'None', '7272': 'None', '7273': 'None', '7270': 'None', '7372': 'None', '7425': 'None', '7424': 'None', '7422': 'None', '7421': 'None', '7420': 'None', '7261': 'None', '5622': 'None', '7650': 'None', '7651': 'None', '7652': 'None', '7653': 'None', '7654': 'None', '7655': 'None', '7517': 'None', '7159': 'None', '7158': 'None', '7157': 'None', '7493': 'None', '7496': 'None', '7497': 'None', '7494': 'None', '7495': 'None', '7412': 'None', '7411': 'None', '7417': 'None', '7414': 'None', '7415': 'None', '7553': 'None', '7552': 'None', '7419': 'None', '7156': 'None', '7292': 'None', '7295': 'None', '7510': 'None', '7641': 'None', '7480': 'None', '7649': 'None', '7163': 'None', '7160': 'None', '7161': 'None', '7166': 'None', '7164': 'None', '7569': 'None', '7408': 'None', '7405': 'None', '7404': 'None', '7407': 'None', '7406': 'None', '7401': 'None', '7400': 'None', '7403': 'None', '7402': 'None', '7288': 'None', '5525': 'None', '7679': 'None', '7676': 'None', '7677': 'None', '7674': 'None', '7670': 'None', '7571': 'None', '7570': 'None', '7573': 'None', '7575': 'None', '7574': 'None', '7577': 'None', '7576': 'None', '7578': 'None', '7469': 'None', '7478': 'None', '7479': 'None', '7468': 'None', '7470': 'None', '7471': 'None', '7475': 'None', '7476': 'None', '7516': 'None', '7232': 'None', '7230': 'None', '7231': 'None', '7504': 'None', '7506': 'None', '7507': 'None', '7503': 'None', '7462': 'None', '7461': 'None'}}", u'type': u'POOLIN', u'events': 62700, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/77FA6BC7-AAF3-0348-AEF4-A7A4F0353638.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'2098': 'None', '1832': 'None', '1078': 'None', '1077': 'None', '4902': 'None', '1072': 'None', '1945': 'None', '1375': 'None', '2244': 'None', '1094': 'None', '5381': 'None', '1090': 'None', '1316': 'None', '1098': 'None', '1099': 'None', '1959': 'None', '1958': 'None', '1061': 'None', '1824': 'None', '1067': 'None', '1066': 'None', '5699': 'None', '1417': 'None', '1083': 'None', '1082': 'None', '1081': 'None', '1120': 'None', '1125': 'None', '1482': 'None', '4657': 'None', '1929': 'None', '4645': 'None', '5252': 'None', '5250': 'None', '5255': 'None', '5258': 'None', '1053': 'None', '2078': 'None', '1230': 'None', '1335': 'None', '1130': 'None', '1238': 'None', '1135': 'None', '1937': 'None', '1934': 'None', '5125': 'None', '1849': 'None', '1848': 'None', '5248': 'None', '1241': 'None', '1242': 'None', '1246': 'None', '1348': 'None', '1225': 'None', '1221': 'None', '1340': 'None', '1344': 'None', '1229': 'None', '2197': 'None', '5131': 'None', '2200': 'None', '1423': 'None', '2052': 'None', '2059': 'None', '2130': 'None', '1032': 'None', '1030': 'None', '1036': 'None', '1037': 'None', '1034': 'None', '1219': 'None', '1861': 'None', '2110': 'None', '2181': 'None', '1867': 'None', '1866': 'None', '1024': 'None', '1026': 'None', '5341': 'None', '1022': 'None', '2115': 'None', '1107': 'None', '1104': 'None', '1102': 'None', '1101': 'None', '1459': 'None', '5299': 'None', '5291': 'None', '5644': 'None', '2135': 'None', '1810': 'None', '2228': 'None', '2229': 'None', '1058': 'None', '1059': 'None', '5721': 'None', '1110': 'None', '1113': 'None', '2182': 'None', '4519': 'None', '1054': 'None', '1881': 'None', '5040': 'None', '2239': 'None', '1041': 'None', '1046': 'None', '1044': 'None', '1976': 'None', '1964': 'None', '1365': 'None', '1360': 'None', '1965': 'None', '1852': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/772F305E-63EE-9749-8871-01D6F816E5E1.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'1783': 'None', '1787': 'None', '5503': 'None', '2406': 'None', '2404': 'None', '7738': 'None', '2150': 'None', '7755': 'None', '7757': 'None', '7756': 'None', '7751': 'None', '2159': 'None', '7753': 'None', '2409': 'None', '1791': 'None', '5753': 'None', '7733': 'None', '5750': 'None', '7536': 'None', '7736': 'None', '2411': 'None', '2413': 'None', '5696': 'None', '2390': 'None', '2391': 'None', '7722': 'None', '7529': 'None', '7724': 'None', '7725': 'None', '7726': 'None', '7727': 'None', '5395': 'None', '7167': 'None', '5608': 'None', '2396': 'None', '5461': 'None', '5565': 'None', '5092': 'None', '5844': 'None', '7535': 'None', '7732': 'None', '7730': 'None', '7737': 'None', '1657': 'None', '7735': 'None', '7734': 'None', '4625': 'None', '7786': 'None', '1646': 'None', '7148': 'None', '7146': 'None', '7147': 'None', '5874': 'None', '2399': 'None', '7799': 'None', '2392': 'None', '5667': 'None', '5666': 'None', '4635': 'None', '5430': 'None', '5549': 'None', '7717': 'None', '7718': 'None', '5864': 'None', '6184': 'None', '2045': 'None', '4447': 'None', '1910': 'None', '5651': 'None', '7162': 'None', '5424': 'None', '5713': 'None', '4834': 'None', '7165': 'None', '2024': 'None', '2408': 'None', '6051': 'None', '5297': 'None', '5880': 'None', '7832': 'None', '7833': 'None', '7837': 'None', '5357': 'None', '7742': 'None', '5728': 'None', '5924': 'None', '5927': 'None', '5923': 'None', '5802': 'None', '7750': 'None', '7728': 'None', '7828': 'None', '7827': 'None', '5519': 'None', '5445': 'None', '2002': 'None', '7740': 'None', '7746': 'None', '7747': 'None', '7744': 'None', '7745': 'None', '7748': 'None'}}", u'type': u'POOLIN', u'events': 38760, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/71F5DB96-F0E0-6344-899F-7FEED1752088.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'5310': 'None', '7388': 'None', '7389': 'None', '7386': 'None', '7387': 'None', '5586': 'None', '5587': 'None', '4701': 'None', '5374': 'None', '2329': 'None', '2328': 'None', '5370': 'None', '5373': 'None', '4708': 'None', '5361': 'None', '7394': 'None', '4931': 'None', '5462': 'None', '5302': 'None', '5617': 'None', '5857': 'None', '5850': 'None', '5851': 'None', '5852': 'None', '5853': 'None', '5698': 'None', '2265': 'None', '2253': 'None', '5610': 'None', '5604': 'None', '5606': 'None', '5495': 'None', '5497': 'None', '5491': 'None', '4802': 'None', '4806': 'None', '5313': 'None', '4724': 'None', '2303': 'None', '2302': 'None', '5560': 'None', '5316': 'None', '5562': 'None', '5847': 'None', '5845': 'None', '2269': 'None', '5848': 'None', '2289': 'None', '2281': 'None', '4808': 'None', '5320': 'None', '7789': 'None', '5486': 'None', '2276': 'None', '5579': 'None', '5245': 'None', '2300': 'None', '5242': 'None', '5876': 'None', '5973': 'None', '5879': 'None', '2370': 'None', '2373': 'None', '2299': 'None', '2298': 'None', '2293': 'None', '2292': 'None', '2291': 'None', '5488': 'None', '2297': 'None', '2296': 'None', '2295': 'None', '2294': 'None', '5334': 'None', '5336': 'None', '5624': 'None', '5708': 'None', '5541': 'None', '2369': 'None', '2368': 'None', '5865': 'None', '5867': 'None', '5866': 'None', '5861': 'None', '5863': 'None', '2360': 'None', '4775': 'None', '5553': 'None', '4607': 'None', '2365': 'None', '5950': 'None', '5347': 'None', '2363': 'None', '5577': 'None', '2357': 'None', '5446': 'None', '5882': 'None', '5881': 'None', '5458': 'None', '5356': 'None', '4810': 'None', '5287': 'None', '2333': 'None', '4669': 'None', '5365': 'None', '2338': 'None', '5977': 'None', '5368': 'None', '4661': 'None', '2301': 'None', '5312': 'None', '5566': 'None', '4851': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/6FA0E32E-C553-C541-B433-B636475C4ABB.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'1782': 'None', '1497': 'None', '1544': 'None', '1949': 'None', '1543': 'None', '4642': 'None', '1947': 'None', '5904': 'None', '1376': 'None', '2243': 'None', '2174': 'None', '5145': 'None', '1993': 'None', '1490': 'None', '1952': 'None', '2070': 'None', '1829': 'None', '1997': 'None', '1825': 'None', '1820': 'None', '2146': 'None', '2143': 'None', '2194': 'None', '2063': 'None', '2065': 'None', '2149': 'None', '5393': 'None', '1329': 'None', '1927': 'None', '1850': 'None', '1855': 'None', '1857': 'None', '2176': 'None', '4491': 'None', '2179': 'None', '1528': 'None', '2075': 'None', '1332': 'None', '1935': 'None', '5403': 'None', '1640': 'None', '2066': 'None', '2163': 'None', '4633': 'None', '1874': 'None', '1875': 'None', '1872': 'None', '2198': 'None', '2087': 'None', '2051': 'None', '1987': 'None', '1983': 'None', '7559': 'None', '7558': 'None', '1506': 'None', '2113': 'None', '7557': 'None', '7556': 'None', '7555': 'None', '7554': 'None', '1352': 'None', '1357': 'None', '1354': 'None', '1860': 'None', '1863': 'None', '1862': 'None', '1865': 'None', '5898': 'None', '2189': 'None', '2188': 'None', '5652': 'None', '1802': 'None', '7566': 'None', '7567': 'None', '7564': 'None', '7565': 'None', '7562': 'None', '7563': 'None', '7560': 'None', '1519': 'None', '2116': 'None', '2103': 'None', '2100': 'None', '2233': 'None', '2105': 'None', '7580': 'None', '1288': 'None', '7582': 'None', '5633': 'None', '7572': 'None', '1969': 'None', '1966': 'None', '1615': 'None', '2222': 'None', '1962': 'None', '1292': 'None', '1363': 'None', '1297': 'None', '2038': 'None', '1279': 'None', '1270': 'None', '1275': 'None', '1880': 'None', '2238': 'None', '1287': 'None', '5639': 'None', '7584': 'None', '2080': 'None', '1973': 'None', '7581': 'None', '1971': 'None', '7583': 'None', '2007': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/6C4EF3C0-4BE9-D04B-B2D8-7B6F03032323.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'2096': 'None', '5724': 'None', '5506': 'None', '1834': 'None', '2170': 'None', '1373': 'None', '1377': 'None', '2017': 'None', '2010': 'None', '2242': 'None', '1673': 'None', '1314': 'None', '1313': 'None', '1117': 'None', '1956': 'None', '1495': 'None', '2071': 'None', '1701': 'None', '1705': 'None', '1557': 'None', '1559': 'None', '2068': 'None', '2069': 'None', '5690': 'None', '2061': 'None', '1414': 'None', '1087': 'None', '1323': 'None', '1122': 'None', '2231': 'None', '5766': 'None', '5764': 'None', '1713': 'None', '1711': 'None', '2083': 'None', '1419': 'None', '1719': 'None', '5561': 'None', '2172': 'None', '1254': 'None', '1255': 'None', '1250': 'None', '1395': 'None', '2076': 'None', '1139': 'None', '1239': 'None', '5671': 'None', '1666': 'None', '5678': 'None', '5772': 'None', '2042': 'None', '1431': 'None', '1981': 'None', '1844': 'None', '2160': 'None', '1538': 'None', '1223': 'None', '1283': 'None', '1228': 'None', '1986': 'None', '2050': 'None', '1984': 'None', '2128': 'None', '2054': 'None', '2056': 'None', '2058': 'None', '1733': 'None', '5703': 'None', '2111': 'None', '2152': 'None', '2178': 'None', '1351': 'None', '1595': 'None', '5557': 'None', '5556': 'None', '1592': 'None', '2125': 'None', '1599': 'None', '1991': 'None', '2211': 'None', '2217': 'None', '1994': 'None', '1999': 'None', '2241': 'None', '1601': 'None', '1451': 'None', '1600': 'None', '1458': 'None', '1108': 'None', '5522': 'None', '2237': 'None', '2227': 'None', '2138': 'None', '2221': 'None', '1690': 'None', '2220': 'None', '1564': 'None', '1294': 'None', '1277': 'None', '2183': 'None', '2088': 'None', '2089': 'None', '5638': 'None', '1979': 'None', '2126': 'None', '1977': 'None', '2230': 'None', '5636': 'None', '1974': 'None', '2084': 'None', '2236': 'None', '1477': 'None', '2005': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/6B327844-66E8-D643-9ADA-A02BF38A3A3A.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'3321': 'None', '3322': 'None', '3325': 'None', '4577': 'None', '6087': 'None', '3552': 'None', '5387': 'None', '5996': 'None', '5265': 'None', '6317': 'None', '4974': 'None', '6318': 'None', '4977': 'None', '6255': 'None', '5396': 'None', '3327': 'None', '4653': 'None', '3309': 'None', '3307': 'None', '3304': 'None', '3305': 'None', '3302': 'None', '3303': 'None', '3477': 'None', '6516': 'None', '5969': 'None', '6197': 'None', '4969': 'None', '5686': 'None', '4117': 'None', '3311': 'None', '7784': 'None', '7783': 'None', '7781': 'None', '6500': 'None', '6504': 'None', '6077': 'None', '5976': 'None', '5975': 'None', '5439': 'None', '7852': 'None', '7853': 'None', '7850': 'None', '7851': 'None', '7854': 'None', '4346': 'None', '3313': 'None', '3450': 'None', '5941': 'None', '6287': 'None', '6207': 'None', '3429': 'None', '5108': 'None', '7849': 'None', '7848': 'None', '7845': 'None', '7844': 'None', '7847': 'None', '7846': 'None', '7841': 'None', '7840': 'None', '7843': 'None', '7842': 'None', '5953': 'None', '5952': 'None', '5957': 'None', '4713': 'None', '7766': 'None', '7767': 'None', '7768': 'None', '7769': 'None', '6219': 'None', '4360': 'None', '4086': 'None', '5112': 'None', '6456': 'None', '4241': 'None', '4459': 'None', '5084': 'None', '5647': 'None', '5355': 'None', '6107': 'None', '3433': 'None', '6336': 'None', '5358': 'None', '7777': 'None', '7776': 'None', '7775': 'None', '6221': 'None', '7773': 'None', '7770': 'None', '4840': 'None', '4842': 'None', '7778': 'None', '6122': 'None', '4463': 'None', '5362': 'None', '5360': 'None', '3543': 'None', '5937': 'None', '5936': 'None', '4349': 'None', '4857': 'None', '5938': 'None'}}", u'type': u'POOLIN', u'events': 39520, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/641E09CC-072D-6249-B20D-A742C6759232.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'7817': 'None', '7814': 'None', '7812': 'None', '7813': 'None', '7811': 'None', '5178': 'None', '4479': 'None', '5475': 'None', '5472': 'None', '5072': 'None', '5501': 'None', '4705': 'None', '7306': 'None', '7304': 'None', '4700': 'None', '5689': 'None', '5382': 'None', '5386': 'None', '5467': 'None', '7122': 'None', '7120': 'None', '7121': 'None', '4408': 'None', '5693': 'None', '5691': 'None', '5695': 'None', '4574': 'None', '7894': 'None', '5397': 'None', '5665': 'None', '5151': 'None', '4890': 'None', '5765': 'None', '5763': 'None', '4205': 'None', '7247': 'None', '5094': 'None', '7430': 'None', '7885': 'None', '5003': 'None', '5005': 'None', '5008': 'None', '4190': 'None', '5673': 'None', '5489': 'None', '5775': 'None', '5777': 'None', '5776': 'None', '5705': 'None', '4189': 'None', '4188': 'None', '4266': 'None', '5036': 'None', '4183': 'None', '5534': 'None', '4184': 'None', '5139': 'None', '5135': 'None', '5548': 'None', '5704': 'None', '5120': 'None', '5706': 'None', '4820': 'None', '4271': 'None', '5020': 'None', '4279': 'None', '5554': 'None', '5552': 'None', '5657': 'None', '5559': 'None', '5650': 'None', '4601': 'None', '5182': 'None', '5183': 'None', '5180': 'None', '5187': 'None', '4937': 'None', '5223': 'None', '4939': 'None', '4836': 'None', '5796': 'None', '5790': 'None', '5811': 'None', '5815': 'None', '4366': 'None', '5058': 'None', '5210': 'None', '4768': 'None', '5529': 'None', '5056': 'None', '5057': 'None', '5050': 'None', '5051': 'None', '4926': 'None', '4697': 'None', '5722': 'None', '5197': 'None', '5727': 'None', '5716': 'None', '5761': 'None', '5098': 'None', '5162': 'None', '5202': 'None', '5537': 'None', '5204': 'None', '5048': 'None', '5046': 'None', '7334': 'None', '5832': 'None', '5635': 'None', '5637': 'None', '5447': 'None', '5632': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/6419C56C-62B4-B94A-AAFF-D9D127668A5D.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'4572': 'None', '4221': 'None', '4222': 'None', '3128': 'None', '3129': 'None', '5580': 'None', '1079': 'None', '3123': 'None', '1074': 'None', '1073': 'None', '6009': 'None', '1025': 'None', '1092': 'None', '4882': 'None', '3838': 'None', '4333': 'None', '4033': 'None', '4035': 'None', '4034': 'None', '3133': 'None', '4039': 'None', '4038': 'None', '1069': 'None', '1068': 'None', '4649': 'None', '1063': 'None', '1062': 'None', '5614': 'None', '4074': 'None', '1085': 'None', '1084': 'None', '1080': 'None', '4071': 'None', '2775': 'None', '1089': 'None', '4042': 'None', '4049': 'None', '4497': 'None', '1018': 'None', '4028': 'None', '1014': 'None', '1015': 'None', '1016': 'None', '1017': 'None', '1010': 'None', '1011': 'None', '1012': 'None', '4193': 'None', '2765': 'None', '4065': 'None', '5086': 'None', '1009': 'None', '4676': 'None', '1007': 'None', '1005': 'None', '3099': 'None', '1003': 'None', '3127': 'None', '4631': 'None', '1095': 'None', '3003': 'None', '3002': 'None', '5620': 'None', '3699': 'None', '4060': 'None', '4061': 'None', '4829': 'None', '3219': 'None', '1038': 'None', '3088': 'None', '6045': 'None', '1033': 'None', '1031': 'None', '3081': 'None', '3073': 'None', '4895': 'None', '3229': 'None', '4174': 'None', '1027': 'None', '3688': 'None', '1021': 'None', '1020': 'None', '1023': 'None', '3682': 'None', '6117': 'None', '4178': 'None', '1028': 'None', '4072': 'None', '4011': 'None', '4830': 'None', '4082': 'None', '4889': 'None', '4394': 'None', '4369': 'None', '4018': 'None', '5649': 'None', '4611': 'None', '1051': 'None', '3230': 'None', '6414': 'None', '3622': 'None', '1052': 'None', '3700': 'None', '1043': 'None', '1042': 'None', '1004': 'None', '1047': 'None', '4012': 'None', '1049': 'None', '1048': 'None', '3221': 'None', '3223': 'None', '6330': 'None', '4584': 'None'}}", u'type': u'POOLIN', u'events': 43320, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/480B09D0-3E5A-A24A-815F-EBB159FCEFC2.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'4300': 'None', '3049': 'None', '5469': 'None', '5746': 'None', '4788': 'None', '4471': 'None', '3043': 'None', '4476': 'None', '4679': 'None', '4678': 'None', '1372': 'None', '1374': 'None', '1379': 'None', '1378': 'None', '4861': 'None', '5840': 'None', '4330': 'None', '5752': 'None', '4237': 'None', '3038': 'None', '3039': 'None', '4963': 'None', '4133': 'None', '3031': 'None', '5692': 'None', '1389': 'None', '5859': 'None', '4310': 'None', '4325': 'None', '1483': 'None', '1480': 'None', '1485': 'None', '4557': 'None', '4554': 'None', '4551': 'None', '5854': 'None', '4281': 'None', '4419': 'None', '3027': 'None', '3026': 'None', '3025': 'None', '3024': 'None', '3022': 'None', '3021': 'None', '3020': 'None', '2383': 'None', '1399': 'None', '4490': 'None', '1402': 'None', '1401': 'None', '4780': 'None', '1393': 'None', '1404': 'None', '4213': 'None', '4218': 'None', '4540': 'None', '4542': 'None', '4544': 'None', '3018': 'None', '4816': 'None', '5576': 'None', '3010': 'None', '3011': 'None', '3016': 'None', '3017': 'None', '3014': 'None', '3015': 'None', '4959': 'None', '2371': 'None', '4955': 'None', '3004': 'None', '4437': 'None', '4345': 'None', '4438': 'None', '5238': 'None', '4465': 'None', '4536': 'None', '4530': 'None', '2366': 'None', '1358': 'None', '4602': 'None', '4600': 'None', '4838': 'None', '4528': 'None', '4523': 'None', '4520': 'None', '1511': 'None', '4083': 'None', '4085': 'None', '4087': 'None', '4453': 'None', '3061': 'None', '3067': 'None', '5871': 'None', '4596': 'None', '4845': 'None', '4846': 'None', '4843': 'None', '4093': 'None', '4090': 'None', '4095': 'None', '3008': 'None', '5730': 'None', '5535': 'None', '3055': 'None', '7239': 'None', '4396': 'None', '4957': 'None', '1366': 'None', '4858': 'None', '4850': 'None', '1368': 'None', '4582': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/394AD3A2-07AD-5345-B344-25A1B4F46E91.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'3924': 'None', '3929': 'None', '5744': 'None', '4029': 'None', '5825': 'None', '5826': 'None', '5986': 'None', '3559': 'None', '5985': 'None', '4985': 'None', '7754': 'None', '5909': 'None', '7752': 'None', '3938': 'None', '4337': 'None', '3936': 'None', '3931': 'None', '3930': 'None', '4030': 'None', '4239': 'None', '5992': 'None', '4079': 'None', '5999': 'None', '3640': 'None', '3568': 'None', '7729': 'None', '5856': 'None', '5697': 'None', '7721': 'None', '7723': 'None', '4329': 'None', '4898': 'None', '4321': 'None', '3942': 'None', '4322': 'None', '5768': 'None', '7790': 'None', '4045': 'None', '5318': 'None', '4040': 'None', '4041': 'None', '6261': 'None', '3574': 'None', '4289': 'None', '3570': 'None', '7739': 'None', '5841': 'None', '5961': 'None', '7731': 'None', '5006': 'None', '5322': 'None', '7785': 'None', '7782': 'None', '5774': 'None', '4056': 'None', '4053': 'None', '4051': 'None', '7548': 'None', '7549': 'None', '5979': 'None', '5878': 'None', '7545': 'None', '7546': 'None', '7547': 'None', '3948': 'None', '7610': 'None', '7587': 'None', '4101': 'None', '4102': 'None', '4108': 'None', '5946': 'None', '5947': 'None', '4824': 'None', '5233': 'None', '3517': 'None', '5868': 'None', '7551': 'None', '7550': 'None', '5860': 'None', '5862': 'None', '4272': 'None', '3523': 'None', '5951': 'None', '5955': 'None', '4078': 'None', '3447': 'None', '5220': 'None', '3960': 'None', '3961': 'None', '4081': 'None', '4010': 'None', '3901': 'None', '4244': 'None', '4240': 'None', '7839': 'None', '7834': 'None', '7836': 'None', '4068': 'None', '7774': 'None', '4259': 'None', '3912': 'None', '4317': 'None', '5732': 'None', '5834': 'None', '7588': 'None', '5833': 'None', '7585': 'None', '7586': 'None', '4043': 'None', '4015': 'None', '4014': 'None', '7743': 'None', '7741': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/388705A5-4160-BF41-A576-4BB6806E3C27.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'3492': 'None', '1076': 'None', '1075': 'None', '1070': 'None', '1071': 'None', '810': 'None', '812': 'None', '1096': 'None', '1097': 'None', '2460': 'None', '1091': 'None', '1093': 'None', '1153': 'None', '1050': 'None', '1060': 'None', '1065': 'None', '1064': 'None', '5269': 'None', '419': 'None', '591': 'None', '1086': 'None', '1121': 'None', '1123': 'None', '1124': 'None', '1126': 'None', '1088': 'None', '6147': 'None', '53': 'None', '3385': 'None', '364': 'None', '109': 'None', '3368': 'None', '104': 'None', '787': 'None', '3501': 'None', '3504': 'None', '3506': 'None', '3092': 'None', '3093': 'None', '3091': 'None', '3097': 'None', '3094': 'None', '3095': 'None', '511': 'None', '1248': 'None', '433': 'None', '1001': 'None', '1128': 'None', '1129': 'None', '2450': 'None', '64': 'None', '5436': 'None', '3457': 'None', '3512': 'None', '3362': 'None', '1039': 'None', '3089': 'None', '3085': 'None', '3084': 'None', '3087': 'None', '3083': 'None', '3082': 'None', '561': 'None', '3077': 'None', '1127': 'None', '6403': 'None', '3379': 'None', '1187': 'None', '1029': 'None', '1181': 'None', '1106': 'None', '1105': 'None', '1103': 'None', '1100': 'None', '1035': 'None', '1109': 'None', '151': 'None', '1166': 'None', '1160': 'None', '1161': 'None', '1204': 'None', '5294': 'None', '5290': 'None', '1199': 'None', '1198': 'None', '3348': 'None', '1055': 'None', '1056': 'None', '2670': 'None', '3104': 'None', '3105': 'None', '3106': 'None', '3101': 'None', '1111': 'None', '1112': 'None', '1115': 'None', '1114': 'None', '1119': 'None', '1118': 'None', '6027': 'None', '1177': 'None', '1176': 'None', '1173': 'None', '1008': 'None', '5286': 'None', '3356': 'None', '1006': 'None', '484': 'None', '1040': 'None', '1045': 'None', '1057': 'None', '1002': 'None', '1193': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/339DF112-9626-0945-872A-6CE3245B655A.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'5455': 'None', '3328': 'None', '7302': 'None', '7303': 'None', '7300': 'None', '3798': 'None', '7599': 'None', '7598': 'None', '7597': 'None', '7053': 'None', '7050': 'None', '7309': 'None', '7593': 'None', '7592': 'None', '7591': 'None', '7590': 'None', '3857': 'None', '6320': 'None', '3833': 'None', '7045': 'None', '7044': 'None', '7047': 'None', '7046': 'None', '7041': 'None', '7040': 'None', '7043': 'None', '7042': 'None', '7049': 'None', '7048': 'None', '7319': 'None', '7318': 'None', '7315': 'None', '7606': 'None', '7605': 'None', '7316': 'None', '7603': 'None', '7602': 'None', '7601': 'None', '7600': 'None', '6312': 'None', '7607': 'None', '3843': 'None', '3844': 'None', '6314': 'None', '3720': 'None', '3826': 'None', '7604': 'None', '6141': 'None', '7594': 'None', '6432': 'None', '3810': 'None', '3814': 'None', '5945': 'None', '6288': 'None', '7787': 'None', '7307': 'None', '7276': 'None', '7277': 'None', '7274': 'None', '7275': 'None', '6503': 'None', '7305': 'None', '7052': 'None', '7596': 'None', '7267': 'None', '6374': 'None', '7308': 'None', '6377': 'None', '7051': 'None', '3809': 'None', '7056': 'None', '7055': 'None', '6434': 'None', '5942': 'None', '7268': 'None', '6431': 'None', '7264': 'None', '3458': 'None', '7266': 'None', '3862': 'None', '7296': 'None', '7297': 'None', '7299': 'None', '7357': 'None', '6486': 'None', '5831': 'None', '5420': 'None', '6359': 'None', '6056': 'None', '3868': 'None', '4247': 'None', '3634': 'None', '4009': 'None', '6419': 'None', '7321': 'None', '7322': 'None', '7323': 'None', '7074': 'None', '6348': 'None', '7595': 'None', '7329': 'None', '7073': 'None', '3708': 'None', '3702': 'None', '7320': 'None', '7589': 'None', '7069': 'None', '7330': 'None', '6464': 'None', '6444': 'None', '6335': 'None', '6337': 'None', '7749': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/3376FDD5-22D2-D146-A9D6-55DAF851F84F.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'5170': 'None', '5175': 'None', '5659': 'None', '3320': 'None', '4789': 'None', '5071': 'None', '4569': 'None', '5074': 'None', '5582': 'None', '5583': 'None', '6000': 'None', '5983': 'None', '5980': 'None', '4906': 'None', '3837': 'None', '5384': 'None', '5385': 'None', '5140': 'None', '4563': 'None', '5460': 'None', '4561': 'None', '4560': 'None', '5464': 'None', '5595': 'None', '5759': 'None', '4568': 'None', '5264': 'None', '5263': 'None', '5594': 'None', '5261': 'None', '4872': 'None', '5613': 'None', '3030': 'None', '5683': 'None', '5398': 'None', '5155': 'None', '5154': 'None', '5423': 'None', '3308': 'None', '4559': 'None', '4552': 'None', '5319': 'None', '4784': 'None', '5256': 'None', '3028': 'None', '5684': 'None', '4961': 'None', '4549': 'None', '3318': 'None', '3266': 'None', '4541': 'None', '5379': 'None', '4543': 'None', '4545': 'None', '4547': 'None', '4546': 'None', '5406': 'None', '5405': 'None', '5402': 'None', '3012': 'None', '4756': 'None', '5870': 'None', '4952': 'None', '4954': 'None', '3597': 'None', '3005': 'None', '4794': 'None', '5333': 'None', '3006': 'None', '5335': 'None', '5668': 'None', '4944': 'None', '4539': 'None', '4826': 'None', '4742': 'None', '5948': 'None', '4744': 'None', '4776': 'None', '4774': 'None', '4772': 'None', '4770': 'None', '4771': 'None', '5655': 'None', '5345': 'None', '5364': 'None', '5185': 'None', '5221': 'None', '5711': 'None', '5111': 'None', '4558': 'None', '5641': 'None', '5645': 'None', '3195': 'None', '5725': 'None', '3185': 'None', '4841': 'None', '5160': 'None', '5161': 'None', '5163': 'None', '5165': 'None', '5167': 'None', '5168': 'None', '5047': 'None', '5208': 'None', '4790': 'None', '5966': 'None', '5448': 'None', '5366': 'None', '4712': 'None', '4562': 'None', '4994': 'None', '4998': 'None', '4999': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/2B3487D4-62FE-1B48-8186-2013DF94EC78.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'4475': 'None', '4474': 'None', '7618': 'None', '7619': 'None', '5629': 'None', '5628': 'None', '7614': 'None', '7615': 'None', '5625': 'None', '7617': 'None', '7612': 'None', '7613': 'None', '7759': 'None', '7758': 'None', '4986': 'None', '4989': 'None', '4965': 'None', '7254': 'None', '7255': 'None', '7256': 'None', '7257': 'None', '7252': 'None', '7609': 'None', '7608': 'None', '7253': 'None', '7259': 'None', '4979': 'None', '7720': 'None', '4970': 'None', '7658': 'None', '7633': 'None', '7630': 'None', '7631': 'None', '7634': 'None', '7539': 'None', '7538': 'None', '7534': 'None', '7537': 'None', '7531': 'None', '7533': 'None', '7265': 'None', '7625': 'None', '7627': 'None', '7621': 'None', '7620': 'None', '7788': 'None', '7629': 'None', '7628': 'None', '7780': 'None', '5375': 'None', '7540': 'None', '7541': 'None', '7542': 'None', '7543': 'None', '7544': 'None', '7623': 'None', '7656': 'None', '7657': 'None', '7791': 'None', '7659': 'None', '7793': 'None', '7792': 'None', '7713': 'None', '7712': 'None', '7715': 'None', '7716': 'None', '7719': 'None', '5438': 'None', '7260': 'None', '7263': 'None', '7262': 'None', '4461': 'None', '7643': 'None', '7642': 'None', '7640': 'None', '7647': 'None', '7646': 'None', '7645': 'None', '7644': 'None', '7648': 'None', '7764': 'None', '7765': 'None', '7760': 'None', '7761': 'None', '7762': 'None', '7763': 'None', '5887': 'None', '5115': 'None', '5116': 'None', '5885': 'None', '5118': 'None', '5883': 'None', '4451': 'None', '4457': 'None', '5886': 'None', '7678': 'None', '5884': 'None', '7672': 'None', '7673': 'None', '7671': 'None', '7669': 'None', '7668': 'None', '7661': 'None', '7663': 'None', '7662': 'None', '7665': 'None', '7664': 'None', '7667': 'None', '7666': 'None', '5630': 'None'}}", u'type': u'POOLIN', u'events': 41800, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/279CBE72-9AE1-3E49-88B2-45C2ADD1D02E.root_1'}, {u'parents': u'[]', u'runlumi': u"{'1': {'213': 'None', '4304': 'None', '2844': 'None', '5474': 'None', '4573': 'None', '5473': 'None', '5471': 'None', '4470': 'None', '4389': 'None', '4702': 'None', '2488': 'None', '7451': 'None', '4677': 'None', '2487': 'None', '2485': 'None', '2482': 'None', '2483': 'None', '2481': 'None', '2454': 'None', '4866': 'None', '2013': 'None', '4888': 'None', '2461': 'None', '2463': 'None', '6511': 'None', '2468': 'None', '2469': 'None', '5465': 'None', '5466': 'None', '2498': 'None', '2491': 'None', '6564': 'None', '2493': 'None', '2492': 'None', '2497': 'None', '2417': 'None', '2419': 'None', '2476': 'None', '593': 'None', '2474': 'None', '2471': 'None', '2470': 'None', '4892': 'None', '5747': 'None', '2479': 'None', '4786': 'None', '4282': 'None', '4801': 'None', '4803': 'None', '4284': 'None', '4807': 'None', '4809': 'None', '4413': 'None', '1019': 'None', '1013': 'None', '2444': 'None', '2445': 'None', '2448': 'None', '2449': 'None', '5321': 'None', '5481': 'None', '5271': 'None', '5089': 'None', '4429': 'None', '2271': 'None', '2270': 'None', '4814': 'None', '2486': 'None', '5877': 'None', '2459': 'None', '2458': 'None', '4673': 'None', '2453': 'None', '6601': 'None', '2805': 'None', '4947': 'None', '4946': 'None', '4822': 'None', '7410': 'None', '4275': 'None', '6524': 'None', '4449': 'None', '4176': 'None', '4525': 'None', '4070': 'None', '6213': 'None', '2515': 'None', '2511': 'None', '2512': 'None', '7440': 'None', '5215': 'None', '4764': 'None', '5526': 'None', '7390': 'None', '4922': 'None', '4692': 'None', '4927': 'None', '2340': 'None', '4696': 'None', '4698': 'None', '4929': 'None', '2508': 'None', '2507': 'None', '2506': 'None', '2505': 'None', '2501': 'None', '4315': 'None', '2879': 'None', '4503': 'None', '6546': 'None', '4154': 'None', '4416': 'None', '6230': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/26B4D9D7-31DF-CB4F-9534-28024B4085E0.root_1'}], u'2': [{u'parents': u'[]', u'runlumi': u'{}', u'type': u'TFILE', u'events': 0, u'lfn': u'/store/user/kaliyana/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/ana_datamc_qcd1800to2400/191017_174534/0000/zp2mu_histos_2.root'}, {u'parents': u'[]', u'runlumi': u"{'1': {'3717': 'None', '1785': 'None', '2097': 'None', '5745': 'None', '2092': 'None', '1774': 'None', '1542': 'None', '1548': 'None', '1598': 'None', '1469': 'None', '2245': 'None', '1676': 'None', '2240': 'None', '1671': 'None', '1462': 'None', '1799': 'None', '5389': 'None', '1691': 'None', '1491': 'None', '1957': 'None', '3330': 'None', '1703': 'None', '1706': 'None', '4643': 'None', '1668': 'None', '2060': 'None', '5967': 'None', '1921': 'None', '1928': 'None', '1489': 'None', '1488': 'None', '1712': 'None', '1716': 'None', '5685': 'None', '1655': 'None', '3586': 'None', '1930': 'None', '5675': 'None', '1644': 'None', '3212': 'None', '1724': 'None', '1721': 'None', '5873': 'None', '1535': 'None', '1530': 'None', '1683': 'None', '1876': 'None', '1737': 'None', '1870': 'None', '1631': 'None', '1632': 'None', '1633': 'None', '1634': 'None', '2206': 'None', '1580': 'None', '1735': 'None', '1988': 'None', '1585': 'None', '1678': 'None', '1509': 'None', '3080': 'None', '2117': 'None', '1594': 'None', '3074': 'None', '5658': 'None', '1464': 'None', '3078': 'None', '2246': 'None', '1622': 'None', '1621': 'None', '1620': 'None', '1627': 'None', '1626': 'None', '3200': 'None', '1629': 'None', '4524': 'None', '1518': 'None', '2012': 'None', '2107': 'None', '1742': 'None', '1743': 'None', '3735': 'None', '1896': 'None', '1815': 'None', '1618': 'None', '1616': 'None', '1614': 'None', '1967': 'None', '1612': 'None', '1961': 'None', '1610': 'None', '1696': 'None', '1697': 'None', '1769': 'None', '1759': 'None', '1749': 'None', '1757': 'None', '1756': 'None', '1755': 'None', '1754': 'None', '1566': 'None', '4796': 'None', '1883': 'None', '1602': 'None', '1605': 'None', '1607': 'None', '1680': 'None', '2019': 'None', '1471': 'None', '1591': 'None', '1571': 'None', '1576': 'None', '1575': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/FEFEF3C3-79E7-D247-8E51-0FB091023B78.root_2'}, {u'parents': u'[]', u'runlumi': u"{'1': {'7877': 'None', '5055': 'None', '4472': 'None', '7878': 'None', '7879': 'None', '4477': 'None', '4458': 'None', '5076': 'None', '5232': 'None', '7153': 'None', '5077': 'None', '7889': 'None', '7888': 'None', '7880': 'None', '7883': 'None', '7882': 'None', '7884': 'None', '7887': 'None', '4215': 'None', '4211': 'None', '4212': 'None', '4469': 'None', '7418': 'None', '7423': 'None', '7409': 'None', '7892': 'None', '7893': 'None', '7890': 'None', '7891': 'None'}}", u'type': u'POOLIN', u'events': 11020, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/FCD1D50F-6AA6-6644-82B5-9EE1C00AC3CC.root_2'}, {u'parents': u'[]', u'runlumi': u"{'1': {'5173': 'None', '3920': 'None', '7359': 'None', '5078': 'None', '3415': 'None', '5096': 'None', '5749': 'None', '5276': 'None', '5627': 'None', '4982': 'None', '5069': 'None', '3403': 'None', '5592': 'None', '7251': 'None', '5591': 'None', '4876': 'None', '5262': 'None', '5260': 'None', '5598': 'None', '5596': 'None', '5268': 'None', '5694': 'None', '5015': 'None', '5605': 'None', '5600': 'None', '7246': 'None', '7245': 'None', '7244': 'None', '4729': 'None', '5254': 'None', '5564': 'None', '7249': 'None', '5097': 'None', '6306': 'None', '5002': 'None', '3954': 'None', '7867': 'None', '5124': 'None', '3391': 'None', '3390': 'None', '3392': 'None', '5249': 'None', '3397': 'None', '7237': 'None', '5244': 'None', '5575': 'None', '5570': 'None', '4950': 'None', '5039': 'None', '5700': 'None', '5034': 'None', '5032': 'None', '5033': 'None', '5031': 'None', '3453': 'None', '3451': 'None', '5709': 'None', '5707': 'None', '5234': 'None', '5701': 'None', '5738': 'None', '5200': 'None', '5041': 'None', '5029': 'None', '5028': 'None', '5021': 'None', '5023': 'None', '5025': 'None', '5026': 'None', '5102': 'None', '5103': 'None', '3528': 'None', '6354': 'None', '4933': 'None', '4934': 'None', '5184': 'None', '3445': 'None', '5715': 'None', '3440': 'None', '5710': 'None', '5082': 'None', '5113': 'None', '3427': 'None', '5648': 'None', '5213': 'None', '5211': 'None', '5642': 'None', '4921': 'None', '5729': 'None', '3434': 'None', '6101': 'None', '5192': 'None', '5235': 'None', '3874': 'None', '7236': 'None', '5734': 'None', '5737': 'None', '7235': 'None', '5731': 'None', '7233': 'None', '5733': 'None', '7243': 'None', '5045': 'None', '5042': 'None', '7238': 'None', '5367': 'None', '3423': 'None', '3421': 'None', '3565': 'None', '6136': 'None', '4997': 'None', '4859': 'None', '4853': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/EE3BE86D-254D-8041-B1C2-CDE7F97319A9.root_2'}, {u'parents': u'[]', u'runlumi': u"{'1': {'5171': 'None', '7077': 'None', '5179': 'None', '7113': 'None', '7109': 'None', '7116': 'None', '5073': 'None', '5070': 'None', '7058': 'None', '7059': 'None', '7057': 'None', '7054': 'None', '5900': 'None', '5901': 'None', '5906': 'None', '5907': 'None', '5065': 'None', '5064': 'None', '5067': 'None', '5060': 'None', '5062': 'None', '5144': 'None', '7168': 'None', '7126': 'None', '5919': 'None', '5915': 'None', '5914': 'None', '5911': 'None', '5910': 'None', '5913': 'None', '5912': 'None', '5019': 'None', '7139': 'None', '7875': 'None', '7872': 'None', '7383': 'None', '7137': 'None', '5099': 'None', '5091': 'None', '5095': 'None', '7794': 'None', '7796': 'None', '7025': 'None', '5126': 'None', '5088': 'None', '5531': 'None', '5571': 'None', '5038': 'None', '5037': 'None', '5035': 'None', '7347': 'None', '5138': 'None', '5137': 'None', '5134': 'None', '5133': 'None', '5132': 'None', '5130': 'None', '7096': 'None', '7094': 'None', '7092': 'None', '7093': 'None', '5540': 'None', '5890': 'None', '5891': 'None', '5892': 'None', '5893': 'None', '5895': 'None', '5106': 'None', '5107': 'None', '5105': 'None', '7081': 'None', '7080': 'None', '7083': 'None', '7082': 'None', '7084': 'None', '7087': 'None', '7088': 'None', '5117': 'None', '7271': 'None', '5059': 'None', '5054': 'None', '5889': 'None', '5888': 'None', '5052': 'None', '5053': 'None', '7078': 'None', '7079': 'None', '7075': 'None', '5196': 'None', '7070': 'None', '7072': 'None', '5929': 'None', '7779': 'None', '5166': 'None', '5169': 'None', '7100': 'None', '7101': 'None', '7102': 'None', '5049': 'None', '7660': 'None', '5044': 'None', '5043': 'None', '5085': 'None', '7068': 'None', '7067': 'None', '7066': 'None', '7065': 'None', '7064': 'None', '7063': 'None', '7062': 'None', '7061': 'None', '7060': 'None', '5359': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/EB52E4FB-ACE9-FA45-BA9E-1178F364CF37.root_2'}, {u'parents': u'[]', u'runlumi': u"{'1': {'7810': 'None', '7818': 'None', '7819': 'None', '7450': 'None', '2407': 'None', '2405': 'None', '7690': 'None', '2403': 'None', '2400': 'None', '2401': 'None', '2465': 'None', '7809': 'None', '7443': 'None', '7444': 'None', '7561': 'None', '2397': 'None', '2394': 'None', '2395': 'None', '2415': 'None', '2393': 'None', '2416': 'None', '2418': 'None', '2398': 'None', '2477': 'None', '2410': 'None', '7437': 'None', '7432': 'None', '7433': 'None', '7530': 'None', '7532': 'None', '2442': 'None', '2443': 'None', '2440': 'None', '2441': 'None', '2446': 'None', '2447': 'None', '2412': 'None', '7427': 'None', '7429': 'None', '7428': 'None', '2414': 'None', '7097': 'None', '7498': 'None', '7095': 'None', '7090': 'None', '7091': 'None', '7492': 'None', '7490': 'None', '7491': 'None', '7098': 'None', '7099': 'None', '2402': 'None', '2429': 'None', '2420': 'None', '2421': 'None', '2422': 'None', '2423': 'None', '2424': 'None', '2425': 'None', '2426': 'None', '2427': 'None', '7485': 'None', '7484': 'None', '7487': 'None', '7486': 'None', '7481': 'None', '7483': 'None', '7482': 'None', '7489': 'None', '7085': 'None', '7086': 'None', '7089': 'None', '2439': 'None', '2438': 'None', '2433': 'None', '2432': 'None', '2431': 'None', '2430': 'None', '2437': 'None', '2436': 'None', '2435': 'None', '2434': 'None', '7830': 'None', '7831': 'None', '7579': 'None', '7076': 'None', '7071': 'None', '7472': 'None', '7473': 'None', '7474': 'None', '7829': 'None', '7103': 'None', '7104': 'None', '7105': 'None', '7823': 'None', '7822': 'None', '7821': 'None', '7820': 'None', '7826': 'None', '7825': 'None', '7824': 'None', '7508': 'None', '7509': 'None', '7505': 'None', '7500': 'None', '7501': 'None', '7502': 'None', '7463': 'None', '7460': 'None', '7467': 'None', '7466': 'None', '7465': 'None', '7464': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/E1749025-409B-BD4D-A1ED-A6789CBB4BF3.root_2'}, {u'parents': u'[]', u'runlumi': u"{'1': {'3499': 'None', '2094': 'None', '4228': 'None', '2093': 'None', '4226': 'None', '2099': 'None', '2323': 'None', '4908': 'None', '2321': 'None', '2320': 'None', '2326': 'None', '4380': 'None', '2079': 'None', '4142': 'None', '6323': 'None', '2247': 'None', '3487': 'None', '3331': 'None', '3337': 'None', '3336': 'None', '3338': 'None', '4233': 'None', '4232': 'None', '2332': 'None', '2319': 'None', '5300': 'None', '2317': 'None', '2315': 'None', '2312': 'None', '2310': 'None', '2311': 'None', '6313': 'None', '2144': 'None', '2259': 'None', '2257': 'None', '2256': 'None', '2255': 'None', '2254': 'None', '2251': 'None', '2309': 'None', '3387': 'None', '3384': 'None', '3381': 'None', '2305': 'None', '2304': 'None', '2306': 'None', '2268': 'None', '2260': 'None', '2261': 'None', '2266': 'None', '2267': 'None', '2264': 'None', '4548': 'None', '4358': 'None', '3456': 'None', '2046': 'None', '2274': 'None', '2277': 'None', '2273': 'None', '3398': 'None', '2279': 'None', '3468': 'None', '4262': 'None', '2190': 'None', '1909': 'None', '4748': 'None', '2204': 'None', '2207': 'None', '3513': 'None', '3366': 'None', '3367': 'None', '3360': 'None', '3361': 'None', '2114': 'None', '2331': 'None', '3393': 'None', '2180': 'None', '1914': 'None', '4374': 'None', '6299': 'None', '3378': 'None', '3375': 'None', '3373': 'None', '3372': 'None', '2129': 'None', '2358': 'None', '2353': 'None', '2350': 'None', '2028': 'None', '2355': 'None', '4362': 'None', '4760': 'None', '1897': 'None', '2345': 'None', '3349': 'None', '2342': 'None', '2214': 'None', '2224': 'None', '1960': 'None', '2348': 'None', '3344': 'None', '3345': 'None', '3475': 'None', '4256': 'None', '3355': 'None', '3351': 'None', '4500': 'None', '2120': 'None', '2123': 'None', '2337': 'None', '2082': 'None', '3343': 'None', '3340': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/DC84B8C4-99DB-074C-9058-A079B916DC61.root_2'}, {u'parents': u'[]', u'runlumi': u"{'1': {'1780': 'None', '5317': 'None', '1784': 'None', '4024': 'None', '4025': 'None', '5508': 'None', '5509': 'None', '5275': 'None', '1948': 'None', '1771': 'None', '5272': 'None', '1772': 'None', '5377': 'None', '1779': 'None', '5409': 'None', '1798': 'None', '5309': 'None', '5388': 'None', '1792': 'None', '1790': 'None', '5142': 'None', '1794': 'None', '4031': 'None', '4032': 'None', '1951': 'None', '1953': 'None', '4036': 'None', '5468': 'None', '5512': 'None', '5515': 'None', '5266': 'None', '1708': 'None', '1709': 'None', '4400': 'None', '4647': 'None', '4402': 'None', '1822': 'None', '1669': 'None', '1908': 'None', '5227': 'None', '5399': 'None', '1923': 'None', '1926': 'None', '4800': 'None', '5253': 'None', '5410': 'None', '5411': 'None', '1714': 'None', '5311': 'None', '5259': 'None', '4048': 'None', '4124': 'None', '4062': 'None', '1833': 'None', '4621': 'None', '4115': 'None', '4112': 'None', '2102': 'None', '4057': 'None', '5404': 'None', '1728': 'None', '4295': 'None', '1727': 'None', '1722': 'None', '5572': 'None', '4059': 'None', '4058': 'None', '1946': 'None', '1877': 'None', '4107': 'None', '1878': 'None', '1739': 'None', '5433': 'None', '1732': 'None', '5546': 'None', '4273': 'None', '5555': 'None', '5551': 'None', '1868': 'None', '1913': 'None', '4172': 'None', '4173': 'None', '5427': 'None', '5426': 'None', '5421': 'None', '1745': 'None', '1740': 'None', '4246': 'None', '5521': 'None', '1845': 'None', '5217': 'None', '4166': 'None', '4161': 'None', '1619': 'None', '5451': 'None', '4168': 'None', '1793': 'None', '1693': 'None', '1753': 'None', '5414': 'None', '4316': 'None', '5280': 'None', '5283': 'None', '5282': 'None', '4254': 'None', '5530': 'None', '1887': 'None', '1807': 'None', '4153': 'None', '4397': 'None', '1689': 'None', '1760': 'None', '1767': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/D9E4282C-AD7C-7B46-AD69-0EB83DB54732.root_2'}, {u'parents': u'[]', u'runlumi': u"{'1': {'4229': 'None', '3329': 'None', '3120': 'None', '3253': 'None', '5278': 'None', '3256': 'None', '3257': 'None', '3135': 'None', '5997': 'None', '3136': 'None', '3131': 'None', '3130': 'None', '3132': 'None', '4236': 'None', '3294': 'None', '3248': 'None', '4736': 'None', '3240': 'None', '3246': 'None', '4482': 'None', '5012': 'None', '3276': 'None', '3141': 'None', '3142': 'None', '3144': 'None', '3273': 'None', '3271': 'None', '3278': 'None', '3279': 'None', '4129': 'None', '3165': 'None', '4125': 'None', '3588': 'None', '5009': 'None', '3153': 'None', '3154': 'None', '3167': 'None', '6273': 'None', '3464': 'None', '3463': 'None', '3462': 'None', '3469': 'None', '5978': 'None', '3593': 'None', '3592': 'None', '3121': 'None', '3124': 'None', '3298': 'None', '3299': 'None', '4106': 'None', '4109': 'None', '3295': 'None', '3296': 'None', '3297': 'None', '3290': 'None', '3291': 'None', '3292': 'None', '3293': 'None', '3214': 'None', '3215': 'None', '3216': 'None', '3217': 'None', '3213': 'None', '4741': 'None', '4740': 'None', '3218': 'None', '3516': 'None', '3896': 'None', '3894': 'None', '3288': 'None', '3171': 'None', '3286': 'None', '3285': 'None', '3284': 'None', '3283': 'None', '3281': 'None', '3280': 'None', '3207': 'None', '3206': 'None', '3204': 'None', '3203': 'None', '3202': 'None', '3201': 'None', '3882': 'None', '3209': 'None', '3208': 'None', '4242': 'None', '3459': 'None', '4617': 'None', '3234': 'None', '4515': 'None', '3301': 'None', '4709': 'None', '4258': 'None', '4097': 'None', '4096': 'None', '4099': 'None', '4507': 'None', '4508': 'None', '3228': 'None', '3119': 'None', '3118': 'None', '3117': 'None', '3115': 'None', '3114': 'None', '3111': 'None', '3222': 'None', '6039': 'None', '3194': 'None', '3190': 'None', '6231': 'None', '6035': 'None', '3983': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/D74AACBA-4EBB-374D-B422-11104D37E1B6.root_2'}, {u'parents': u'[]', u'runlumi': u"{'1': {'1142': 'None', '1143': 'None', '1307': 'None', '1300': 'None', '1144': 'None', '1145': 'None', '1149': 'None', '2330': 'None', '1303': 'None', '1460': 'None', '1317': 'None', '1159': 'None', '1158': 'None', '1155': 'None', '1154': 'None', '1157': 'None', '1156': 'None', '1150': 'None', '1319': 'None', '1152': 'None', '1411': 'None', '1412': 'None', '1416': 'None', '1322': 'None', '1320': 'None', '1321': 'None', '1324': 'None', '1325': 'None', '1304': 'None', '1409': 'None', '1237': 'None', '1339': 'None', '1232': 'None', '1233': 'None', '1334': 'None', '1330': 'None', '1333': 'None', '1436': 'None', '1433': 'None', '1438': 'None', '1439': 'None', '1240': 'None', '1227': 'None', '1226': 'None', '1222': 'None', '1342': 'None', '1420': 'None', '1425': 'None', '1427': 'None', '1426': 'None', '1428': 'None', '1212': 'None', '1213': 'None', '1210': 'None', '1211': 'None', '1216': 'None', '1217': 'None', '1214': 'None', '1215': 'None', '1201': 'None', '1218': 'None', '1200': 'None', '1188': 'None', '1189': 'None', '1186': 'None', '1184': 'None', '1185': 'None', '1182': 'None', '1183': 'None', '1180': 'None', '1455': 'None', '1164': 'None', '1165': 'None', '1167': 'None', '1209': 'None', '1208': 'None', '1162': 'None', '1163': 'None', '1205': 'None', '1207': 'None', '1206': 'None', '1168': 'None', '1169': 'None', '1203': 'None', '1202': 'None', '1312': 'None', '1191': 'None', '1190': 'None', '1192': 'None', '1195': 'None', '1194': 'None', '1197': 'None', '1196': 'None', '1446': 'None', '1299': 'None', '1442': 'None', '1441': 'None', '1290': 'None', '1291': 'None', '1296': 'None', '1175': 'None', '1174': 'None', '1172': 'None', '1171': 'None', '1170': 'None', '1179': 'None', '1178': 'None', '1285': 'None', '1286': 'None', '1280': 'None', '1282': 'None', '1470': 'None', '1475': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/D37C8A2F-D353-7C45-9A59-66826120DF0A.root_2'}, {u'parents': u'[]', u'runlumi': u"{'1': {'2095': 'None', '3323': 'None', '2091': 'None', '5502': 'None', '3044': 'None', '4706': 'None', '4383': 'None', '3251': 'None', '4386': 'None', '4384': 'None', '5903': 'None', '2157': 'None', '2249': 'None', '5908': 'None', '5921': 'None', '4887': 'None', '2262': 'None', '4238': 'None', '5954': 'None', '2145': 'None', '2140': 'None', '2064': 'None', '5014': 'None', '3282': 'None', '3143': 'None', '3272': 'None', '3306': 'None', '3149': 'None', '3300': 'None', '3009': 'None', '2173': 'None', '2027': 'None', '2177': 'None', '2175': 'None', '2073': 'None', '2263': 'None', '4499': 'None', '2074': 'None', '2258': 'None', '2053': 'None', '4116': 'None', '5778': 'None', '4113': 'None', '4354': 'None', '3268': 'None', '4356': 'None', '3317': 'None', '3319': 'None', '4752': 'None', '2049': 'None', '5872': 'None', '2168': 'None', '2167': 'None', '2192': 'None', '4105': 'None', '2195': 'None', '3169': 'None', '2199': 'None', '6165': 'None', '2202': 'None', '2203': 'None', '2209': 'None', '5784': 'None', '5786': 'None', '5781': 'None', '5782': 'None', '5783': 'None', '4378': 'None', '5894': 'None', '2185': 'None', '5897': 'None', '5656': 'None', '4370': 'None', '5101': 'None', '4377': 'None', '2216': 'None', '2215': 'None', '1996': 'None', '2108': 'None', '5791': 'None', '5810': 'None', '2101': 'None', '2106': 'None', '4365': 'None', '4364': 'None', '2232': 'None', '2035': 'None', '4766': 'None', '2136': 'None', '2133': 'None', '2131': 'None', '2226': 'None', '5452': 'None', '2225': 'None', '2037': 'None', '5926': 'None', '5808': 'None', '5920': 'None', '4597': 'None', '2030': 'None', '3188': 'None', '3189': 'None', '4250': 'None', '4483': 'None', '3186': 'None', '2121': 'None', '5449': 'None', '4390': 'None', '2081': 'None', '3196': 'None', '5933': 'None', '3191': 'None', '5939': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/BCC714E5-BF70-5E4C-85FB-5345FD2ABF9D.root_2'}, {u'parents': u'[]', u'runlumi': u"{'1': {'5174': 'None', '1262': 'None', '1266': 'None', '7205': 'None', '7367': 'None', '4704': 'None', '5279': 'None', '4671': 'None', '4603': 'None', '7199': 'None', '7198': 'None', '2018': 'None', '7193': 'None', '7192': 'None', '7190': 'None', '7196': 'None', '7195': 'None', '7194': 'None', '5380': 'None', '4732': 'None', '5383': 'None', '5148': 'None', '4687': 'None', '5518': 'None', '4564': 'None', '5517': 'None', '5308': 'None', '5597': 'None', '5599': 'None', '5301': 'None', '4641': 'None', '5616': 'None', '5306': 'None', '5307': 'None', '4973': 'None', '5391': 'None', '4832': 'None', '5304': 'None', '4894': 'None', '4654': 'None', '7368': 'None', '7369': 'None', '5569': 'None', '4720': 'None', '7248': 'None', '1256': 'None', '1257': 'None', '1253': 'None', '1251': 'None', '1397': 'None', '4622': 'None', '7301': 'None', '4629': 'None', '4759': 'None', '7379': 'None', '5400': 'None', '4757': 'None', '4623': 'None', '1247': 'None', '1249': 'None', '5660': 'None', '4637': 'None', '5664': 'None', '4828': 'None', '5542': 'None', '5547': 'None', '5545': 'None', '4793': 'None', '7242': 'None', '4777': 'None', '5109': 'None', '4609': 'None', '7358': 'None', '5558': 'None', '5104': 'None', '7218': 'None', '7219': 'None', '4680': 'None', '7211': 'None', '7212': 'None', '7213': 'None', '7214': 'None', '7215': 'None', '7217': 'None', '2022': 'None', '1513': 'None', '5114': 'None', '5523': 'None', '7179': 'None', '1892': 'None', '4691': 'None', '4690': 'None', '7209': 'None', '7208': 'None', '4694': 'None', '7203': 'None', '7202': 'None', '7201': 'None', '7200': 'None', '7207': 'None', '7206': 'None', '5193': 'None', '7204': 'None', '5164': 'None', '5285': 'None', '7234': 'None', '4792': 'None', '4728': 'None', '4714': 'None', '4716': 'None', '5443': 'None', '4665': 'None', '7181': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/B2A7FDE0-6A4B-8D45-AB6E-A53038739668.root_2'}, {u'parents': u'[]', u'runlumi': u"{'1': {'7816': 'None', '4302': 'None', '7815': 'None', '4305': 'None', '4308': 'None', '5079': 'None', '4785': 'None', '5075': 'None', '4144': 'None', '4146': 'None', '4140': 'None', '4385': 'None', '7459': 'None', '4181': 'None', '4868': 'None', '4862': 'None', '4864': 'None', '7772': 'None', '7801': 'None', '4334': 'None', '4335': 'None', '4138': 'None', '7442': 'None', '4404': 'None', '7448': 'None', '4132': 'None', '4135': 'None', '4136': 'None', '4137': 'None', '7523': 'None', '7684': 'None', '4971': 'None', '4430': 'None', '7855': 'None', '7874': 'None', '7876': 'None', '4209': 'None', '7870': 'None', '7871': 'None', '7873': 'None', '4202': 'None', '4200': 'None', '4206': 'None', '4044': 'None', '4046': 'None', '4128': 'None', '4121': 'None', '4126': 'None', '7438': 'None', '4217': 'None', '4198': 'None', '4196': 'None', '7866': 'None', '7865': 'None', '7864': 'None', '7863': 'None', '7862': 'None', '7861': 'None', '7860': 'None', '7869': 'None', '7868': 'None', '4758': 'None', '4812': 'None', '4055': 'None', '4054': 'None', '4298': 'None', '4050': 'None', '5080': 'None', '5241': 'None', '4755': 'None', '5243': 'None', '4956': 'None', '4268': 'None', '4187': 'None', '4904': 'None', '4103': 'None', '4436': 'None', '7856': 'None', '7857': 'None', '4433': 'None', '4432': 'None', '7858': 'None', '7859': 'None', '4341': 'None', '5239': 'None', '4942': 'None', '7413': 'None', '7416': 'None', '4277': 'None', '5024': 'None', '5027': 'None', '4445': 'None', '4446': 'None', '7488': 'None', '7210': 'None', '4076': 'None', '5226': 'None', '7216': 'None', '4689': 'None', '7519': 'None', '4248': 'None', '4427': 'None', '5218': 'None', '5219': 'None', '5191': 'None', '5190': 'None', '4849': 'None', '7771': 'None', '4092': 'None', '4312': 'None', '4047': 'None', '4151': 'None', '4159': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/A9852662-F05D-F547-A5D5-6CD8B46ADB20.root_2'}, {u'parents': u'[]', u'runlumi': u"{'1': {'1140': 'None', '1141': 'None', '1146': 'None', '1148': 'None', '7112': 'None', '7111': 'None', '7110': 'None', '7117': 'None', '7115': 'None', '7114': 'None', '7382': 'None', '7119': 'None', '7381': 'None', '5372': 'None', '7800': 'None', '7803': 'None', '7802': 'None', '7805': 'None', '7804': 'None', '7807': 'None', '7806': 'None', '1151': 'None', '7128': 'None', '7129': 'None', '7127': 'None', '7125': 'None', '7123': 'None', '5330': 'None', '7344': 'None', '7345': 'None', '7138': 'None', '7131': 'None', '7130': 'None', '7133': 'None', '7132': 'None', '7135': 'None', '7380': 'None', '7136': 'None', '7118': 'None', '7360': 'None', '7361': 'None', '7362': 'None', '7363': 'None', '7364': 'None', '7365': 'None', '7366': 'None', '5843': 'None', '5842': 'None', '7881': 'None', '1138': 'None', '1133': 'None', '1132': 'None', '1131': 'None', '1137': 'None', '1136': 'None', '1134': 'None', '5327': 'None', '7378': 'None', '7149': 'None', '7373': 'None', '7145': 'None', '7371': 'None', '7370': 'None', '7377': 'None', '5240': 'None', '7375': 'None', '7374': 'None', '7426': 'None', '5205': 'None', '5207': 'None', '7346': 'None', '7798': 'None', '7348': 'None', '5332': 'None', '7342': 'None', '7343': 'None', '7341': 'None', '5339': 'None', '5237': 'None', '7797': 'None', '7349': 'None', '3369': 'None', '5230': 'None', '5231': 'None', '7155': 'None', '7154': 'None', '7152': 'None', '5236': 'None', '7150': 'None', '7291': 'None', '7293': 'None', '7294': 'None', '7336': 'None', '7351': 'None', '7350': 'None', '7353': 'None', '7352': 'None', '7355': 'None', '7354': 'None', '7356': 'None', '5229': 'None', '5228': 'None', '5718': 'None', '5222': 'None', '5712': 'None', '7144': 'None', '5795': 'None', '7278': 'None', '5817': 'None', '7283': 'None', '7282': 'None', '7281': 'None', '7280': 'None', '7287': 'None', '7286': 'None', '7285': 'None', '7284': 'None', '7140': 'None', '7289': 'None', '7141': 'None', '5216': 'None', '7142': 'None', '7143': 'None', '7325': 'None', '7326': 'None', '7675': 'None', '5350': 'None', '7376': 'None', '7134': 'None', '5201': 'None', '7151': 'None', '7279': 'None', '7106': 'None', '7107': 'None', '7108': 'None', '7337': 'None', '5363': 'None', '7335': 'None', '7332': 'None', '7338': 'None', '5246': 'None'}}", u'type': u'POOLIN', u'events': 53580, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/A2235E19-0B30-744A-AAD9-77E5553A8BE5.root_2'}, {u'parents': u'[]', u'runlumi': u"{'1': {'4511': 'None', '5177': 'None', '3712': 'None', '4026': 'None', '4027': 'None', '3658': 'None', '4021': 'None', '5507': 'None', '5274': 'None', '3796': 'None', '4672': 'None', '6474': 'None', '4867': 'None', '3766': 'None', '5149': 'None', '4883': 'None', '4886': 'None', '3332': 'None', '5463': 'None', '6443': 'None', '3642': 'None', '3641': 'None', '5516': 'None', '4734': 'None', '5303': 'None', '4484': 'None', '4485': 'None', '4486': 'None', '6311': 'None', '4480': 'None', '4481': 'None', '3324': 'None', '4489': 'None', '3772': 'None', '5013': 'None', '5017': 'None', '5150': 'None', '3778': 'None', '5157': 'None', '4606': 'None', '6450': 'None', '3678': 'None', '3270': 'None', '3672': 'None', '3671': 'None', '5251': 'None', '5257': 'None', '5314': 'None', '4494': 'None', '6305': 'None', '6300': 'None', '4498': 'None', '3664': 'None', '3262': 'None', '3310': 'None', '3312': 'None', '3314': 'None', '3316': 'None', '4505': 'None', '6420': 'None', '4423': 'None', '3616': 'None', '5392': 'None', '3750': 'None', '3598': 'None', '5337': 'None', '5669': 'None', '4509': 'None', '4066': 'None', '3364': 'None', '5543': 'None', '4069': 'None', '6047': 'None', '3780': 'None', '3724': 'None', '5654': 'None', '6481': 'None', '4778': 'None', '5181': 'None', '4075': 'None', '4077': 'None', '3274': 'None', '4073': 'None', '6057': 'None', '4084': 'None', '4089': 'None', '6498': 'None', '5524': 'None', '3736': 'None', '3438': 'None', '3342': 'None', '4001': 'None', '4002': 'None', '4003': 'None', '4005': 'None', '4007': 'None', '3978': 'None', '4008': 'None', '5281': 'None', '5284': 'None', '3627': 'None', '5533': 'None', '3352': 'None', '3774': 'None', '4398': 'None', '4019': 'None', '4917': 'None', '5440': 'None', '4912': 'None', '4995': 'None', '3985': 'None', '3986': 'None', '3980': 'None'}}", u'type': u'POOLIN', u'events': 42940, u'lfn': u'/store/mc/RunIIAutumn18MiniAOD/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/A1CD1388-05F4-F148-9306-EA289ACD5BD1.root_2'}]}, u'taskDBInfo': {u'inputDataset': u'/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM', u'userWebDirURL': u'http://vocms0119.cern.ch/mon/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400', u'publication': False, u'outputDatasets': []}}]}
+INFO 2019-11-01 14:19:40.271 UTC: 	 Running crab status first to fetch necessary information.
+DEBUG 2019-11-01 14:19:40.308 UTC: 	 Running on: Linux lxplus605.cern.ch 2.6.32-754.18.2.el6.x86_64 #1 SMP Wed Aug 14 10:00:35 CEST 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	Scientific Linux CERN SLC release 6.10 (Carbon)
+
+DEBUG 2019-11-01 14:19:40.308 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-01 14:19:40.309 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+DEBUG 2019-11-01 14:19:40.317 UTC: 	 Checking credentials
+DEBUG 2019-11-01 14:19:40.317 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-01 14:19:40.317 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-01 14:19:41.027 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 41360
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:41.834 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 41358
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:41.834 UTC: 	 Proxy lifetime 41360 secs is different from voms extension lifetime 41358 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-01 14:19:41.834 UTC: 	 Proxy valid for 11:29:18 hours
+DEBUG 2019-11-01 14:19:42.018 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:42.018 UTC: 	 Checking credentials
+DEBUG 2019-11-01 14:19:42.018 UTC: 	 Found proxy file /tmp/x509up_u112442
+DEBUG 2019-11-01 14:19:42.018 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-01 14:19:42.923 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -timeleft
+ output : 41358
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:43.629 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u112442 -actimeleft
+ output : 41356
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:43.630 UTC: 	 Proxy lifetime 41358 secs is different from voms extension lifetime 41356 secs for proxy: /tmp/x509up_u112442
+DEBUG 2019-11-01 14:19:43.630 UTC: 	 Proxy valid for 11:29:16 hours
+DEBUG 2019-11-01 14:19:43.729 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-01 14:19:43.839 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:43.839 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-01 14:19:43.839 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage_cmsweb.cern.ch for credential name
+DEBUG 2019-11-01 14:19:44.244 UTC: 	 Executing : 
+ command : myproxy-info -l f8fea12f46d9be4617ea61f8bc080f9234758131 -s myproxy.cern.ch
+ output : username: f8fea12f46d9be4617ea61f8bc080f9234758131
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 550:56:04  (23.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 14:19:44.244 UTC: 	 Myproxy is valid: 1983364
+DEBUG 2019-11-01 14:19:44.245 UTC: 	 Command use: status
+DEBUG 2019-11-01 14:19:44.245 UTC: 	 Options use: []
+DEBUG 2019-11-01 14:19:44.376 UTC: 	 CRABClient version: 3.3.1910.patch2
+DEBUG 2019-11-01 14:19:44.376 UTC: 	 Instance is prod
+DEBUG 2019-11-01 14:19:44.376 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-01 14:19:44.376 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-01 14:19:44.468 UTC: 	 Got information from server oracle database: {u'result': [u'191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400', u'None', u'None', u'SUBMITTED', u'None', u'2019-10-17 17:45:34.928347', u'None', u'2019-10-17 17:49:39.771054', u'None', u'CMSSW_10_2_5', u'slc6_amd64_gcc700', u'/QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM', u'T', u'0', u"['T2_US_MIT']", u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 20, 'runs': [], 'lumis': []}", u'263bdb8b60407f090ce1f41c3d06ef428620a1156889942efbeeaeb9a8b70773.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'kaliyana', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=kaliyana/CN=821457/CN=Kalpanie Madara Liyanage', u'cms', u'None', u'None', u'ana_datamc_qcd1800to2400-00000000000000000000000000000000', u'F', u'T2_US_MIT', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['zp2mu_histos.root']", u'[]', u'Analysis', u'pythia', u'None', u"{'maxjobruntime': 1250, 'priority': 10, 'site_blacklist': [], 'resubmit_jobids': ['2'], 'numcores': 1, 'site_whitelist': ['T2_US_MIT'], 'maxmemory': 2000, 'resubmit_publication': 0}", u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u"['The CRAB3 server got a non-critical error while checking stageout permissions. Please use checkwrite to check if everything is fine.']", u'http://vocms0119.cern.ch/mon/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0119.cern.ch', u'F', u'[]', u'T', u'/store/user/kaliyana', u'T', u'None', u'F', u'None', u'QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8', u'None', u'ee021f84c425e996d5f832f6c42697bf24d90452caca2403d923061f5e688fa2.tar.gz', u'44345368', u'filetransfers', u'F', u'188.184.106.99', u'-1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-11-01 14:19:44.469 UTC: 	 CRAB project directory:		/afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400
+INFO 2019-11-01 14:19:44.469 UTC: 	 Task name:			191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-11-01 14:19:44.469 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0119.cern.ch - crab-prod-tw01
+INFO 2019-11-01 14:19:44.469 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-11-01 14:19:44.469 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-11-01 14:19:44.469 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=kaliyana&var-task=191017_174534%3Akaliyana_crab_ana_datamc_qcd1800to2400
+INFO 2019-11-01 14:19:44.469 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+WARNING 2019-11-01 14:19:44.469 UTC: 	 Warning:			The CRAB3 server got a non-critical error while checking stageout permissions. Please use checkwrite to check if everything is fine.
+DEBUG 2019-11-01 14:19:44.469 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 44345368)
+DEBUG 2019-11-01 14:19:44.470 UTC: 	 Webdir is located at http://vocms0119.cern.ch/mon/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+DEBUG 2019-11-01 14:19:44.578 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0119/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400
+DEBUG 2019-11-01 14:19:44.578 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0119/cms253/191017_174534:kaliyana_crab_ana_datamc_qcd1800to2400/status_cache
+DEBUG 2019-11-01 14:19:45.385 UTC: 	 Got information from status cache file: {'1': {'Retries': 1, 'WallDurations': [9.0, 15059.0, 9.0, 17742.0], 'StartTimes': [1571334964.0, 1571355792.0], 'SubmitTimes': [1571334592.0, 1571355500.0], 'JobIds': ['44345370.0', '44360407.0'], 'EndTimes': [1571350023.0, 1571373534.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1828492, 1804932], 'TotalUserCpuTimeHistory': [3220, 3347.0], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [225, 248.0]}, '2': {'Retries': 3, 'WallDurations': [9.0, 12163.0, 8.0, 8057.0, 10.0, 9952.0, 9.0, 11757.0], 'StartTimes': [1571334971.0, 1571351231.0, 1571359668.0, 1571401672.0], 'SubmitTimes': [1571334593.0, 1571350812.0, 1571359425.0, 1571400319.0], 'JobIds': ['44345371.0', '44357920.0', '44361284.0', '44384989.0'], 'EndTimes': [1571347134.0, 1571359288.0, 1571369620.0, 1571413429.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1615512, 1406340, 1619432, 1664572], 'Error': [90000, 'Got recoverable stageout exception:\nStageout failed with code 1.\nThere were 1 failed/killed stageout jobs.\nFailure reasons (per document) follow:\n- d46419344e8c445a0e096e8f23d9fb9dc197b853f77e5ce6ca878f55:\n  -----> ASO log start -----\n  TRANSFER 70 TRANSFER  globus_xio: Unable to connect to se01.cmsaf.mit.edu:2811 globus_xio: System error in connect: Connection timed out globus_xio: A system call failed: Connection timed out  [...CUT...] Full log at https://fts3.cern.ch:8449/fts3/ftsmon/#/job/a547c676-f158-11e9-8d03-02163e018d65\n  <----- ASO log finish ----', {}], 'TotalUserCpuTimeHistory': [2667, 2019, 1970, 2209], 'SiteHistory': ['Unknown', 'T2_US_Caltech', 'Unknown', 'T2_US_Vanderbilt', 'Unknown', 'T2_US_UCSD', 'Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [291, 130, 172, 151]}}
+INFO 2019-11-01 14:19:45.385 UTC: 	 Status on the scheduler:	COMPLETED
+INFO 2019-11-01 14:19:45.385 UTC: 	 
+Jobs status:                    finished     		100.0% (2/2)
+INFO 2019-11-01 14:19:45.385 UTC: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2019-11-01 14:19:45.386 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-11-01 14:19:45.386 UTC: 	 
+Warning: the average jobs CPU efficiency is less than 50%, please consider to improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task
+INFO 2019-11-01 14:19:45.386 UTC: 	 
+Summary of run jobs:
+ * Memory: 1762MB min, 1762MB max, 1694MB ave
+ * Runtime: 3:15:57 min, 4:55:42 max, 4:05:49 ave
+ * CPU eff: 20% min, 20% max, 20% ave
+ * Waste: 12:34:45 (61% of total)
+
+INFO 2019-11-01 14:19:45.879 UTC: 	 Will save lumi files into output directory /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/results
+INFO 2019-11-01 14:19:45.880 UTC: 	 Summary from jobs in status 'finished':
+INFO 2019-11-01 14:19:45.880 UTC: 	   Number of files processed: 34
+  Number of events read: 1445800
+  Number of events written in EDM files: 0
+  Number of events written in TFileService files: 0
+  Number of events written in other type of files: 0
+INFO 2019-11-01 14:19:45.886 UTC: 	   Processed lumis written to processedLumis.json
+INFO 2019-11-01 14:19:45.986 UTC: 	 Log file is /afs/cern.ch/user/k/kaliyana/2018Z/CMSSW_10_2_5/src/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/crab_2018_QCD_Pt_1800to2400_TuneCP5_13TeV_pythia8/crab_ana_datamc_qcd1800to2400/crab.log

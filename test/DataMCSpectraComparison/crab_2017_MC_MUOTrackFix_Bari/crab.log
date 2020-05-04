@@ -1,0 +1,18 @@
+DEBUG 2020-03-18 10:35:38.667 UTC: 	 Running on: Linux lxplus608.cern.ch 2.6.32-754.27.1.el6.x86_64 #1 SMP Wed Jan 29 10:28:48 CET 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux CERN SLC release 6.10 (Carbon)
+DEBUG 2020-03-18 10:35:38.682 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2020-03-18 10:35:38.683 UTC: 	 Executing command: 'status'
+DEBUG 2020-03-18 10:35:38.683 UTC: 	 Found CRAB cache file /afs/cern.ch/user/k/kaliyana/.crab3
+ERROR 2020-03-18 10:35:38.684 UTC: 	 Error: crab_ana_datamc_dy45 is not a valid CRAB project directory.
+ERROR 2020-03-18 10:35:38.684 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 595, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_ana_datamc_dy45 is not a valid CRAB project directory.
