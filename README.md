@@ -3,9 +3,12 @@
 # For MC 
 
 Files needed: 
+
 	/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/histos.py
+	
 	/SUSYBSMAnalysis/Zprime2muAnalysis/python/MCSamples.py
-	/SUSYBSMAnalysis/Zprime2muAnalysis/python/ METFilterMiniAOD_cfi.py (only to change between 	data and MC)
+	
+	/SUSYBSMAnalysis/Zprime2muAnalysis/python/ METFilterMiniAOD_cfi.py (only to change between data and MC)
 
 Changes to be done:
 
@@ -41,10 +44,14 @@ To submit:	 python histos.py submit no_data
 
 # For Data
 
-Files needed: 
+Files needed:
+
 	/SUSYBSMAnalysis/Zprime2muAnalysis/test/DataMCSpectraComparison/histos.py
-	/SUSYBSMAnalysis/Zprime2muAnalysis/python/METFilterMiniAOD_cfi.py (only to change between 	data and MC)
+	
+	/SUSYBSMAnalysis/Zprime2muAnalysis/python/METFilterMiniAOD_cfi.py (only to change between data and MC)
+	
 	/SUSYBSMAnalysis/Zprime2muAnalysis/python/HistosFromPAT_cfi.py (fill_gen_info = cms.bool(False) # for DATA)
+	
 	/SUSYBSMAnalysis/Zprime2muAnalysis/python/goodlumis.py(to add JSON files)
 
         histos.py
