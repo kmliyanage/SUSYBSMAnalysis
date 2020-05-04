@@ -8,7 +8,7 @@ Files needed:
 	
 	/SUSYBSMAnalysis/Zprime2muAnalysis/python/MCSamples.py
 	
-	/SUSYBSMAnalysis/Zprime2muAnalysis/python/ METFilterMiniAOD_cfi.py (only to change between data and MC)
+	/SUSYBSMAnalysis/Zprime2muAnalysis/python/METFilterMiniAOD_cfi.py (only to change between data and MC)
 
 Changes to be done:
 
